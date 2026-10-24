@@ -9,6 +9,12 @@ Study site for Darren's Korean lessons: https://leoparmint.github.io/ai103-pract
 
 Progress is saved in the browser only; Options and backup moves it between devices.
 
+## Color themes
+
+The theme menu (top right) has 13 popular dark themes: Dracula (the default, same as the AI-103 site), Catppuccin Mocha, Tokyo Night, One Dark, Nord, GitHub Dark, Gruvbox Dark, Rosé Pine, Monokai, Solarized Dark, Everforest, Night Owl and Kanagawa. Each theme sets 17 palette colors in the `THEMES` object at the top of `index.html`, taken from the theme's official palette files; borders, tinted fills and keyboard keys are mixed from those. A few colors are lightened where the official one is too dim to read on this page (Nord's red, Solarized's magenta), and the choice is remembered per browser.
+
+`python3 korean/tools/check_themes.py` checks every theme's text contrast against WCAG minimums (add `-v` to see pairs that pass but sit below the target).
+
 ## Where the content comes from
 
 `source/` holds Markdown exports of the two Claude Docs that the scheduled "Korean study materials update" keeps current after each lesson: Korean Review Notes (Start here, Vocabulary, Grammar, Mix-ups & mistakes) and Korean Practice Workbook (Practice, Answer key). `tools/build.py` turns them into `deck.json`, which `index.html` loads.

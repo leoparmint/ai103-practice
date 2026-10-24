@@ -6,6 +6,36 @@
 <meta name="description" content="Korean flashcards, practice questions and notes from Darren's lessons">
 <meta name="robots" content="noindex, nofollow">
 <title>Korean Flashcards</title>
+<meta name="theme-color" content="#21222C">
+<script>
+// Color themes: each one sets the 17 palette colors on :root. This runs before the page paints, so a saved theme never flashes Dracula first.
+const THEMES = /* THEMES:START */{
+  dracula: {name: "Dracula", bg: "#21222C", surface: "#282A36", surface2: "#2E3040", code: "#191A21", line: "#44475A", ink: "#F8F8F2", muted: "#A9B1D6", faint: "#6272A4", accent: "#BD93F9", accentInk: "#21222C", link: "#8BE9FD", good: "#50FA7B", miss: "#FF6E6E", warn: "#FFB86C", info: "#8BE9FD", pink: "#FF79C6", yellow: "#F1FA8C"},
+  catppuccin: {name: "Catppuccin Mocha", bg: "#181825", surface: "#1E1E2E", surface2: "#313244", code: "#11111B", line: "#45475A", ink: "#CDD6F4", muted: "#A6ADC8", faint: "#7F849C", accent: "#CBA6F7", accentInk: "#1E1E2E", link: "#89B4FA", good: "#A6E3A1", miss: "#F38BA8", warn: "#FAB387", info: "#89B4FA", pink: "#F5C2E7", yellow: "#F9E2AF"},
+  tokyonight: {name: "Tokyo Night", bg: "#16161E", surface: "#1A1B26", surface2: "#292E42", code: "#0C0E14", line: "#3B4261", ink: "#C0CAF5", muted: "#A9B1D6", faint: "#737AA2", accent: "#7AA2F7", accentInk: "#16161E", link: "#7DCFFF", good: "#9ECE6A", miss: "#F7768E", warn: "#FF9E64", info: "#7DCFFF", pink: "#BB9AF7", yellow: "#E0AF68"},
+  onedark: {name: "One Dark", bg: "#21252B", surface: "#282C34", surface2: "#2C313A", code: "#1B1D23", line: "#3E4451", ink: "#D7DAE0", muted: "#ABB2BF", faint: "#7F848E", accent: "#61AFEF", accentInk: "#1B1D23", link: "#56B6C2", good: "#98C379", miss: "#E06C75", warn: "#D19A66", info: "#56B6C2", pink: "#C678DD", yellow: "#E5C07B"},
+  nord: {name: "Nord", bg: "#2E3440", surface: "#3B4252", surface2: "#434C5E", code: "#272C36", line: "#4C566A", ink: "#ECEFF4", muted: "#D8DEE9", faint: "#99A0AD", accent: "#88C0D0", accentInk: "#2E3440", link: "#88C0D0", good: "#A3BE8C", miss: "#CE9199", warn: "#EBCB8B", info: "#88C0D0", pink: "#B48EAD", yellow: "#EBCB8B"},
+  github: {name: "GitHub Dark", bg: "#0D1117", surface: "#161B22", surface2: "#21262D", code: "#010409", line: "#30363D", ink: "#E6EDF3", muted: "#9198A1", faint: "#6E7681", accent: "#58A6FF", accentInk: "#0D1117", link: "#58A6FF", good: "#3FB950", miss: "#FF7B72", warn: "#DB6D28", info: "#79C0FF", pink: "#DB61A2", yellow: "#E3B341"},
+  gruvbox: {name: "Gruvbox Dark", bg: "#1D2021", surface: "#282828", surface2: "#3C3836", code: "#141617", line: "#504945", ink: "#EBDBB2", muted: "#BDAE93", faint: "#928374", accent: "#FABD2F", accentInk: "#282828", link: "#8EC07C", good: "#B8BB26", miss: "#FB4934", warn: "#FE8019", info: "#83A598", pink: "#D3869B", yellow: "#FABD2F"},
+  rosepine: {name: "Rosé Pine", bg: "#191724", surface: "#1F1D2E", surface2: "#26233A", code: "#16141F", line: "#403D52", ink: "#E0DEF4", muted: "#908CAA", faint: "#6E6A86", accent: "#EBBCBA", accentInk: "#191724", link: "#C4A7E7", good: "#9CCFD8", miss: "#EB6F92", warn: "#F6C177", info: "#C4A7E7", pink: "#EBBCBA", yellow: "#F6C177"},
+  monokai: {name: "Monokai", bg: "#1E1F1C", surface: "#272822", surface2: "#3E3D32", code: "#191A16", line: "#49483E", ink: "#F8F8F2", muted: "#CFCFC2", faint: "#90908A", accent: "#AE81FF", accentInk: "#1E1F1C", link: "#66D9EF", good: "#A6E22E", miss: "#F92672", warn: "#FD971F", info: "#66D9EF", pink: "#F92672", yellow: "#E6DB74"},
+  solarized: {name: "Solarized Dark", bg: "#00212B", surface: "#002B36", surface2: "#073642", code: "#001A22", line: "#274642", ink: "#EEE8D5", muted: "#93A1A1", faint: "#657B83", accent: "#268BD2", accentInk: "#00212B", link: "#2AA198", good: "#859900", miss: "#DC322F", warn: "#B58900", info: "#2AA198", pink: "#D74D8D", yellow: "#B58900"},
+  everforest: {name: "Everforest", bg: "#232A2E", surface: "#2D353B", surface2: "#343F44", code: "#1E2326", line: "#475258", ink: "#D3C6AA", muted: "#9DA9A0", faint: "#859289", accent: "#A7C080", accentInk: "#232A2E", link: "#7FBBB3", good: "#A7C080", miss: "#E67E80", warn: "#E69875", info: "#7FBBB3", pink: "#D699B6", yellow: "#DBBC7F"},
+  nightowl: {name: "Night Owl", bg: "#010E1A", surface: "#011627", surface2: "#0B2942", code: "#010B14", line: "#1D3B53", ink: "#D6DEEB", muted: "#89A4BB", faint: "#5F7E97", accent: "#C792EA", accentInk: "#011627", link: "#82AAFF", good: "#9CCC65", miss: "#FF5874", warn: "#F78C6C", info: "#7FDBCA", pink: "#80CBC4", yellow: "#ECC48D"},
+  kanagawa: {name: "Kanagawa", bg: "#16161D", surface: "#1F1F28", surface2: "#2A2A37", code: "#121218", line: "#363646", ink: "#DCD7BA", muted: "#C8C093", faint: "#727169", accent: "#7E9CD8", accentInk: "#0D0C0C", link: "#7FB4CA", good: "#98BB6C", miss: "#E46876", warn: "#FFA066", info: "#7FB4CA", pink: "#D27E99", yellow: "#E6C384"}
+}/* THEMES:END */;
+const THEME_VARS = {bg: '--bg', surface: '--surface', surface2: '--surface2', code: '--code-bg', line: '--line', ink: '--ink', muted: '--muted', faint: '--faint', accent: '--accent', accentInk: '--accent-ink', link: '--link', good: '--good', miss: '--miss', warn: '--rev', info: '--new', pink: '--pink', yellow: '--yellow'};
+function applyTheme(key) {
+  if (!Object.prototype.hasOwnProperty.call(THEMES, key)) key = 'dracula';
+  const t = THEMES[key], root = document.documentElement;
+  for (const [k, v] of Object.entries(THEME_VARS)) root.style.setProperty(v, t[k]);
+  root.dataset.theme = key;
+  const m = document.querySelector('meta[name="theme-color"]');
+  if (m) m.content = t.bg;
+  return key;
+}
+try { applyTheme(localStorage.getItem('kdeck.theme')); } catch (e) { applyTheme('dracula'); }
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+KR:wght@400;500;700&family=Source+Sans+3:wght@400;600&display=swap">
@@ -13,11 +43,28 @@
 [hidden]{display:none !important}
 /* Same Dracula look as the AI-103 deck: one ~640px column, deck list first, the card below */
 :root{
-  --bg:#21222C; --surface:#282A36; --surface2:#2E3040; --ink:#F8F8F2; --muted:#A9B1D6; --line:#44475A;
-  --accent:#BD93F9; --accent-soft:#3A3452; --accent-ink:#21222C;
-  --good:#50FA7B; --good-soft:#1E3A2B; --miss:#FF6E6E; --miss-soft:#45252C;
-  --code-bg:#191A21; --link:#8BE9FD; --rev:#FFB86C; --rev-soft:rgba(255,184,108,.14); --rev-line:rgba(255,184,108,.5);
-  --new:#8BE9FD; --learn:#FFB86C; --due:#50FA7B; --pink:#FF79C6; --yellow:#F1FA8C;
+  /* Dracula by default; a theme from the picker overrides these 17 colors */
+  --bg:#21222C; --surface:#282A36; --surface2:#2E3040; --code-bg:#191A21; --line:#44475A;
+  --ink:#F8F8F2; --muted:#A9B1D6; --faint:#6272A4;
+  --accent:#BD93F9; --accent-ink:#21222C; --link:#8BE9FD;
+  --good:#50FA7B; --miss:#FF6E6E; --rev:#FFB86C; --new:#8BE9FD; --pink:#FF79C6; --yellow:#F1FA8C;
+  /* Everything else is mixed from the palette, so it follows the theme */
+  --learn:var(--rev); --due:var(--good);
+  --accent-soft:color-mix(in srgb, var(--accent) 22%, var(--surface));
+  --good-soft:color-mix(in srgb, var(--good) 18%, var(--surface));
+  --miss-soft:color-mix(in srgb, var(--miss) 18%, var(--surface));
+  --rev-soft:color-mix(in srgb, var(--rev) 14%, var(--surface));
+  --rev-line:color-mix(in srgb, var(--rev) 50%, transparent);
+  --mark-bg:color-mix(in srgb, var(--yellow) 18%, var(--surface));
+  --row-line:color-mix(in srgb, var(--line) 55%, transparent);
+  --key:color-mix(in srgb, var(--line) 55%, var(--surface));
+  --key-fn:color-mix(in srgb, var(--surface) 80%, var(--code-bg));
+  --key-down:color-mix(in srgb, var(--line) 85%, var(--ink));
+  --key-vowel:color-mix(in srgb, var(--accent) 55%, var(--ink));
+  --key-shadow:color-mix(in srgb, var(--code-bg) 60%, #000);
+  --overlay:color-mix(in srgb, var(--code-bg) 78%, transparent);
+  --key-shift:var(--yellow);
+  --tab-badge:color-mix(in srgb, var(--accent-ink) 22%, transparent);
   --shadow:0 1px 2px rgba(0,0,0,.35), 0 10px 28px rgba(0,0,0,.3);
   --display:"Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
   --body:"Source Sans 3", "Noto Sans KR", "Segoe UI", system-ui, sans-serif;
@@ -25,14 +72,37 @@
   --mono:"JetBrains Mono", ui-monospace, "Cascadia Mono", Consolas, monospace;
   --kbh:0px;
   color-scheme:dark;
+  scrollbar-color:var(--line) var(--bg);
 }
-::selection{background:#44475A; color:#F8F8F2}
+/* Dracula keeps the exact fills of the original page (and the AI-103 site) instead of the mixed ones */
+:root[data-theme="dracula"]{--accent-soft:#3A3452; --good-soft:#1E3A2B; --miss-soft:#45252C; --rev-soft:rgba(255,184,108,.14); --mark-bg:rgba(241,250,140,.18); --key:#343746; --key-fn:#2A2C3A; --key-down:#4A4E63; --key-vowel:#D6BCFA; --overlay:rgba(15,16,21,.72)}
+/* Solarized's yellow and accent are mid-tones: lift the few small texts that sit on them */
+:root[data-theme="solarized"]{--key-shift:color-mix(in srgb, var(--yellow) 80%, var(--ink))}
+:root[data-theme="solarized"] mark.hl{color:color-mix(in srgb, var(--yellow) 70%, var(--ink))}
+:root:is([data-theme="solarized"], [data-theme="monokai"], [data-theme="nord"]){--tab-badge:color-mix(in srgb, var(--ink) 25%, transparent)}
+::selection{background:var(--line); color:var(--ink)}
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
 body{margin:0; background:var(--bg); color:var(--ink); font-family:var(--body); font-size:16px; line-height:1.5}
 body.kbopen .wrap{padding-bottom:calc(var(--kbh) + 24px)}
 .wrap{max-width:640px; margin:0 auto; padding-inline:16px; padding-block:28px 48px; display:flex; flex-direction:column; gap:20px}
 header{display:flex; flex-direction:column; gap:6px}
+.toprow{display:flex; justify-content:space-between; align-items:center; gap:10px}
+/* Theme picker: each swatch is drawn in its own theme's colors */
+.themepick{position:relative}
+.themepick > summary{list-style:none; cursor:pointer; display:inline-flex; align-items:center; gap:7px; font-family:var(--mono); font-size:.72rem; letter-spacing:.06em; text-transform:uppercase; color:var(--muted); border:1px solid var(--line); border-radius:999px; padding:5px 11px; background:var(--surface); white-space:nowrap}
+.themepick > summary::-webkit-details-marker{display:none}
+.themepick > summary::after{content:"\25BE"; content:"\25BE" / ""}
+.themepick[open] > summary, .themepick > summary:hover{color:var(--accent); border-color:var(--accent)}
+.tdot{width:11px; height:11px; border-radius:50%; flex:none; background:conic-gradient(var(--accent) 0 34%, var(--good) 0 67%, var(--miss) 0)}
+.tpanel{position:absolute; right:0; top:calc(100% + 8px); z-index:25; width:min(calc(100vw - 32px), 470px); background:var(--surface); border:1px solid var(--line); border-radius:14px; box-shadow:var(--shadow); padding:12px; display:flex; flex-direction:column; gap:10px}
+.tgrid{display:grid; grid-template-columns:repeat(auto-fill, minmax(132px, 1fr)); gap:8px}
+.tbtn{font:inherit; text-align:left; display:flex; flex-direction:column; gap:8px; padding:9px 11px; border-radius:10px; border:1px solid; cursor:pointer; min-height:58px}
+.tbtn .tn{font-weight:600; font-size:.92rem; line-height:1.2}
+.tbtn .dots{display:flex; gap:4px}
+.tbtn .dots i{width:12px; height:12px; border-radius:50%}
+.tbtn[aria-checked="true"]{box-shadow:inset 0 0 0 2px var(--accent)}
+.tbtn[aria-checked="true"] .tn::after{content:" \2713"}
 .eyebrow{font-family:var(--mono); font-size:.72rem; letter-spacing:.08em; text-transform:uppercase; color:var(--muted)}
 h1{font-family:var(--display); font-weight:700; font-size:1.9rem; line-height:1.15; margin:0; letter-spacing:-.01em}
 h2{font-family:var(--display); font-weight:600; font-size:1.15rem; margin:0}
@@ -55,8 +125,8 @@ kbd{font-family:var(--mono); font-size:.75rem; border:1px solid var(--line); bor
 .modes{display:inline-flex; flex-wrap:wrap; gap:4px; padding:4px; background:var(--surface); border:1px solid var(--line); border-radius:12px; align-self:flex-start; max-width:100%}
 .mode{font:inherit; font-weight:600; font-size:.95rem; border:0; border-radius:9px; padding:8px 14px; background:none; color:var(--muted); cursor:pointer; min-height:40px}
 .mode[aria-selected="true"]{background:var(--accent); color:var(--accent-ink)}
-.mode .n{font-family:var(--mono); font-size:.75rem; font-weight:500; margin-left:4px; padding:1px 6px; border-radius:999px; background:rgba(80,250,123,.14); color:var(--due)}
-.mode[aria-selected="true"] .n{background:rgba(33,34,44,.25); color:inherit}
+.mode .n{font-family:var(--mono); font-size:.75rem; font-weight:500; margin-left:4px; padding:1px 6px; border-radius:999px; background:color-mix(in srgb, var(--due) 16%, transparent); color:var(--due)}
+.mode[aria-selected="true"] .n{background:var(--tab-badge); color:inherit}
 .mode .n:empty{display:none}
 .view{display:flex; flex-direction:column; gap:18px}
 :focus-visible{outline:2px solid var(--accent); outline-offset:2px}
@@ -87,7 +157,7 @@ kbd{font-family:var(--mono); font-size:.75rem; border:1px solid var(--line); bor
 .dhead, .drow{display:grid; grid-template-columns:minmax(0,1fr) 2.9rem 3.4rem 2.9rem; align-items:center; gap:2px; padding:0 10px 0 6px}
 .dhead{font-family:var(--mono); font-size:.66rem; letter-spacing:.07em; text-transform:uppercase; color:var(--muted); padding-block:9px; border-bottom:1px solid var(--line)}
 .dhead span:not(:first-child), .drow .c{text-align:right; font-family:var(--mono); font-variant-numeric:tabular-nums; font-size:.9rem}
-.drow{min-height:46px; border-bottom:1px solid rgba(68,71,90,.55)}
+.drow{min-height:46px; border-bottom:1px solid var(--row-line)}
 .drow:last-child{border-bottom:0}
 .drow .nm{display:flex; align-items:center; min-width:0}
 .dtog{font:inherit; width:28px; height:28px; flex:none; border:0; background:none; color:var(--muted); cursor:pointer; border-radius:6px; font-size:.8rem}
@@ -99,7 +169,7 @@ kbd{font-family:var(--mono); font-size:.75rem; border:1px solid var(--line); bor
 .drow.latest{background:var(--rev-soft)}
 .drow.latest .dname{color:var(--rev); font-weight:600}
 .c.n{color:var(--new)} .c.l{color:var(--learn)} .c.d{color:var(--due)}
-.c.zero{color:var(--line)}
+.c.zero{color:color-mix(in srgb, var(--faint) 50%, var(--line))}
 .today{display:flex; flex-wrap:wrap; gap:4px 18px; font-size:.92rem; color:var(--muted)}
 .today b{color:var(--ink); font-weight:600; font-variant-numeric:tabular-nums}
 
@@ -150,7 +220,7 @@ kbd{font-family:var(--mono); font-size:.75rem; border:1px solid var(--line); bor
 .notes{margin:0; color:var(--muted); font-size:.98rem}
 .notes .ko{color:var(--ink)}
 mark.fill{background:var(--good-soft); color:var(--good); font-weight:600; border-radius:4px; padding:0 4px; box-shadow:inset 0 -2px 0 var(--good)}
-mark.hl{background:rgba(241,250,140,.18); color:var(--yellow); border-radius:3px; padding:0 1px}
+mark.hl{background:var(--mark-bg); color:var(--yellow); border-radius:3px; padding:0 1px}
 .keynote{margin:0; font-size:.95rem; padding:8px 12px; border-radius:10px; background:var(--bg); border-left:3px solid var(--accent)}
 .alts{margin:0; font-size:.92rem; color:var(--muted)}
 .seerow{display:flex; flex-wrap:wrap; gap:6px; align-items:center; font-size:.88rem; color:var(--muted)}
@@ -160,11 +230,12 @@ mark.hl{background:rgba(241,250,140,.18); color:var(--yellow); border-radius:3px
 /* Typing */
 .inrow{display:grid; grid-template-columns:minmax(0,1fr) auto; gap:8px}
 .kin{font-family:var(--ko); font-size:1.15rem; min-width:0; width:100%; padding:10px 12px; border:1px solid var(--line); border-radius:12px; background:var(--bg); color:var(--ink); min-height:48px}
-.kin::placeholder{font-family:var(--body); color:#6C7293; font-size:1rem}
+.kin::placeholder{font-family:var(--body); color:var(--faint); font-size:1rem}
 .kin:focus{outline:2px solid var(--accent); outline-offset:1px; border-color:var(--accent)}
 .kin[readonly]{opacity:.85}
 .kbtn{font:inherit; font-family:var(--ko); font-weight:700; font-size:1rem; min-width:48px; border:1px solid var(--line); border-radius:12px; background:var(--surface2); color:var(--accent); cursor:pointer}
 .kbtn:hover{border-color:var(--accent)}
+.kbtn[aria-pressed="true"]{background:var(--accent); border-color:var(--accent); color:var(--accent-ink)}
 input.blank{font-family:var(--ko); font-size:1.1rem; font-weight:500; display:inline-block; vertical-align:baseline; min-width:3.2em; max-width:100%; padding:2px 8px; margin:0 2px; border:0; border-bottom:2px solid var(--accent); border-radius:6px 6px 0 0; background:var(--accent-soft); color:var(--ink); text-align:center}
 input.blank:focus{outline:2px solid var(--accent); outline-offset:1px}
 input.blank.ok{border-bottom-color:var(--good); background:var(--good-soft)}
@@ -174,8 +245,8 @@ input.blank.no{border-bottom-color:var(--miss); background:var(--miss-soft)}
 .typed .tl{font-family:var(--mono); font-size:.66rem; letter-spacing:.07em; text-transform:uppercase; color:var(--muted)}
 .typed .line{font-family:var(--ko); overflow-wrap:anywhere}
 .d-ok{color:var(--good)}
-.d-bad{color:var(--miss); background:var(--miss-soft); border-radius:3px; text-decoration:line-through}
-.d-miss{color:var(--ink); background:rgba(241,250,140,.16); border-bottom:2px solid var(--yellow); border-radius:3px}
+.d-bad{color:var(--miss); background:var(--miss-soft); border-radius:3px; text-decoration:line-through; font-weight:700}
+.d-miss{color:var(--ink); background:var(--mark-bg); border-bottom:2px solid var(--yellow); border-radius:3px}
 .verdict{font-weight:600}
 .verdict.ok{color:var(--good)} .verdict.no{color:var(--miss)} .verdict.sp{color:var(--rev)}
 
@@ -186,6 +257,7 @@ input.blank.no{border-bottom-color:var(--miss); background:var(--miss-soft)}
 .choice:disabled{cursor:default}
 .choice.right{border-color:var(--good); background:var(--good-soft); color:var(--good)}
 .choice.wrongpick{border-color:var(--miss); background:var(--miss-soft); color:var(--miss)}
+.choice.right, .choice.wrongpick{font-weight:700}
 .slot{display:inline-block; min-width:3em; border-bottom:2px solid var(--accent); text-align:center; color:var(--accent)}
 
 /* Grade buttons */
@@ -193,10 +265,10 @@ input.blank.no{border-bottom-color:var(--miss); background:var(--miss-soft)}
 .grades{display:grid; grid-template-columns:repeat(4, minmax(0,1fr)); gap:8px}
 .grade{display:flex; flex-direction:column; align-items:center; justify-content:center; gap:0; padding:8px 4px; min-height:56px}
 .grade .gi{font-family:var(--mono); font-size:.74rem; font-weight:500; color:var(--muted)}
-.grade.g1{color:var(--miss); border-color:rgba(255,110,110,.55)}
-.grade.g2{color:var(--rev); border-color:rgba(255,184,108,.45)}
-.grade.g3{color:var(--good); border-color:rgba(80,250,123,.45)}
-.grade.g4{color:var(--new); border-color:rgba(139,233,253,.45)}
+.grade.g1{color:var(--miss); border-color:color-mix(in srgb, var(--miss) 55%, transparent)}
+.grade.g2{color:var(--rev); border-color:color-mix(in srgb, var(--rev) 45%, transparent)}
+.grade.g3{color:var(--good); border-color:color-mix(in srgb, var(--good) 45%, transparent)}
+.grade.g4{color:var(--new); border-color:color-mix(in srgb, var(--new) 45%, transparent)}
 .grade.sugg{box-shadow:0 0 0 2px currentColor inset}
 .btn.show{width:100%}
 .smore{display:flex; flex-wrap:wrap; justify-content:space-between; gap:6px 16px; align-items:center}
@@ -240,13 +312,13 @@ details.nd details.nd{background:var(--bg)}
 .tw{overflow-x:auto; max-width:100%}
 table.nt{width:100%; border-collapse:collapse; font-size:.95rem}
 table.nt th{font-family:var(--mono); font-size:.66rem; letter-spacing:.06em; text-transform:uppercase; color:var(--muted); text-align:left; padding:6px 8px 6px 0; border-bottom:1px solid var(--line); font-weight:500; vertical-align:bottom}
-table.nt td{padding:8px 8px 8px 0; border-bottom:1px solid rgba(68,71,90,.55); vertical-align:top}
+table.nt td{padding:8px 8px 8px 0; border-bottom:1px solid var(--row-line); vertical-align:top}
 table.nt td.ko{font-size:1.02rem}
 table.nt td.mut{color:var(--muted)}
 @media (max-width:560px){
   table.nt.stack thead{display:none}
   table.nt.stack, table.nt.stack tbody, table.nt.stack tr, table.nt.stack td{display:block}
-  table.nt.stack tr{padding:8px 0; border-bottom:1px solid rgba(68,71,90,.55)}
+  table.nt.stack tr{padding:8px 0; border-bottom:1px solid var(--row-line)}
   table.nt.stack td{border:0; padding:1px 0}
   table.nt.stack td[data-l]::before{content:attr(data-l) " "; font-family:var(--mono); font-size:.62rem; letter-spacing:.06em; text-transform:uppercase; color:var(--muted)}
 }
@@ -266,7 +338,7 @@ table.nt td.mut{color:var(--muted)}
 .kbhelp b{color:var(--ink)}
 
 /* On-screen Hangul keyboard (두벌식), docked to the bottom of the screen */
-.kb{position:fixed; left:0; right:0; bottom:0; z-index:30; background:#191A21; border-top:1px solid var(--line); box-shadow:0 -8px 24px rgba(0,0,0,.45); padding:6px 4px calc(8px + env(safe-area-inset-bottom)); user-select:none; -webkit-user-select:none; touch-action:manipulation}
+.kb{position:fixed; left:0; right:0; bottom:0; z-index:30; background:var(--code-bg); border-top:1px solid var(--line); box-shadow:0 -8px 24px rgba(0,0,0,.45); padding:6px 4px calc(8px + env(safe-area-inset-bottom)); user-select:none; -webkit-user-select:none; touch-action:manipulation}
 .kbin{max-width:760px; margin:0 auto; display:flex; flex-direction:column; gap:6px}
 .kbbar{display:flex; align-items:center; gap:6px; padding:0 2px; font-size:.82rem; color:var(--muted)}
 .kbbar .sp{flex:1}
@@ -274,21 +346,22 @@ table.nt td.mut{color:var(--muted)}
 body.coarse .finekeys{display:none}
 .kbbar button[aria-pressed="true"]{color:var(--accent); border-color:var(--accent); background:var(--accent-soft)}
 .kbrow{display:flex; gap:5px; justify-content:center}
-.key{position:relative; flex:1 1 0; max-width:64px; height:46px; border:0; border-radius:8px; background:#343746; color:var(--ink); font-family:var(--ko); font-size:1.3rem; display:flex; align-items:center; justify-content:center; cursor:pointer; box-shadow:0 2px 0 #0F1015; padding:0}
-.key.v{color:#D6BCFA}
-.key small{position:absolute; top:2px; right:5px; font-family:var(--mono); font-size:.58rem; color:#6C7293; text-transform:uppercase}
-.key.fn{background:#2A2C3A; font-family:var(--body); font-size:.9rem; color:var(--muted)}
+.key{position:relative; flex:1 1 0; max-width:64px; height:46px; border:0; border-radius:8px; background:var(--key); color:var(--ink); font-family:var(--ko); font-size:1.3rem; display:flex; align-items:center; justify-content:center; cursor:pointer; box-shadow:0 2px 0 var(--key-shadow); padding:0}
+.key.v{color:var(--key-vowel)}
+.key small{position:absolute; top:2px; right:5px; font-family:var(--mono); font-size:.58rem; color:var(--faint); text-transform:uppercase}
+.key.fn{background:var(--key-fn); font-family:var(--body); font-size:.9rem; color:var(--muted)}
 .key.wide{flex:1.5 1 0; max-width:96px}
 .key.space{flex:5 1 0; max-width:none}
 .key.enter{flex:1.6 1 0; max-width:110px; background:var(--accent); color:var(--accent-ink); font-weight:600}
-.key.down, .key:active{background:#4A4E63; transform:translateY(1px); box-shadow:none}
-.kb.shift .key[data-s]{color:var(--yellow)}
+.key.down, .key:active{background:var(--key-down); transform:translateY(1px); box-shadow:none}
+.kb.shift .key[data-s]{color:var(--key-shift)}
+.kb.shift .key[data-s]:not(.down):not(:active){box-shadow:0 2px 0 var(--key-shadow), inset 0 -3px 0 color-mix(in srgb, var(--yellow) 75%, transparent)}
 .key.shiftkey[aria-pressed="true"]{background:var(--accent-soft); color:var(--accent)}
 .key.shiftkey.locked{background:var(--accent); color:var(--accent-ink)}
 @media (max-width:420px){ .key{height:44px; font-size:1.18rem} .kbrow{gap:4px} .key small{display:none} }
 
 /* Note pop-up */
-.modal{position:fixed; inset:0; z-index:40; background:rgba(15,16,21,.72); display:flex; align-items:flex-end; justify-content:center; padding:16px}
+.modal{position:fixed; inset:0; z-index:40; background:var(--overlay); display:flex; align-items:flex-end; justify-content:center; padding:16px}
 @media (min-width:700px){ .modal{align-items:center} }
 .mbox{background:var(--surface); border:1px solid var(--line); border-radius:16px; box-shadow:var(--shadow); width:100%; max-width:640px; max-height:85vh; display:flex; flex-direction:column}
 .mhead{display:flex; align-items:center; gap:10px; padding:12px 16px; border-bottom:1px solid var(--line)}
@@ -309,7 +382,13 @@ body.focus header .lede, body.focus .howto, body.focus .banner{display:none}
 <body>
 <div class="wrap">
   <header>
-    <span class="eyebrow">한국어 · Lesson notes study deck</span>
+    <div class="toprow">
+      <span class="eyebrow">한국어 · Lesson notes study deck</span>
+      <details class="themepick" id="themePick">
+        <summary aria-label="Color theme: Dracula"><span class="tdot" aria-hidden="true"></span><span id="themeName">Dracula</span></summary>
+        <div class="tpanel"><span class="glabel">Color theme</span><div class="tgrid" id="themeGrid" role="radiogroup" aria-label="Color theme"></div></div>
+      </details>
+    </div>
     <h1>Korean Flashcards</h1>
     <p class="lede" id="updated">Loading your lessons…</p>
     <details class="howto"><summary>How this deck works</summary>
@@ -992,6 +1071,7 @@ function renderDecks() {
   const susp = CARDS.filter(c => S.cards[c.id] && S.cards[c.id].susp).length;
   $('#suspLine').textContent = susp ? susp + ' suspended card' + (susp > 1 ? 's' : '') : 'No suspended cards';
   $('#unsusp').hidden = !susp;
+  $('#footStats').textContent = `${CARDS.length} cards. Deck built ${new Date(D.built).toLocaleString([], {dateStyle: 'medium', timeStyle: 'short'})}.`;
   updateDueTab();
 }
 function updateDueTab() {
@@ -1477,6 +1557,37 @@ $('#padCopy').onclick = async () => { const ok = await copyText($('#pad').value)
 $('#padClear').onclick = () => { $('#pad').value = ''; IME.commit(); try { localStorage.setItem('kdeck.pad', ''); } catch (e) {} };
 $('#pad').addEventListener('input', () => { try { localStorage.setItem('kdeck.pad', $('#pad').value); } catch (e) {} });
 
+/* ---------- Color theme ---------- */
+function themeLabel(key) {
+  $('#themeName').textContent = THEMES[key].name;
+  $('#themePick summary').setAttribute('aria-label', 'Color theme: ' + THEMES[key].name);
+}
+function renderThemes() {
+  const cur = document.documentElement.dataset.theme || 'dracula';
+  themeLabel(cur);
+  $('#themeGrid').innerHTML = Object.entries(THEMES).map(([k, t]) =>
+    `<button class="tbtn" type="button" role="radio" aria-checked="${k === cur}" tabindex="${k === cur ? 0 : -1}" data-theme="${k}" style="background:${t.surface}; border-color:${t.line}; color:${t.ink}"><span class="tn">${esc(t.name)}</span><span class="dots" aria-hidden="true">${[t.accent, t.good, t.miss, t.warn, t.info, t.pink].map(c => `<i style="background:${c}"></i>`).join('')}</span></button>`).join('');
+}
+function pickTheme(b) {
+  const key = applyTheme(b.dataset.theme);
+  try { localStorage.setItem('kdeck.theme', key); } catch (err) {}
+  themeLabel(key);
+  for (const x of $$('#themeGrid .tbtn')) { const on = x === b; x.setAttribute('aria-checked', on); x.tabIndex = on ? 0 : -1; }
+}
+$('#themeGrid').addEventListener('click', e => { const b = e.target.closest('.tbtn'); if (b) pickTheme(b); });
+$('#themeGrid').addEventListener('keydown', e => {
+  // A radio group: arrows move the choice, Home/End jump to the ends
+  const all = $$('#themeGrid .tbtn'), i = all.indexOf(document.activeElement);
+  if (i < 0) return;
+  const step = {ArrowRight: 1, ArrowDown: 1, ArrowLeft: -1, ArrowUp: -1}[e.key];
+  const j = step ? (i + step + all.length) % all.length : e.key === 'Home' ? 0 : e.key === 'End' ? all.length - 1 : -1;
+  if (j < 0) return;
+  e.preventDefault();
+  all[j].focus(); pickTheme(all[j]);
+});
+$('#themePick').addEventListener('focusout', e => { if (e.relatedTarget && !$('#themePick').contains(e.relatedTarget)) $('#themePick').open = false; });
+document.addEventListener('click', e => { const d = $('#themePick'); if (d.open && !d.contains(e.target)) d.open = false; });
+
 /* ---------- Modes and keys ---------- */
 const VIEWS = {study: 'studyView', practice: 'practiceView', notes: 'notesView', keyboard: 'keyboardView'};
 let mode = 'study';
@@ -1493,9 +1604,10 @@ function setMode(m, opts = {}) {
 }
 for (const k of Object.keys(VIEWS)) $('#tab-' + k).onclick = () => setMode(k);
 document.addEventListener('keydown', e => {
-  if (e.key === 'Escape') { if (!$('#modal').hidden) { closeNote(); return; } closeKb(); return; }
+  if (e.key === 'Escape') { if ($('#themePick').open) { $('#themePick').open = false; $('#themePick summary').focus(); return; } if (!$('#modal').hidden) { closeNote(); return; } closeKb(); return; }
   const t = e.target;
   if (e.defaultPrevented) return;
+  if (t && t.closest && t.closest('#themePick')) return;
   if (t && (t.tagName === 'INPUT' || t.tagName === 'TEXTAREA' || t.tagName === 'SELECT') && !t.readOnly) return;
   if (e.ctrlKey || e.metaKey || e.altKey) return;
   if (!$('#modal').hidden) return;
@@ -1514,7 +1626,6 @@ document.addEventListener('keydown', e => {
 function renderHeader() {
   const s = D.stats;
   $('#updated').textContent = `Updated after your ${fmtDate(D.latest.date)} lesson · ${s.words} words · ${s.points} grammar points · ${s.mixups + s.mistakes} mix-ups and mistakes · ${s.workbook} workbook items`;
-  $('#footStats').textContent = `${CARDS.length} cards. Deck built ${new Date(D.built).toLocaleString([], {dateStyle: 'medium', timeStyle: 'short'})}.`;
   if (S.seenBuild === undefined) { S.seenBuild = D.built; S.seenLatest = D.latest.date; save(); }
   else if (S.seenLatest !== D.latest.date) {
     const n = deckCards('latest').length;
@@ -1527,6 +1638,7 @@ function renderHeader() {
 }
 async function boot() {
   document.body.classList.toggle('coarse', coarse);
+  renderThemes();
   buildKb(); setKoType(S.set.koType); initOptions();
   try { $('#pad').value = localStorage.getItem('kdeck.pad') || ''; } catch (e) {}
   try {
