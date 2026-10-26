@@ -2,12 +2,18 @@
 
 Study site for Darren's Korean lessons: https://leoparmint.github.io/ai103-practice/korean/
 
-- **Study**: Anki-style spaced repetition (Again / Hard / Good / Easy, Anki's default steps and intervals) over 1,700 cards: every word both ways, grammar points, example sentences, unit self-tests, mix-ups, recurring mistakes and all 319 workbook items
+- **Study**: Anki-style spaced repetition over 1,700 cards: every word both ways, grammar points, example sentences, unit self-tests, mix-ups, recurring mistakes and all 319 workbook items. Scheduling is FSRS-6 (the scheduler Anki recommends) with its default parameters, Anki's learning steps (1m 10m, relearning 10m) and a 90% target recall that Options can change to 85% or 95%. English → Korean vocabulary cards unlock once their Korean → English card is scheduled 3+ days out, and cards forgotten 8 times are tagged Leech
 - **Practice**: run a workbook part, a unit self-test, the mix-up quiz or the mistakes straight through, with typed answers checked against the answer key
 - **Notes**: every word and grammar point, searchable, plus the lesson update log
 - **Keyboard**: an on-screen 두벌식 Hangul keyboard for devices without a Korean layout, and a scratchpad to copy from. On a computer, typing in an answer box follows the Korean layout (<kbd>Shift</kbd>+<kbd>Space</kbd> switches)
 
 Progress is saved in the browser only; Options and backup moves it between devices.
+
+## Scheduler notes
+
+The FSRS code in `index.html` was checked against py-fsrs 6.3.2 (`python3 korean/tools/test_fsrs.py`). Cards studied under the earlier SM-2 scheduler keep their due dates; at their next review they get a stability equal to their interval and a difficulty solved from their ease, the same conversion Anki makes when a deck is switched to FSRS.
+
+Every grade is also logged per card as `[unix seconds, grade, state before]` (the `log` field in a backup). After a few thousand reviews, a backup can be run through the py-fsrs `Optimizer` to fit parameters to Darren's own memory and replace `W`. Cards whose first log entry has a state other than 0 were started before logging began and should be left out of fitting.
 
 ## Color themes
 

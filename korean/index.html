@@ -204,6 +204,7 @@ kbd{font-family:var(--mono); font-size:.75rem; border:1px solid var(--line); bor
 .ktag{margin:0; font-family:var(--mono); font-size:.7rem; letter-spacing:.06em; text-transform:uppercase; color:var(--muted)}
 .ktag b{color:var(--accent); font-weight:500}
 .ktag .pill{margin-left:6px}
+.pill.leech{background:color-mix(in srgb, var(--miss) 14%, transparent); color:var(--miss); border-color:color-mix(in srgb, var(--miss) 45%, transparent)}
 .big{margin:0; font-size:1.55rem; line-height:1.3; font-weight:600; overflow-wrap:anywhere}
 .big.ko{font-size:2rem; font-weight:500}
 .big.en{font-family:var(--display); font-weight:600}
@@ -392,8 +393,8 @@ body.focus header .lede, body.focus .howto, body.focus .banner{display:none}
     <h1>Korean Flashcards</h1>
     <p class="lede" id="updated">Loading your lessons…</p>
     <details class="howto"><summary>How this deck works</summary>
-      <p class="lede">Everything comes from your Korean Review Notes and Practice Workbook, and the deck refreshes on its own after each lesson update. <b>Study</b> works like Anki: pick a deck, recall the answer, then grade yourself. Again brings the card back in a minute; Hard, Good and Easy push it further out each time you remember it.</p>
-      <p class="lede">New words start Korean → English; the English → Korean card follows a few days later. Fill-in-the-blank and fix-the-mistake cards check what you type. <b>Practice</b> runs a workbook part or self-test straight through without touching the schedule. <b>Notes</b> has every word and grammar point, searchable.</p>
+      <p class="lede">Everything comes from your Korean Review Notes and Practice Workbook, and the deck refreshes on its own after each lesson update. <b>Study</b> works like Anki with its FSRS scheduler: pick a deck, recall the answer, then grade yourself honestly. Each grade updates an estimate of how well you know that card, and it comes back just as your chance of remembering it drops to your target recall (90% unless you change it in Options). Again brings it back within minutes; Hard, Good and Easy push it further out.</p>
+      <p class="lede">New words start Korean → English; the English → Korean card unlocks once the Korean → English one is scheduled 3 or more days out, so you recognize a word before you have to produce it. Cards you keep forgetting get a Leech tag. Fill-in-the-blank and fix-the-mistake cards check what you type. <b>Practice</b> runs a workbook part or self-test straight through without touching the schedule. <b>Notes</b> has every word and grammar point, searchable.</p>
       <p class="lede">No Korean keyboard? Tap 한 next to any answer box for the on-screen Hangul keyboard. On a computer, just type: your keys follow the standard Korean layout (r = ㄱ, k = ㅏ). <kbd>Shift</kbd>+<kbd>Space</kbd> switches between Korean and English.</p>
     </details>
   </header>
@@ -419,6 +420,8 @@ body.focus header .lede, body.focus .howto, body.focus .banner{display:none}
         <div class="optbody">
           <label class="opt"><span class="lab">New cards a day<small>Shared across all decks</small></span><input type="number" id="oNew" min="0" max="999"></label>
           <label class="opt"><span class="lab">Reviews a day</span><input type="number" id="oRev" min="0" max="9999"></label>
+          <label class="opt"><span class="lab">Target recall<small>A card comes back when your chance of remembering it falls to this. 95% makes intervals about 40% as long as 90%; 85% about 1.9× as long. Applies from each card's next review.</small></span>
+            <select id="oRet"><option value="0.85">85%</option><option value="0.9">90% (recommended)</option><option value="0.95">95%</option></select></label>
           <label class="opt"><span class="lab">Vocabulary cards</span>
             <select id="oDir"><option value="both">Both directions</option><option value="ko-en">Korean → English only</option><option value="en-ko">English → Korean only</option></select></label>
           <label class="opt"><span class="lab">Answer box on English → Korean cards<small>Optional: leave it empty and just show the answer</small></span><input type="checkbox" id="oType"></label>
@@ -511,7 +514,7 @@ function plain(html) { const d = document.createElement('div'); d.innerHTML = ht
 
 /* ---------- Saved state ---------- */
 const KEY = 'kdeck.v1';
-const DEFAULTS = {newPerDay: 20, revPerDay: 200, vocabDir: 'both', typeEnKo: true, kb: 'auto', koType: true};
+const DEFAULTS = {newPerDay: 20, revPerDay: 200, vocabDir: 'both', typeEnKo: true, kb: 'auto', koType: true, retention: 0.9};
 let S = loadState();
 function loadState() {
   let s = null;
@@ -524,6 +527,7 @@ function loadState() {
   s.open = s.open || {'': true};
   s.hist = s.hist || {};
   s.bury = s.bury || {n: -1, notes: {}};
+  s.log = s.log || {};   // review log per card: [unix seconds, grade, state before], for fitting FSRS to you later
   return s;
 }
 let saveTimer = 0;
@@ -534,8 +538,14 @@ function save(now) {
 }
 addEventListener('pagehide', () => save(true));
 
-/* ---------- Scheduler: Anki's defaults (learning steps 1m 10m, graduate 1d, easy 4d, ease 250%) ---------- */
-const P = {learn: [1, 10], relearn: [10], grad: 1, easy: 4, ease0: 2.5, easyBonus: 1.3, hard: 1.2, maxIvl: 36500, minEase: 1.3, aheadMin: 20};
+/* ---------- Scheduler: FSRS-6, the scheduler Anki recommends, with its default parameters ----------
+   Each card keeps a stability (days until recall falls to 90%) and a difficulty (1–10), and comes back when its
+   predicted recall drops to the target (90% unless changed in Options). Learning steps 1m 10m, relearning 10m, as in
+   Anki. Cards scheduled by the earlier SM-2 code get a stability and difficulty estimated from their interval and
+   ease at their next review, the same conversion Anki makes when a deck is switched to FSRS. Checked against py-fsrs. */
+const W = [0.212, 1.2931, 2.3065, 8.2956, 6.4133, 0.8334, 3.0194, 0.001, 1.8722, 0.1666, 0.796, 1.4835, 0.0614, 0.2629, 1.6483, 0.6014, 1.8729, 0.5425, 0.0912, 0.0658, 0.1542];
+const DECAY = -W[20], FACTOR = Math.pow(0.9, 1 / DECAY) - 1;
+const P = {learn: [1, 10], relearn: [10], maxIvl: 36500, aheadMin: 20, leech: 8, prodGate: 3};
 const MIN = 6e4;
 function dayNum(t = Date.now()) { const d = new Date(t - 4 * 36e5); return Math.round(Date.UTC(d.getFullYear(), d.getMonth(), d.getDate()) / 864e5); }
 function ensureDay() {
@@ -544,38 +554,68 @@ function ensureDay() {
   if (S.bury.n !== n) S.bury = {n, notes: {}};
 }
 function hash(str) { let x = 2166136261; for (let i = 0; i < str.length; i++) { x ^= str.charCodeAt(i); x = Math.imul(x, 16777619); } return x >>> 0; }
-function fuzz(ivl, id, reps) { if (ivl < 3) return Math.round(ivl); const f = ((hash(id + ':' + reps) % 11) - 5) / 100; return Math.round(ivl * (1 + f)); }
+// FSRS fuzz ranges; seeded by card and review count so the label on a button matches what pressing it does
+function fuzz(ivl, id, reps) {
+  if (ivl < 2.5) return ivl;
+  let delta = 1;
+  for (const [a, b, f] of [[2.5, 7, .15], [7, 20, .1], [20, Infinity, .05]]) delta += f * Math.max(Math.min(ivl, b) - a, 0);
+  const hi = Math.min(Math.round(ivl + delta), P.maxIvl), lo = Math.min(Math.max(2, Math.round(ivl - delta)), hi);
+  return lo + hash(id + ':' + reps) % (hi - lo + 1);
+}
 const stOf = c => S.cards[c.id];
 const isNew = c => { const o = S.cards[c.id]; return !o || !o.s; };
+
+const clampD = d => Math.min(10, Math.max(1, d)), clampS = st => Math.max(0.001, st);
+const initS = g => clampS(W[g - 1]);
+const initD = (g, raw) => { const d = W[4] - Math.exp(W[5] * (g - 1)) + 1; return raw ? d : clampD(d); };
+const recall = (days, st) => Math.pow(1 + FACTOR * days / st, DECAY);
+const nextD = (d, g) => clampD(W[7] * initD(4, true) + (1 - W[7]) * (d - W[6] * (g - 3) * (10 - d) / 9));
+function shortS(st, g) { let k = Math.exp(W[17] * (g - 3 + W[18])) * Math.pow(st, -W[19]); if (g > 1) k = Math.max(k, 1); return clampS(st * k); }
+function longS(d, st, r, g) {
+  if (g === 1) return clampS(Math.min(W[11] * Math.pow(d, -W[12]) * (Math.pow(st + 1, W[13]) - 1) * Math.exp((1 - r) * W[14]), st / Math.exp(W[17] * W[18])));
+  return clampS(st * (1 + Math.exp(W[8]) * (11 - d) * Math.pow(st, -W[9]) * (Math.exp((1 - r) * W[10]) - 1) * (g === 2 ? W[15] : 1) * (g === 4 ? W[16] : 1)));
+}
+const target = () => S.set.retention || 0.9;
+const ivlFor = st => Math.min(P.maxIvl, Math.max(1, Math.round(st / FACTOR * (Math.pow(target(), 1 / DECAY) - 1))));
+// Memory state of a card already seen. SM-2-era cards: stability = interval (SM-2 assumed ~90% recall at its
+// interval), difficulty solved from ease so FSRS's next on-time Good grows the interval by about the old ease.
+function memOf(o) {
+  if (o.stab) return {st: o.stab, d: o.diff};
+  if (o.s === 2 || o.s === 3) {
+    const st = clampS(o.ivl || 1), ease = o.ease || 2.5;
+    return {st, d: clampD(11 - (ease - 1) / (Math.exp(W[8]) * Math.pow(st, -W[9]) * (Math.exp(0.1 * W[10]) - 1)))};
+  }
+  const g = o.step ? 3 : 1;   // still in its learning steps: step 1 means the first answer was Good
+  return {st: initS(g), d: initD(g)};
+}
 
 function schedule(c, g, now = Date.now()) {
   const today = dayNum(now);
   const o = S.cards[c.id] || {s: 0};
   const n = Object.assign({}, o, {reps: (o.reps || 0) + 1, last: now});
-  const grad = (ivl) => { n.s = 2; n.ivl = ivl; n.due = today + ivl; n.ease = n.ease || P.ease0; delete n.step; };
-  if (!o.s || o.s === 1) {
-    const steps = P.learn, step = o.s === 1 ? (o.step || 0) : 0;
-    if (g === 1) { n.s = 1; n.step = 0; n.due = now + steps[0] * MIN; }
-    else if (g === 2) { n.s = 1; n.step = step; n.due = now + (step === 0 ? (steps.length > 1 ? (steps[0] + steps[1]) / 2 : steps[0] * 1.5) : steps[step]) * MIN; }
-    else if (g === 3) { if (step + 1 >= steps.length) grad(P.grad); else { n.s = 1; n.step = step + 1; n.due = now + steps[step + 1] * MIN; } }
-    else grad(P.easy);
-  } else if (o.s === 3) {
-    const steps = P.relearn, step = o.step || 0, base = Math.max(1, o.ivl || 1);
-    if (g === 1) { n.step = 0; n.due = now + steps[0] * MIN; }
-    else if (g === 2) { n.due = now + (steps.length === 1 ? steps[0] * 1.5 : steps[step]) * MIN; }
-    else if (g === 3) { if (step + 1 >= steps.length) { n.s = 2; n.ivl = base; n.due = today + base; delete n.step; } else { n.step = step + 1; n.due = now + steps[step + 1] * MIN; } }
-    else { n.s = 2; n.ivl = base + 1; n.due = today + base + 1; delete n.step; }
+  const m = o.s ? memOf(o) : null;
+  const days = o.last ? Math.max(0, today - dayNum(o.last)) : 0;
+  const after = gg => !m ? {st: initS(gg), d: initD(gg)}
+    : {st: days < 1 ? shortS(m.st, gg) : longS(m.d, m.st, recall(days, m.st), gg), d: nextD(m.d, gg)};
+  const mm = after(g);
+  n.stab = mm.st; n.diff = mm.d;
+  const review = ivl => { n.s = 2; n.ivl = ivl; n.due = today + ivl; delete n.step; };
+  if (o.s !== 2) {
+    // New, learning or relearning: walk the steps, then graduate to the FSRS interval
+    const list = o.s === 3 ? P.relearn : P.learn, step = o.s ? (o.step || 0) : 0;
+    n.s = o.s === 3 ? 3 : 1;
+    if (g === 1) { n.step = 0; n.due = now + list[0] * MIN; }
+    else if (g === 2) { n.step = step; n.due = now + (step === 0 ? (list.length > 1 ? (list[0] + list[1]) / 2 : list[0] * 1.5) : list[step]) * MIN; }
+    else if (g === 3 && step + 1 < list.length) { n.step = step + 1; n.due = now + list[step + 1] * MIN; }
+    else review(fuzz(ivlFor(mm.st), c.id, n.reps));
+  } else if (g === 1) {
+    n.lapses = (o.lapses || 0) + 1; n.s = 3; n.step = 0; n.due = now + P.relearn[0] * MIN;
   } else {
-    const ivl = o.ivl || 1, ease = o.ease || P.ease0, late = Math.max(0, today - o.due);
-    if (g === 1) { n.lapses = (o.lapses || 0) + 1; n.ease = Math.max(P.minEase, ease - 0.2); n.s = 3; n.step = 0; n.ivl = 1; n.due = now + P.relearn[0] * MIN; }
-    else {
-      const hard = Math.min(P.maxIvl, Math.max(ivl + 1, fuzz(ivl * P.hard, c.id, n.reps)));
-      const good = Math.min(P.maxIvl, Math.max(hard + 1, fuzz((ivl + late / 2) * ease, c.id, n.reps)));
-      const easy = Math.min(P.maxIvl, Math.max(good + 1, fuzz((ivl + late) * ease * P.easyBonus, c.id, n.reps)));
-      n.ivl = g === 2 ? hard : g === 3 ? good : easy;
-      n.due = today + n.ivl;
-      n.ease = g === 2 ? Math.max(P.minEase, ease - 0.15) : g === 4 ? ease + 0.15 : ease;
-    }
+    // Keep Hard < Good < Easy, as Anki does
+    const iv = gg => fuzz(ivlFor(after(gg).st), c.id, n.reps);
+    let hard = iv(2), good = iv(3), easy = iv(4);
+    hard = Math.min(hard, good); good = Math.max(good, hard + 1); easy = Math.max(easy, good + 1);
+    review(Math.min(P.maxIvl, g === 2 ? hard : g === 3 ? good : easy));
   }
   return n;
 }
@@ -640,6 +680,12 @@ function deckCards(key) {
 }
 function deckName(key) { return key === 'latest' ? fmtDate(D.latest.date) + ' lesson' : key ? key : 'All decks'; }
 const buried = c => c.kind[0] === 'v' && S.bury.notes[c.note];
+// English → Korean waits until its Korean → English card is solid (scheduled 3+ days out): recognize a word before producing it
+function ready(c) {
+  if (c.kind !== 'vp' || S.set.vocabDir !== 'both') return true;
+  const r = S.cards[c.note + ':r'];
+  return !!r && (!!r.susp || (r.s === 2 && (r.ivl || 0) >= P.prodGate));
+}
 
 function counts(cards) {
   ensureDay();
@@ -648,7 +694,7 @@ function counts(cards) {
   for (const c of cards) {
     const o = S.cards[c.id];
     if (o && o.susp) continue;
-    if (!o || !o.s) { if (!buried(c)) n++; }
+    if (!o || !o.s) { if (!buried(c) && ready(c)) n++; }
     else if (o.s === 1 || o.s === 3) { if (o.due <= Math.max(end, endOfDay())) l++; }
     else if (o.due <= today && !buried(c)) d++;
   }
@@ -686,7 +732,7 @@ function pickNext() {
       if (o.due <= now) { if (!learnNow || o.due < S.cards[learnNow.id].due) learnNow = c; }
       else if (o.due <= now + P.aheadMin * MIN && (!learnSoon || o.due < S.cards[learnSoon.id].due)) learnSoon = c;
     } else if (o && o.s === 2) { if (o.due <= today && !buried(c)) reviews.push(c); }
-    else if (!buried(c)) fresh.push(c);
+    else if (!buried(c) && ready(c)) fresh.push(c);
   }
   if (learnNow) return learnNow;
   const rl = revLeft(), nl = newLeft();
@@ -727,7 +773,7 @@ function nextCard() {
   if (!c) {
     $('#sCtl').hidden = true;
     const tm = dueTomorrow(sess.cards);
-    const more = sess.cards.filter(x => isNew(x) && !(S.cards[x.id] && S.cards[x.id].susp)).length;
+    const more = sess.cards.filter(x => isNew(x) && ready(x) && !buried(x) && !(S.cards[x.id] && S.cards[x.id].susp)).length;
     box.innerHTML = `<div class="done"><strong>Done for now</strong><p>${esc(deckName(sess.key))} has nothing else due today.${tm ? ' Tomorrow: ' + tm + ' due.' : ''}</p>
       <div class="row" style="justify-content:center">${more ? '<button class="btn small" id="moreNew" type="button">Study 10 more new cards</button>' : ''}<button class="btn small primary" id="doneBack" type="button">Back to decks</button></div></div>`;
     $('#doneBack').onclick = stopStudy;
@@ -755,15 +801,16 @@ function revealed(v) {
 }
 function grade(g) {
   if (!sess || !sess.cur || !sess.view || !sess.view.revealed) return;
-  const c = sess.cur, o = S.cards[c.id];
-  sess.undo = {id: c.id, prev: o ? Object.assign({}, o) : null, day: Object.assign({}, S.day), bury: JSON.parse(JSON.stringify(S.bury)), hist: S.hist[S.day.n] || 0};
+  const c = sess.cur, o = S.cards[c.id], now = Date.now();
+  sess.undo = {id: c.id, prev: o ? Object.assign({}, o) : null, day: Object.assign({}, S.day), bury: JSON.parse(JSON.stringify(S.bury)), hist: S.hist[S.day.n] || 0, log: (S.log[c.id] || []).length};
   $('#undoBtn').disabled = false;
   if (!o || !o.s) S.day.newDone = (S.day.newDone || 0) + 1;
   else if (o.s === 2) S.day.revDone = (S.day.revDone || 0) + 1;
   S.day.studied = (S.day.studied || 0) + 1;
-  S.day.ms = (S.day.ms || 0) + Math.min(60000, Date.now() - sess.shownAt);
+  S.day.ms = (S.day.ms || 0) + Math.min(60000, now - sess.shownAt);
   S.hist[S.day.n] = (S.hist[S.day.n] || 0) + 1;
-  const n = schedule(c, g);
+  (S.log[c.id] = S.log[c.id] || []).push([Math.round(now / 1000), g, (o && o.s) || 0]);
+  const n = schedule(c, g, now);
   if (o && o.susp) n.susp = true;
   S.cards[c.id] = n;
   if (c.kind[0] === 'v') S.bury.notes[c.note] = 1;
@@ -777,6 +824,7 @@ function undo() {
   const u = sess.undo; sess.undo = null; $('#undoBtn').disabled = true;
   if (u.prev) S.cards[u.id] = u.prev; else delete S.cards[u.id];
   S.day = u.day; S.bury = u.bury; S.hist[S.day.n] = u.hist;
+  if (S.log[u.id]) { S.log[u.id].length = u.log; if (!u.log) delete S.log[u.id]; }
   save();
   const c = BYID.get(u.id);
   if (!c) return nextCard();
@@ -898,7 +946,8 @@ function cardView(c, ctx) {
   const root = h('<div class="kcard"><div class="kfront"></div><div class="kback" hidden></div></div>');
   const front = root.firstElementChild, back = root.lastElementChild;
   v.root = root;
-  const tag = t => `<p class="ktag">${t}${newPill(c)}</p>`;
+  const so = ctx.mode === 'srs' ? S.cards[c.id] : null, leech = !!so && (so.lapses || 0) >= P.leech;
+  const tag = t => `<p class="ktag">${t}${newPill(c)}${leech ? `<span class="pill leech" title="Forgotten ${so.lapses} times">Leech</span>` : ''}</p>`;
   const typing = ctx.mode === 'practice' || S.set.typeEnKo;
   let expect = null;          // alternatives for a single typed answer
   let backHTML = '';
@@ -1035,6 +1084,7 @@ function cardView(c, ctx) {
       }
       html += backHTML;
     }
+    if (leech) html += `<p class="alts">Forgotten ${so.lapses} times. A memory hook or a sentence of your own with it usually fixes a leech; suspend it if it isn't worth the time.</p>`;
     back.innerHTML = html;
     back.hidden = false;
     ctx.onReveal && ctx.onReveal(v);
@@ -1095,6 +1145,8 @@ function initOptions() {
   const o = S.set;
   $('#oNew').value = o.newPerDay; $('#oRev').value = o.revPerDay; $('#oDir').value = o.vocabDir;
   $('#oType').checked = o.typeEnKo; $('#oKb').value = o.kb; $('#oKo').checked = o.koType;
+  $('#oRet').value = String(o.retention);
+  $('#oRet').onchange = e => { S.set.retention = parseFloat(e.target.value) || 0.9; save(); };
   const num = (el, key) => el.addEventListener('change', () => { const n = Math.max(0, Math.min(9999, parseInt(el.value, 10) || 0)); el.value = n; S.set[key] = n; save(); renderDecks(); });
   num($('#oNew'), 'newPerDay'); num($('#oRev'), 'revPerDay');
   $('#oDir').onchange = e => { S.set.vocabDir = e.target.value; save(); buildCards(); renderDecks(); };
@@ -1112,7 +1164,7 @@ function initOptions() {
   $('#bFileIn').onchange = async e => { const f = e.target.files[0]; if (f) restore(await f.text()); e.target.value = ''; };
   $('#bPaste').onclick = () => restore($('#restoreBox').value);
   $('#unsusp').onclick = () => { for (const id in S.cards) if (S.cards[id].susp) delete S.cards[id].susp; save(); renderDecks(); };
-  armed($('#resetAll'), 'Tap again to erase all progress', () => { S.cards = {}; S.day = {n: -1}; S.missed = {}; S.hist = {}; S.bury = {n: -1, notes: {}}; save(true); renderDecks(); });
+  armed($('#resetAll'), 'Tap again to erase all progress', () => { S.cards = {}; S.day = {n: -1}; S.missed = {}; S.hist = {}; S.bury = {n: -1, notes: {}}; S.log = {}; save(true); renderDecks(); });
 }
 function armed(btn, prompt, fn) {
   const label = btn.textContent; let t = 0;
@@ -1122,7 +1174,7 @@ function armed(btn, prompt, fn) {
     t = setTimeout(() => { btn.classList.remove('armed'); btn.textContent = label; }, 4000);
   };
 }
-function backupData() { return {kind: 'korean-flashcards', v: 1, at: new Date().toISOString(), cards: S.cards, missed: S.missed, hist: S.hist}; }
+function backupData() { return {kind: 'korean-flashcards', v: 1, at: new Date().toISOString(), cards: S.cards, missed: S.missed, hist: S.hist, log: S.log}; }
 function restore(text) {
   let d;
   try { d = JSON.parse(text); } catch (e) { $('#bMsg').textContent = 'That isn’t a backup.'; return; }
@@ -1134,6 +1186,12 @@ function restore(text) {
   }
   Object.assign(S.missed, d.missed || {});
   for (const [k, v] of Object.entries(d.hist || {})) S.hist[k] = Math.max(S.hist[k] || 0, v);
+  for (const [id, arr] of Object.entries(d.log && typeof d.log === 'object' ? d.log : {})) {
+    if (!Array.isArray(arr)) continue;
+    const mine = S.log[id] || [], seen = new Set(mine.map(e => e[0]));
+    const add = arr.filter(e => Array.isArray(e) && typeof e[0] === 'number' && !seen.has(e[0]));
+    if (add.length) S.log[id] = mine.concat(add).sort((a, b) => a[0] - b[0]);
+  }
   save(true); renderDecks();
   $('#bMsg').textContent = `Restored ${n} card${n === 1 ? '' : 's'}.`;
   $('#restoreBox').value = '';
