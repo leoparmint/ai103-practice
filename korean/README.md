@@ -9,6 +9,12 @@ Study site for Darren's Korean lessons: https://leoparmint.github.io/ai103-pract
 
 Progress is saved in the browser only; Options and backup moves it between devices.
 
+## Added Anki decks
+
+Options › Added Anki decks reads a shared deck (.apkg) in the browser and keeps it in IndexedDB on that device; nothing is uploaded or committed here, so decks whose authors don't allow re-uploading stay private. It reads all three .apkg formats (collection.anki21b with zstd and a protobuf media list, collection.anki21, collection.anki2), finds the Korean, English, Hanja, audio and number fields by name, and makes Korean → English and English → Korean cards in the deck's own order. Added decks have their own new-cards-a-day limit (10 by default), words already in the lesson vocabulary are left out unless already started, and audio plays with ▶ Listen or <kbd>R</kbd>. Card ids come from each note's guid, so removing and re-adding a deck keeps its progress.
+
+The reader libraries in `vendor/` (sql.js, JSZip, fzstd; licenses in `vendor/LICENSES.md`) load only when a deck is added. `python3 korean/tools/make_test_apkg.py OUT_DIR` builds small made-up test decks in each format.
+
 ## Scheduler notes
 
 The FSRS code in `index.html` was checked against py-fsrs 6.3.2 (`python3 korean/tools/test_fsrs.py`). Cards studied under the earlier SM-2 scheduler keep their due dates; at their next review they get a stability equal to their interval and a difficulty solved from their ease, the same conversion Anki makes when a deck is switched to FSRS.
