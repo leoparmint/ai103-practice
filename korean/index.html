@@ -298,8 +298,11 @@ input.blank.no{border-bottom-color:var(--miss); background:var(--miss-soft)}
 .mlist .a{color:var(--good); font-family:var(--ko)}
 
 /* Notes */
-.pagelink{margin:0; font-size:.95rem; color:var(--muted)}
-.pagelink a{font-weight:600}
+/* "All notes on one page" is a link styled as a button */
+a.btn{display:inline-flex; align-items:center; justify-content:center; gap:8px; text-decoration:none}
+a.btn:hover{border-color:var(--accent)}
+a.btn.primary:hover{filter:brightness(1.08)}
+.pagelink{gap:8px 12px}
 .nsearch{display:grid; grid-template-columns:minmax(0,1fr) auto; gap:8px}
 .nlist{display:flex; flex-direction:column; gap:10px}
 details.nd{border:1px solid var(--line); border-radius:12px; background:var(--surface)}
@@ -402,7 +405,7 @@ body.focus .banner.warn:not([hidden]){display:flex}
     </div>
     <h1>Korean Flashcards</h1>
     <p class="lede" id="updated">Loading your lessons…</p>
-    <p class="pagelink"><a href="notes.html">All notes on one page</a> · every word and grammar point with a table of contents, ready for <kbd>Ctrl</kbd>+<kbd>F</kbd></p>
+    <div class="row pagelink"><a class="btn small" href="notes.html"><span aria-hidden="true">&#9776;</span>All notes on one page</a><span class="optnote">Every word and grammar point, ready for <kbd>Ctrl</kbd>+<kbd>F</kbd></span></div>
     <details class="howto"><summary>How this deck works</summary>
       <p class="lede">Everything comes from your Korean Review Notes and Practice Workbook, and the deck refreshes on its own after each lesson update. <b>Study</b> works like Anki with its FSRS scheduler: pick a deck, recall the answer, then grade yourself honestly. Each grade updates an estimate of how well you know that card, and it comes back just as your chance of remembering it drops to your target recall (90% unless you change it in Options). Again brings it back within minutes; Hard, Good and Easy push it further out.</p>
       <p class="lede">New words start Korean → English; the English → Korean card unlocks once the Korean → English one is scheduled 3 or more days out, so you recognize a word before you have to produce it. Cards you keep forgetting get a Leech tag. Fill-in-the-blank and fix-the-mistake cards check what you type. <b>Practice</b> runs a workbook part or self-test straight through without touching the schedule. <b>Notes</b> has every word and grammar point, searchable; <a href="notes.html">All notes on one page</a> opens them all at once with a table of contents, for your browser's Find (<kbd>Ctrl</kbd>+<kbd>F</kbd>). Options can also add a shared Anki deck (.apkg); it is read and kept in this browser only.</p>
@@ -490,7 +493,6 @@ body.focus .banner.warn:not([hidden]){display:flex}
   </section>
 
   <section class="view" id="notesView" role="tabpanel" aria-labelledby="tab-notes" hidden>
-    <p class="pagelink">Prefer one long page? <a href="notes.html">All notes on one page</a> has everything open with a table of contents, so <kbd>Ctrl</kbd>+<kbd>F</kbd> finds it.</p>
     <div class="nsearch"><input id="nq" class="kin" type="search" data-ko="opt" placeholder="Search words, grammar, mistakes…" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"><button class="kbtn" type="button" data-kbfor="nq" aria-pressed="false" title="Type Korean in the search box">한</button></div>
     <div class="row" id="nChips"></div>
     <div id="nBody" class="nlist"></div>
