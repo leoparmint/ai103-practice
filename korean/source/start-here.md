@@ -2,7 +2,7 @@
 
 Oct 8, 2026 · @Darren Funes
 
-Vocabulary and grammar from every lesson with both teachers through October 23, 2026: 447 words and phrases in 22 sets, 63 grammar points in 9 units, and your most common mix-ups and mistakes, set up so you test yourself first and read second.
+Vocabulary and grammar from every lesson with both teachers through October 29, 2026: 509 words and phrases in 25 sets, 66 grammar points in 9 units, and your most common mix-ups and mistakes, set up so you test yourself first and read second.
 
 ## How to study
 
@@ -53,12 +53,15 @@ Write the date and how many items you missed in each cell (10/9 · 3). If you mi
 | V20 | Hobbies and days off |  |  |  |  |  |
 | V21 | Worries and getting ready |  |  |  |  |  |
 | V22 | Packing, eating and free time |  |  |  |  |  |
+| V23 | Tests, jobs and days off |  |  |  |  |  |
+| V24 | Work days and old friends |  |  |  |  |  |
+| V25 | Health, habits and doing well |  |  |  |  |  |
 | Unit 1 | Particles and basics (G1–G10, G63) |  |  |  |  |  |
 | Unit 2 | Describing (G11–G19) |  |  |  |  |  |
-| Unit 3 | Time and order (G20–G26) |  |  |  |  |  |
-| Unit 4 | Reasons and contrast (G27–G32, G59–G61) |  |  |  |  |  |
+| Unit 3 | Time and order (G20–G26, G64) |  |  |  |  |  |
+| Unit 4 | Reasons and contrast (G27–G32, G59–G61, G66) |  |  |  |  |  |
 | Unit 5 | Can, may, must, if (G33–G37) |  |  |  |  |  |
-| Unit 6 | Plans and purpose (G38–G43) |  |  |  |  |  |
+| Unit 6 | Plans and purpose (G38–G43, G65) |  |  |  |  |  |
 | Unit 7 | Experience and reactions (G44–G48) |  |  |  |  |  |
 | Unit 8 | Inner questions, worries, quoting (G49–G53, G62) |  |  |  |  |  |
 | Unit 9 | Requests and politeness (G54–G58) |  |  |  |  |  |
@@ -73,6 +76,9 @@ Write the date and how many items you missed in each cell (10/9 · 3). If you mi
 - Lesson 27 (Oct 19, 2026), 등산을 하거나 운동 모임에 가요, with Sooyoung: 대런-260531 and A-27 lesson PDF. Added V20, G62 (-(으)ㄹ까요? for guesses), examples in G7, G35, G42, G53 and G58, mix-ups 34–35 and mistake 44.
 - Oct 22, 2026 lesson, 대런\_ㄹ까봐 (Google Doc and PDF in the teacher's folder): worries and getting ready for a trip. Added V21, G63 (number + (이)나), new rules and examples in G51 (-(으)ㄹ까 봐), examples in G7, G24, G49 and G52, and mix-ups 36–37. The Oct 15 file 대런\_기 때문에 was edited again on Oct 22, but everything in it was already covered.
 - Oct 23, 2026 lesson, 대런\_ㄹ까봐\_이나.pdf (teacher's folder): more -(으)ㄹ까 봐 and number + (이)나, packing a lunch, picky eating, 아무거나. Added V22, new rules and examples in G51 and G63, examples in G16, G56 and G57, Unit 8 self-test row 16, Unit 1 self-test row 18, mix-up 38 and mistakes 45–46.
+- Lesson 28 (Oct 26, 2026), \[프리토킹\] 휴일, with Sooyoung: 대런-260531 and homework feedback 대런-숙제-261019.pdf. Added V23, new rules and examples in G22, G37 and G53, examples in G6, G7, G12, G16, G41 and G44, Unit 3 self-test row 14, Unit 5 self-test row 13, mix-up 39 and mistakes 47–50.
+- Lesson 29 (Oct 27, 2026), 요즘 아침마다 회의가 있어요, with Sooyoung: 대런-260531 and A-29 lesson PDF. Added V24, G64 (-자마자), new rules and examples in G5 (-마다, -(으)ㄹ 때마다) and G20 (-(으)ㄹ 때, N 때), Unit 1 self-test row 19, Unit 3 self-test rows 15–16, mix-ups 40–41 and mistake 51.
+- Oct 29, 2026 lesson, 대런\_도록.pdf (teacher's folder): -(으)ㄹ까 봐 rewritten with -도록, number + (이)나 vs 밖에, health and sleep, and a first look at -아/어 가지고. Added V25, G65 (-도록), G66 (-아/어 가지고), new rule and examples in G51, examples in G6, G38 and G63, Unit 1 self-test row 20, Unit 4 self-test rows 18–19, Unit 6 self-test rows 14–15, and mix-ups 42–44. No corrected mistakes in this file.
 
 ## Sources
 

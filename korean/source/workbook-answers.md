@@ -126,6 +126,18 @@ Answers are in \[brackets\]. Check each part as soon as you finish it, and look 
 | A118 | \[싸요\] | 도시락을 싸다 = to pack a lunch · V22 |
 | A119 | \[말라요\] | 목이 마르다 = to be thirsty; 르 irregular → 말라요 · V22 |
 | A120 | \[한가해요\] | 한가하다 = to be free, not busy · V22 |
+| A121 | \[드라이브\] | 드라이브(를) 가다 = to go for a drive · V23 |
+| A122 | \[구하고\] | 직업을 구하다 = to look for a job · V23 |
+| A123 | \[장비\] | 장비 = equipment, gear · V23 |
+| A124 | \[에 따라\] | N에 따라 달라요 = it depends on N · V23 |
+| A125 | \[회식\] | 회식(을) 하다 · V24 |
+| A126 | \[출퇴근\] | 출근 + 퇴근 · V24 |
+| A127 | \[조용한\] | 조용하다 + -ㄴ before a noun · V24, G11 |
+| A128 | \[통화했어요\] | also \[전화했어요\] · V24 |
+| A129 | \[미리미리\] | also \[미리\] · V25 |
+| A130 | \[체했어요\] | 체하다 = get indigestion · V25 |
+| A131 | \[잠이 안 와서\] | 잠을 안 자서 = chose not to sleep · V25 |
+| A132 | \[고생했어요\] | also \[수고했어요\] · V25 |
 
 ## Part B answers
 
@@ -249,6 +261,18 @@ Answers are in \[brackets\]. Check each part as soon as you finish it, and look 
 | B116 | \[막힐까 봐\] | 막히 ends in a vowel → -ㄹ까 봐 · G51 |
 | B117 | \[이나\] | 시간 has 받침 → 이나; "three whole hours" · G63 |
 | B118 | \[아무거나\] | N 빼고 아무거나 = anything except N; positive verb · G56 |
+| B119 | \[끝나고\] | -고 = and then; 끝난 후에 = 끝나고 · G22 |
+| B120 | \[충분하다면\] | adjective + -다면 = if (imagining) · G37 |
+| B121 | \[노는\] | ㄹ stem drops ㄹ before -는: 놀다 → 노는 것 · G53 |
+| B122 | \[쓰는\] | verb + -는 편이다 · G16 |
+| B123 | \[수요일마다\] | noun + 마다, no space · G5 |
+| B124 | \[받을 때마다\] | 받 has 받침 → -을 때마다 · G5 |
+| B125 | \[있을 때\] | 있 has 받침 → -을 때 · G20 |
+| B126 | \[일어나자마자\] | stem + 자마자 · G64 |
+| B127 | \[안 늦도록\] | also \[늦지 않도록\] · G65 |
+| B128 | \[걸리지 않도록\] | = 안 걸리도록 · G65 |
+| B129 | \[자 가지고\] | = 자서 (casual); no past before 가지고 · G66 |
+| B130 | \[조각이나\] | a lot = (이)나 · G63 |
 
 ## Part C answers
 
@@ -296,6 +320,12 @@ Answers are in \[brackets\]. Check each part as soon as you finish it, and look 
 | C40 | \[춥기 때문에\] | it's always cold there, a fact, not a worry · G51, G60 |
 | C41 | \[맞을까 봐\] | it might not suit your taste, a worry, not a fact · G51, G60 |
 | C42 | \[까다로운\] | adjective + -(으)ㄴ 편이다; ㅂ irregular → 까다로운 · G16, G19 |
+| C43 | \[밖에서\] | 밖 = outside; N밖에 = only, with a negative verb · V23, G6 |
+| C44 | \[만든\] | describing a noun with a past action: V-(으)ㄴ · G12 |
+| C45 | \[갈 때마다\] | every single time = -(으)ㄹ 때마다 · G5, G20 |
+| C46 | \[오자마자\] | right after = -자마자 · G64 |
+| C47 | \[안 맞도록\] | goal = -도록; 안 맞을까 봐 = worried you WON'T get wet · G65, G51 |
+| C48 | \[한 마리밖에\] | too few = 밖에 + 못 · G6, G63 |
 
 ## Part D answers
 
@@ -330,6 +360,11 @@ Answers are in \[brackets\]. Check each part as soon as you finish it, and look 
 | D27 | \[해야 됐어요\] | 어제 = past: had to is -아/어야 됐어요 · G35, mistake 44 |
 | D28 | \[목이 마를까 봐\] | the worry is getting thirsty, not the workout · G51, mistake 45 |
 | D29 | \[맞을까 봐\] | 맞다 has 받침 → 맞을까 봐 · G51, mistake 46 |
+| D30 | \[잡으면\] | 받침 stem + 으면, no extra ㄹ · G37, mistake 47 |
+| D31 | \[오면\] | vowel stem + 면: 오다 → 오면 · G37, mistake 48 |
+| D32 | \[만든\] | describe a noun with V-(으)ㄴ, not -기 · G12, mistake 49 |
+| D33 | \[봐요\] | 보 + 아요 = 봐요 · G44, mistake 50 |
+| D34 | \[대학생 때\] | in college = 대학생 때 (or 대학교에 다니면서) · G20 |
 
 ## Part E model answers
 

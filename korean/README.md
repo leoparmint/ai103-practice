@@ -5,6 +5,7 @@ Study site for Darren's Korean lessons: https://leoparmint.github.io/ai103-pract
 - **Study**: Anki-style spaced repetition over 1,700 cards: every word both ways, grammar points, example sentences, unit self-tests, mix-ups, recurring mistakes and all 319 workbook items. Scheduling is FSRS-6 (the scheduler Anki recommends) with its default parameters, Anki's learning steps (1m 10m, relearning 10m) and a 90% target recall that Options can change to 85% or 95%. English → Korean vocabulary cards unlock once their Korean → English card is scheduled 3+ days out, and cards forgotten 8 times are tagged Leech
 - **Practice**: run a workbook part, a unit self-test, the mix-up quiz or the mistakes straight through, with typed answers checked against the answer key
 - **Notes**: every word and grammar point, searchable, plus the lesson update log
+- **All notes on one page** (`notes.html`): the same vocabulary, grammar, mix-ups and mistakes as plain, fully open HTML with a table of contents, so the browser's own Find (<kbd>Ctrl</kbd>+<kbd>F</kbd>) reaches everything. Codes like G51 or V21 link within the page, `notes.html#G51` opens straight to a point, and it uses the theme picked on the flashcard page
 - **Keyboard**: an on-screen 두벌식 Hangul keyboard for devices without a Korean layout, and a scratchpad to copy from. On a computer, typing in an answer box follows the Korean layout (<kbd>Shift</kbd>+<kbd>Space</kbd> switches)
 
 Progress is saved in the browser only; Options and backup moves it between devices.
@@ -37,7 +38,7 @@ The scheduled update does this after it adds a lesson to the docs:
 
 1. Export the six tabs with the Claude Docs `export` tool (format: markdown)
 2. `python3 korean/tools/save_exports.py` writes those exports to `source/`
-3. `python3 korean/tools/build.py` rebuilds `deck.json` (it writes nothing if a table doesn't parse)
+3. `python3 korean/tools/build.py` rebuilds `deck.json` and `notes.html` (it writes nothing if a table doesn't parse). `python3 korean/tools/build_notes.py` redraws just `notes.html` from the current `deck.json`
 4. Commit and push to `main`; GitHub Pages serves it within a minute or two
 
 Card ids come from the V/G/workbook codes and the Korean text, so progress carries over between builds. `deck.json` remembers the date each item first appeared, which is how the page knows what came from the latest lesson.

@@ -46,6 +46,12 @@ These pairs are where mixing pays off: practicing look-alikes side by side train
 | 36 | -(으)ㄹ까 봐 / -(으)ㄹ 것 같아요 | worried it might, so you do something (needs a second clause) vs a guess from what you see (can end the sentence) | 하늘이 흐려요. 비가 (올까 봐 / 올 것 같아요). | 올 것 같아요 | G15, G51 |
 | 37 | -(으)ㄹ까 봐 / -기 때문에 | a worry about what might happen vs a real reason, something that is true | 저는 자주 배가 (아플까 봐 / 아프기 때문에) 소화제도 준비했어요. | 아프기 때문에 | G51, G60 |
 | 38 | 아무거나 / 아무것도 | anything at all, with a positive verb vs nothing, with a negative verb | 저는 떡볶이 빼고 (아무거나 / 아무것도) 잘 먹어요. | 아무거나 | G56, G10 |
+| 39 | 밖에서 / 밖에 | 밖 = outside: 밖에서 놀다; N밖에 = only, with a negative verb | 휴일에는 (밖에서 / 밖에) 노는 것보다 집에서 쉬는 것을 더 좋아해요. | 밖에서 | V23, G6 |
+| 40 | -았/었을 때 / -자마자 | when it was done vs the very next thing, right after | "The first thing I do": 아침에 (일어났을 때 / 일어나자마자) 핸드폰을 봐요. | 일어나자마자 | G64, G20 |
+| 41 | -(으)ㄹ 때 / -(으)ㄹ 때마다 | when vs every single time | "Every time I go to the office": 회사에 (갈 때 / 갈 때마다) 차가 막혀요. | 갈 때마다 | G5, G20 |
+| 42 | -(으)ㄹ까 봐 / 안 V-도록 | worried it might happen vs so that it won't | "So I wouldn't get rained on": 비를 (안 맞을까 봐 / 안 맞도록) 우산을 챙겼어요. | 안 맞도록 | G51, G65 |
+| 43 | number + 밖에 / number + (이)나 | only (too few) vs as many as (a lot) | "I caught ten fish!": 물고기를 (열 마리밖에 / 열 마리나) 잡았어요. | 열 마리나 | G6, G63 |
+| 44 | 잠을 자다 / 잠이 오다 | to sleep (you do it) vs sleep comes (you get sleepy) | "I couldn't fall asleep last night": 어제 (잠을 안 자서 / 잠이 안 와서) 힘들었어요. | 잠이 안 와서 | V25 |
 
 ## Your recurring mistakes
 
@@ -99,3 +105,8 @@ Each line is a real correction from your lessons. Cover the Say column, read the
 | 44 | 어제 피클볼을 치고 싶어요, 근데 공부를 해야 돼요. | 어제 피클볼을 치고 싶었어요. 근데 공부를 해야 됐어요. | 어제 = past: had to is -아/어야 됐어요 | G35 |
 | 45 | 운동을 많을까 봐 미리 물을 마셔요. | 운동할 때 목이 마를까 봐 미리 물을 마셔요. | -(으)ㄹ까 봐 goes on the worry itself (getting thirsty), not on the activity | G51 |
 | 46 | 식당 음식이 입맛에 안 맞즐까 봐 도시락을 싸요. | 식당 음식이 입맛에 안 맞을까 봐 도시락을 싸요. | 맞다 has 받침 → 맞을까 봐 · 입맛에 is said \[임마세\] | G51 |
+| 47 | 물고기을 잡을면 정말 재미있어요. | 물고기를 잡으면 정말 재미있어요. | after a vowel: 를 · 받침 stem + 으면, with no extra ㄹ | G37 |
+| 48 | 비가 올면 집에서 게임을 해요. | 비가 오면 집에서 게임을 해요. | vowel stem + 면: 오다 → 오면 | G37 |
+| 49 | 직접 만들기 빵은 더 맛있어요. | 직접 만든 빵은 더 맛있어요. | to describe a noun, use V-(으)ㄴ, not -기: 만들다 → 만든 | G12 |
+| 50 | 꼭 만들어 보요. | 꼭 만들어 봐요. | 보 + 아요 = 봐요 | G44 |
+| 51 | 대학교에 공부하면서 아르바이트를 했어요. | 대학생 때 아르바이트를 했어요. | in college = 대학생 때 (or 대학교에 다니면서); 공부하다 takes 에서, not 에 | G20 |

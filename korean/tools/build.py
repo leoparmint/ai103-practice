@@ -650,6 +650,13 @@ def main():
         n_vocab, len(vocab), n_points, len(units), n_examples, n_selftest))
     print('%d mix-ups · %d mistakes · %d workbook items' % (len(mixups), len(mistakes), n_workbook))
     print('Latest lesson %s: %d new items' % (latest, deck['latest']['count']))
+
+    # The one-page notes (notes.html) are drawn from the same deck, so they never lag behind it
+    sys.path.insert(0, HERE)
+    sys.dont_write_bytecode = True
+    import build_notes
+    notes = build_notes.write_notes(deck)
+    print('Wrote %s (%d KB)' % (os.path.relpath(notes), os.path.getsize(notes) // 1024))
     return 0
 
 

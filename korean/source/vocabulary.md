@@ -297,7 +297,7 @@ Words are grouped by topic. Cover the 한국어 column, read the English, and sa
 | 추천하다 | to recommend |  |
 | 잔 | cup (counter) | 커피 한두 잔 |
 
-## Sets V12–V22
+## Sets V12–V25
 
 ### V12 Shopping and money
 
@@ -564,3 +564,80 @@ Words are grouped by topic. Cover the 한국어 column, read the English, and sa
 | 충전하다 | to charge (a battery) | 저 방전됐어요 = I'm worn out · 에너지를 충전해야 돼요 |
 | 보조 | assistant, backup | 보조 선생님 · 보조 간호사 · 보조 배터리 (V21) |
 | 한 판 | a whole (pizza) | 판 = counter for pizza · 한 조각 = one slice |
+
+### V23 Tests, jobs and days off
+
+| 한국어 | English | Notes |
+| --- | --- | --- |
+| 시험 점수 | test score | 시험 점수가 0점에서 1000점까지 있어요 · 저는 800점이에요 |
+| 높은 점수 | high score | 800점은 높은 점수예요 |
+| 행복하다 | to be happy | 합격해서 정말 행복했어요 |
+| 시험이 끝나다 | the exam is over | 시험이 끝나고 = 시험이 끝난 후에 (G22) |
+| 직업을 구하다 | to look for a job | 구하다 = to look for, find · 내년에 다른 직업을 구하고 싶어요 |
+| 아직은 | for now, so far | 아직은 지금 직업이 좋아요 · 아직 = yet |
+| 필요하다 | to need, be necessary | N이/가 필요해요: 자격증이 더 필요해요? |
+| 한 번 더 | one more time | 자격증을 한 번 더 따고 싶어요 |
+| 드라이브(를) 가다 | to go for a drive | = 운전해서 놀러 가다 · 여자친구하고 드라이브 갔어요 |
+| 하기 싫은 일 | something you don't want to do | 싫다 + -(으)ㄴ · 휴일에 하기 싫은 일은 뭐예요? |
+| 치과의사 | dentist | 다음 달에 치과의사를 만날 거예요 |
+| 밖 | outside | 밖에서 놀다 · not 밖에 = only (G6) |
+| 놀다 | to hang out, have fun | ㄹ stem: 노는 것 · 놀아요 |
+| 함께 | together | = 같이 · 취미를 함께 하는 것을 좋아해요 |
+| N에 따라 달라요 | it depends on N | 취미에 따라 달라요 |
+| 장비 | equipment, gear | 낚시 장비 · 장비를 빨리 사는 편이에요 |
+| 멤버십 | membership | 피클볼장 멤버십이 있어요 |
+| 피클볼장 | pickleball court | -장 = a place for it: 헬스장, 축구장 |
+| 바다사자 | sea lion |  |
+| 바다소 | manatee | 플로리다에 있어요 |
+
+### V24 Work days and old friends
+
+| 한국어 | English | Notes |
+| --- | --- | --- |
+| 회사원 | office worker | 저는 회사원이에요. 신협에서 일해요 |
+| 이메일을 읽다 | to read emails | 아침마다 이메일을 읽어요 · 이메일을 보다 / 쓰다 |
+| 출퇴근하다 | to commute | 출근 + 퇴근 = 출퇴근 · 출퇴근할 때 음악을 들어요 |
+| 회식(을) 하다 | to have a team dinner | = 동료들하고 저녁을 먹다 · 재택근무를 해서 회식을 안 해요 |
+| 정장 | suit | 정장을 입다 · 저는 정장이 없어요 |
+| 결혼식 | wedding | 보통 면접, 결혼식에 정장을 입어요 |
+| 추수감사절 | Thanksgiving | 추수감사절 때 가족을 만나요 |
+| 하루 중에 | during the day | 하루 중에 언제 제일 힘들어요? |
+| 환경 | environment, setting | 어떤 환경에서 일해요? |
+| 신경 안 써요 | I don't mind, it doesn't bother me | 신경(을) 쓰다 = to pay attention, mind |
+| 시끄럽다 ↔ 조용하다 | to be noisy ↔ to be quiet | ㅂ irregular: 시끄러워요 · 일할 때 조용한 음악을 들어요 |
+| 고민 | worry, something on your mind | 고민이 있어요? |
+| 오래된 친구 | long-time friend | 제일 오래된 친구 = my oldest friend |
+| 한 명 · 다른 한 명 | one (person) · the other one | 한 명은 위스콘신에 살아요. 다른 한 명은 조지아에 살아요 |
+| 총 | in total | 총 다섯 명이에요 |
+| 통화하다 | to talk on the phone | = 전화하다 · 친구하고 세 시간 동안 통화했어요 |
+| 중학교 | middle school | 중학교 친구 = a friend from middle school |
+| 대학생 | college student | 대학생 때 아르바이트를 했어요 (G20) |
+| 친한 친구 | close friend | 친하다 = to be close |
+| 궁금한 것 | something you wonder about | 궁금하다 = to be curious · 궁금한 것을 질문해요 |
+
+### V25 Health, habits and doing well
+
+| 한국어 | English | Notes |
+| --- | --- | --- |
+| 미리미리 | well ahead of time | stronger than 미리 (V22) · 시험 전에 미리미리 공부했어요 |
+| 고생했어요 | you worked so hard; that must have been tough | = 수고했어요 · 자격증 시험에 붙었어요! — 고생했어요! |
+| 수고하셨습니다 | thank you for your hard work (formal) | at the end of class or a workday · 고생 = 수고 = hard work |
+| 실수하다 | to make a mistake | 실수 = mistake · 말실수 (V21) |
+| 비를 맞다 | to get rained on | 비를 안 맞도록 우산을 챙겼어요 |
+| 체하다 | to get indigestion (from eating too fast) | 체했어요 = 소화가 안 돼서 배가 아파요 |
+| 소화가 안 되다 | to not digest well | 소화제 (V21) |
+| 급하게 | in a hurry, too fast | ≈ 빨리 · 급하게 먹다가 체했어요 |
+| 건강 | health | 건강 관리를 잘해요 |
+| 건강이 좋아지다 ↔ 나빠지다 | your health gets better ↔ worse | -아/어지다 (G17) |
+| 관리(를) 하다 | to manage, take care of | 시간 관리 · 돈 관리 · 건강 관리 · 피부 관리 |
+| 인간관계 | relationships with people | 인간관계 관리 |
+| 평소에 | usually, in everyday life | 평소에 건강 관리를 잘할게요 |
+| 좋은 인상을 주다 | to make a good impression | 인상 = impression · 면접을 볼 때 |
+| 깔끔하다 | neat, clean-cut | 깔끔한 정장 · 정장 = 수트 (V24) |
+| 음식이 남다 | food is left over | 음식이 남지 않도록 조금만 요리해요 |
+| 이해하다 | to understand | 이해할 수 있도록 · 알아듣다 (V4) is for speech |
+| 비타민을 챙겨 먹다 | to make a point of taking vitamins | 챙기다 (V22) · 비타민은 매일 챙겨 먹어요 |
+| 잠이 오다 ↔ 잠이 안 오다 | to get sleepy ↔ can't fall asleep | 어제 잠이 안 와서 힘들었어요 |
+| 불면증 | insomnia | 불면증에 걸린 것 같아요 |
+| 딸 | daughter | 딸이 한 명밖에 없어요 |
+| 조각 | piece, slice | 피자를 네 조각이나 먹었어요 · 한 판 (V22) |
