@@ -566,13 +566,12 @@ def attach_answers(parts, answers):
 # ---------- Dates ----------
 
 def previous_deck():
-    """(item id → date, lesson dates) from the deck this build replaces."""
+    """The deck this build replaces, or {} when there is none."""
     try:
         with open(OUT, encoding='utf-8') as f:
-            old = json.load(f)
-        return old.get('added', {}), {u['date'] for u in old.get('updates', [])}
+            return json.load(f)
     except (OSError, ValueError):
-        return {}, set()
+        return {}
 
 
 def candidates(named, pool, own=(), see=(), group_date=None):
@@ -671,7 +670,9 @@ def main(argv=()):
 
     latest = max(u['date'] for u in updates)
     lesson_dates = sorted({u['date'] for u in updates})
-    prev, prev_lessons = previous_deck()
+    old = previous_deck()
+    prev = old.get('added', {})
+    prev_lessons = {u['date'] for u in old.get('updates', [])}
     first_build = not prev
     seed = new_codes_by_date(updates) if first_build else {}
     named = mentions(updates)
@@ -769,6 +770,10 @@ def main(argv=()):
         'workbook': parts,
         'added': added,
     }
+    # Same content as before: keep the old build time, so the files don't change and nothing is committed
+    if {k: v for k, v in old.items() if k != 'built'} == {k: v for k, v in deck.items() if k != 'built'}:
+        deck['built'] = old['built']
+        print('No change since the last build.')
     tmp = OUT + '.tmp'
     with open(tmp, 'w', encoding='utf-8') as f:
         json.dump(deck, f, ensure_ascii=False, separators=(',', ':'))
@@ -787,6 +792,10 @@ def main(argv=()):
         print('Repaired dates: %d items moved to their own lesson' % moved)
     for d in sorted(new_dates) if not first_build else []:
         print('  %s: %d new items' % (d, sum(1 for k, v in added.items() if v == d and k not in prev)))
+    orphans = 0 if first_build or new_dates else sum(1 for k in added if k not in prev)
+    if orphans:
+        # New items but no new entry in Lesson sources: the docs update may still be writing
+        print('%d new items with no new lesson entry; dated %s' % (orphans, latest))
     if not write_notes:
         return 0
 
