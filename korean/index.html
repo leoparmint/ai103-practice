@@ -171,6 +171,7 @@ kbd{font-family:var(--mono); font-size:.75rem; border:1px solid var(--line); bor
 .drow.d0 .dname{font-weight:600}
 .drow.latest{background:var(--rev-soft)}
 .drow.latest .dname{color:var(--rev); font-weight:600}
+.drow.lesson{background:color-mix(in srgb, var(--rev-soft) 45%, transparent)}
 .c.n{color:var(--new)} .c.l{color:var(--learn)} .c.d{color:var(--due)}
 .c.zero{color:color-mix(in srgb, var(--faint) 50%, var(--line))}
 .today{display:flex; flex-wrap:wrap; gap:4px 18px; font-size:.92rem; color:var(--muted)}
@@ -708,15 +709,20 @@ function indexNotes() {
   for (const m of D.mixups) NOTEIDX.set('mixup ' + m.n, {type: 'mixup', mx: m});
   for (const m of D.mistakes) NOTEIDX.set('mistake ' + m.n, {type: 'mistake', ms: m});
 }
+// Lesson decks: 'latest', 'lesson:2026-11-09', and 'new' (everything added since the learner last looked)
+let NEWSINCE = '';
+const lessonKey = key => key === 'latest' || key === 'new' || key.startsWith('lesson:');
 function deckCards(key) {
-  if (key === 'latest') return CARDS.filter(c => c.added === D.latest.date);
   if (!key) return CARDS;
+  if (key === 'latest') return CARDS.filter(c => c.added === D.latest.date);
+  if (key === 'new') return CARDS.filter(c => c.added > NEWSINCE);
+  if (key.startsWith('lesson:')) return CARDS.filter(c => c.added === key.slice(7));
   const path = key.split(' › ');
   let node = TREE;
   for (const p of path) { node = node && node.map.get(p); }
   return node ? node.cards : [];
 }
-function deckName(key) { return key === 'latest' ? fmtDate(D.latest.date) + ' lesson' : key ? key : 'All decks'; }
+function deckName(key) { return !key ? 'All decks' : key === 'latest' ? fmtDate(D.latest.date) + ' lesson' : key === 'new' ? 'New since ' + fmtDate(NEWSINCE) : key.startsWith('lesson:') ? fmtDate(key.slice(7)) + ' lesson' : key; }
 const buried = c => c.kind[0] === 'v' && S.bury.notes[c.note];
 // English → Korean waits until its Korean → English card is solid (scheduled 3+ days out): recognize a word before producing it
 function ready(c) {
@@ -793,7 +799,7 @@ function pickNext() {
 function pickNew(fresh) {
   // A parent deck that spans categories takes turns between them, so grammar doesn't wait behind 900 word cards
   const cats = [...new Set(fresh.map(c => c.path[0]))];
-  if ((sess.key === '' || sess.key === 'latest') && cats.length > 1) {
+  if ((sess.key === '' || lessonKey(sess.key)) && cats.length > 1) {
     const cat = cats[sess.rr++ % cats.length];
     return fresh.filter(c => c.path[0] === cat).reduce((a, b) => a.order < b.order ? a : b);
   }
@@ -1146,7 +1152,15 @@ function renderDecks() {
   const latest = deckCards('latest');
   if (latest.length) {
     const k = counts(latest);
-    html += `<div class="drow latest"><span class="nm"><span class="dtog ph">▸</span><button class="dname" type="button" data-deck="latest" title="${latest.length} cards added from your latest lesson">✦ ${esc(fmtDate(D.latest.date))} lesson</button></span>${cell(k.n, 'n')}${cell(k.l, 'l')}${cell(k.d, 'd')}</div>`;
+    // Earlier lessons fold out under the latest one, newest first
+    const older = [...new Set(D.updates.map(u => u.date))].filter(d => d < D.latest.date).sort().reverse().filter(d => d !== D.updates[0].date && deckCards('lesson:' + d).length).slice(0, 12);
+    const open = !!S.open.lessons;
+    const tog = older.length ? `<button class="dtog" type="button" data-tog="lessons" aria-expanded="${open}" aria-label="${open ? 'Hide earlier lessons' : 'Show earlier lessons'}">${open ? '▾' : '▸'}</button>` : '<span class="dtog ph">▸</span>';
+    html += `<div class="drow latest"><span class="nm">${tog}<button class="dname" type="button" data-deck="latest" title="${latest.length} cards added from your latest lesson">✦ ${esc(fmtDate(D.latest.date))} lesson</button></span>${cell(k.n, 'n')}${cell(k.l, 'l')}${cell(k.d, 'd')}</div>`;
+    if (open) for (const d of older) {
+      const kk = counts(deckCards('lesson:' + d));
+      html += `<div class="drow lesson"><span class="nm" style="padding-left:14px"><span class="dtog ph">▸</span><button class="dname" type="button" data-deck="lesson:${d}">${esc(fmtDate(d))} lesson</button></span>${cell(kk.n, 'n')}${cell(kk.l, 'l')}${cell(kk.d, 'd')}</div>`;
+    }
   }
   const walk = node => {
     const k = counts(node.cards);
@@ -1917,11 +1931,16 @@ function renderHeader() {
   $('#updated').textContent = `Updated after your ${fmtDate(D.latest.date)} lesson · ${s.words} words · ${s.points} grammar points · ${s.mixups + s.mistakes} mix-ups and mistakes · ${s.workbook} workbook items`;
   if (S.seenBuild === undefined) { S.seenBuild = D.built; S.seenLatest = D.latest.date; save(); }
   else if (S.seenLatest !== D.latest.date) {
-    const n = deckCards('latest').length;
-    $('#newText').innerHTML = `<b>New from your ${esc(fmtDate(D.latest.date))} lesson:</b> ${n} card${n === 1 ? '' : 's'}. ${esc(D.latest.text.replace(/^.*?Added\s*/, 'Added ')).slice(0, 220)}`;
+    // Count everything added since the last look, which can be several lessons when the site catches up at once
+    NEWSINCE = S.seenLatest || '';
+    const fresh = deckCards('new'), n = fresh.length;
+    const days = [...new Set(fresh.map(c => c.added))].sort();
+    $('#newText').innerHTML = days.length > 1
+      ? `<b>New since you last looked:</b> ${n} cards from ${days.length} lessons (${esc(fmtDate(days[0]))} to ${esc(fmtDate(days[days.length - 1]))}). Each lesson has its own deck under the ✦ row.`
+      : `<b>New from your ${esc(fmtDate(D.latest.date))} lesson:</b> ${n} card${n === 1 ? '' : 's'}. ${esc(D.latest.text.replace(/^.*?Added\s*/, 'Added ')).slice(0, 220)}`;
     $('#newBanner').hidden = false;
     const seen = () => { S.seenLatest = D.latest.date; S.seenBuild = D.built; save(); $('#newBanner').hidden = true; };
-    $('#newStudy').onclick = () => { seen(); setMode('study'); startStudy('latest'); };
+    $('#newStudy').onclick = () => { seen(); setMode('study'); startStudy(days.length > 1 ? 'new' : 'latest'); };
     $('#newDismiss').onclick = seen;
   }
 }

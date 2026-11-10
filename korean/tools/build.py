@@ -12,7 +12,14 @@ It exits non-zero, without writing, when something doesn't parse.
 
 Item ids are stable across builds (V/G/workbook codes never get renumbered), so
 progress saved in the browser carries over. Each item keeps the date it first
-appeared, which is how the page knows what came from the latest lesson.
+appeared, which is how the page knows what came from which lesson. A new item
+gets the date of the lesson whose "Added …" sentence (Start here, Lesson
+sources) names its code, so several lessons can be published in one build.
+
+  --repair-dates   re-date items that an earlier build stamped with one date
+                   although several lessons were published together
+  --src DIR        read the six source files from DIR (tests)
+  --out FILE       write the deck to FILE and skip notes.html (tests, dry runs)
 """
 import datetime
 import hashlib
@@ -202,9 +209,31 @@ def new_codes_by_date(updates):
                         mark(code, date)
                 elif mode_new:
                     mark(code, date)
-            for m2 in re.finditer(r'Unit (\d+) self-test row (\d+)', c):
-                mark('st %s %s' % (m2.group(1), m2.group(2)), date)
+            for code in selftest_codes(c):
+                mark(code, date)
     return first
+
+
+def selftest_codes(text):
+    """'Unit 3 self-test rows 15–16' → ['st 3 15', 'st 3 16']."""
+    out = []
+    for m in re.finditer(r'Unit (\d+) self-test rows? (\d+)(?:\s*[–-]\s*(\d+))?', text):
+        a = int(m.group(2))
+        for n in range(a, int(m.group(3) or a) + 1):
+            out.append('st %s %d' % (m.group(1), n))
+    return out
+
+
+def mentions(updates):
+    """code → dates of every lesson whose 'Added …' sentence names it, new or not."""
+    out = {}
+    for u in updates:
+        m = re.search(r'\bAdded\b(.*)$', u['text'])
+        if not m:
+            continue
+        for code in see_codes(m.group(1)) + selftest_codes(m.group(1)):
+            out.setdefault(code, set()).add(u['date'])
+    return out
 
 
 # ---------- Vocabulary ----------
@@ -536,13 +565,66 @@ def attach_answers(parts, answers):
 
 # ---------- Dates ----------
 
-def previous_added():
+def previous_deck():
+    """(item id → date, lesson dates) from the deck this build replaces."""
     try:
         with open(OUT, encoding='utf-8') as f:
             old = json.load(f)
-        return old.get('added', {})
+        return old.get('added', {}), {u['date'] for u in old.get('updates', [])}
     except (OSError, ValueError):
-        return {}
+        return {}, set()
+
+
+def candidates(named, pool, own=(), see=(), group_date=None):
+    """The lessons in `pool` an item may have come from, most telling clue first.
+
+    pool is the set of lessons being published together. The clues: the lesson a
+    workbook group is headed with, then lessons whose "Added …" sentence names
+    the item's own code, then lessons naming every note it points to (or any of
+    them). Empty when nothing ties the item to a lesson.
+    """
+    if len(pool) == 1:
+        return sorted(pool)
+    if group_date in pool:
+        return [group_date]
+    hits = {d for c in own for d in named.get(c, ()) if d in pool}
+    if hits:
+        return sorted(hits)
+    sets = [{d for d in named.get(c, ()) if d in pool} for c in see]
+    sets = [x for x in sets if x]
+    if sets:
+        return sorted(set.intersection(*sets) or set.union(*sets))
+    return []
+
+
+def settle(cands):
+    """One date per item for a run of new items in document order.
+
+    Items are appended to the notes lesson by lesson, so within a list a later
+    item never comes from an earlier lesson. Neighbours with the same several
+    candidates (new examples in a point that two lessons added to) are shared
+    out in order so that each of those lessons gets at least one. None where an
+    item has no candidates and nothing dated comes before it.
+    """
+    out = []
+    lo = None
+    i = 0
+    while i < len(cands):
+        c = cands[i]
+        j = i
+        while j < len(cands) and cands[j] == c:
+            j += 1
+        k = j - i
+        if not c:
+            out += [lo] * k
+        elif len(c) == 1:
+            out += c * k
+        else:
+            ds = [d for d in c if lo is None or d >= lo] or c[-1:]
+            out += [ds[n * len(ds) // k] if k >= len(ds) else ds[n] for n in range(k)]
+        lo = out[-1] or lo
+        i = j
+    return out
 
 
 def lesson_date_for_group(title, updates):
@@ -560,7 +642,18 @@ def lesson_date_for_group(title, updates):
     return None
 
 
-def main():
+def main(argv=()):
+    global SRC, OUT
+    argv = list(argv)
+    repair = '--repair-dates' in argv
+    write_notes = '--out' not in argv
+    for flag in ('--src', '--out'):
+        if flag in argv:
+            value = os.path.abspath(argv[argv.index(flag) + 1])
+            if flag == '--src':
+                SRC = value
+            else:
+                OUT = value
     updates = parse_start()
     vocab = parse_vocab()
     units = parse_grammar()
@@ -577,44 +670,82 @@ def main():
         return 1
 
     latest = max(u['date'] for u in updates)
-    prev = previous_added()
+    lesson_dates = sorted({u['date'] for u in updates})
+    prev, prev_lessons = previous_deck()
     first_build = not prev
     seed = new_codes_by_date(updates) if first_build else {}
+    named = mentions(updates)
+    new_dates = {d for d in lesson_dates if d not in prev_lessons}
     added = {}
+    unplaced = []
 
-    def date_for(item_id, codes=()):
-        if item_id in prev:
-            return prev[item_id]
-        if not first_build:
-            return latest
-        dates = [seed[c] for c in codes if c in seed]
-        return max(dates) if dates else BASELINE
+    # --repair-dates: an earlier build gave every new item the newest lesson's date. Where a stamped
+    # date covers more than one lesson (none of the lessons before it has items of its own), work
+    # those items out again as if that group of lessons were being published now.
+    windows = {}
+    if repair and prev:
+        stamped = sorted(set(prev.values()))
+        for i, d in enumerate(stamped):
+            floor = stamped[i - 1] if i else ''
+            window = {x for x in lesson_dates if floor < x <= d}
+            if len(window) > 1:
+                windows[d] = window
 
+    # Every list of items in document order: (id, own codes, notes it points to, lesson its group is
+    # headed with, codes a first build seeds its date from)
+    seqs = []
     for s in vocab:
-        for it in s['items']:
-            added[it['id']] = date_for(it['id'], [s['code']])
+        seqs.append([(it['id'], [s['code']], [], None, [s['code']]) for it in s['items']])
     for u in units:
+        seqs.append([('g:' + p['code'], [p['code']], [], None, [p['code']]) for p in u['points']])
         for p in u['points']:
-            added['g:' + p['code']] = date_for('g:' + p['code'], [p['code']])
-            for x in p['examples']:
-                added[x['id']] = date_for(x['id'], [p['code']])
-        for st in u['selftest']:
-            added[st['id']] = date_for(st['id'], ['st %d %s' % (u['n'], st['n'])] + st['see'])
-    for mx in mixups:
-        added[mx['id']] = date_for(mx['id'], ['mixup %s' % mx['n']])
-    for ms in mistakes:
-        added[ms['id']] = date_for(ms['id'], ['mistake %s' % ms['n']])
+            seqs.append([(x['id'], [p['code']], [], None, [p['code']]) for x in p['examples']])
+        seqs.append([(st['id'], ['st %d %s' % (u['n'], st['n'])], st['see'], None,
+                      ['st %d %s' % (u['n'], st['n'])] + st['see']) for st in u['selftest']])
+    seqs.append([(m['id'], ['mixup %s' % m['n']], m['see'], None, ['mixup %s' % m['n']]) for m in mixups])
+    seqs.append([(m['id'], ['mistake %s' % m['n']], m['see'], None, ['mistake %s' % m['n']]) for m in mistakes])
     for p in parts:
         for g in p['groups']:
             gdate = lesson_date_for_group(g['title'], updates)
             vset = re.match(r'(V\d+)\b', g['title'])
-            for it in g['items']:
-                if it['id'] in prev or not first_build:
-                    added[it['id']] = date_for(it['id'])
-                elif gdate:
-                    added[it['id']] = gdate
-                else:
-                    added[it['id']] = date_for(it['id'], ([vset.group(1)] if vset else []) + it.get('see', []))
+            own = [vset.group(1)] if vset else []
+            seqs.append([(it['id'], own, it.get('see', []), gdate, own + it.get('see', [])) for it in g['items']])
+
+    def pool_of(item_id):
+        """The lessons an item is to be placed among, or None to keep the date it has."""
+        if item_id in prev:
+            return windows.get(prev[item_id])
+        return new_dates
+
+    for seq in seqs:
+        if first_build:
+            for item_id, own, see, gdate, first_codes in seq:
+                dates = [seed[c] for c in first_codes if c in seed]
+                added[item_id] = gdate or (max(dates) if dates else BASELINE)
+            continue
+        i = 0
+        while i < len(seq):
+            pool = pool_of(seq[i][0])
+            j = i
+            while j < len(seq) and pool_of(seq[j][0]) == pool:
+                j += 1
+            run = seq[i:j]
+            if pool is None:
+                for item in run:
+                    added[item[0]] = prev[item[0]]
+            elif not pool:
+                for item in run:
+                    added[item[0]] = latest
+            else:
+                dates = settle([candidates(named, pool, own, see, gdate) for _, own, see, gdate, _ in run])
+                for item, d in zip(run, dates):
+                    if d is None:
+                        unplaced.append(item[0])
+                    added[item[0]] = d or prev.get(item[0]) or latest
+            i = j
+    if unplaced:
+        warn('%d new items are not named in any new lesson\'s "Added …" sentence; dated %s: %s' % (
+            len(unplaced), latest, ', '.join(unplaced[:8]) + (' …' if len(unplaced) > 8 else '')))
 
     latest_update = [u for u in updates if u['date'] == latest][-1]
     n_vocab = sum(len(s['items']) for s in vocab)
@@ -651,6 +782,14 @@ def main():
     print('%d mix-ups · %d mistakes · %d workbook items' % (len(mixups), len(mistakes), n_workbook))
     print('Latest lesson %s: %d new items' % (latest, deck['latest']['count']))
 
+    if repair:
+        moved = sum(1 for k, d in added.items() if prev.get(k) not in (None, d))
+        print('Repaired dates: %d items moved to their own lesson' % moved)
+    for d in sorted(new_dates) if not first_build else []:
+        print('  %s: %d new items' % (d, sum(1 for k, v in added.items() if v == d and k not in prev)))
+    if not write_notes:
+        return 0
+
     # The one-page notes (notes.html) are drawn from the same deck, so they never lag behind it
     sys.path.insert(0, HERE)
     sys.dont_write_bytecode = True
@@ -661,4 +800,4 @@ def main():
 
 
 if __name__ == '__main__':
-    sys.exit(main())
+    sys.exit(main(sys.argv[1:]))
