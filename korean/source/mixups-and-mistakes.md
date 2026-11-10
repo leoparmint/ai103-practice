@@ -52,6 +52,16 @@ These pairs are where mixing pays off: practicing look-alikes side by side train
 | 42 | -(으)ㄹ까 봐 / 안 V-도록 | worried it might happen vs so that it won't | "So I wouldn't get rained on": 비를 (안 맞을까 봐 / 안 맞도록) 우산을 챙겼어요. | 안 맞도록 | G51, G65 |
 | 43 | number + 밖에 / number + (이)나 | only (too few) vs as many as (a lot) | "I caught ten fish!": 물고기를 (열 마리밖에 / 열 마리나) 잡았어요. | 열 마리나 | G6, G63 |
 | 44 | 잠을 자다 / 잠이 오다 | to sleep (you do it) vs sleep comes (you get sleepy) | "I couldn't fall asleep last night": 어제 (잠을 안 자서 / 잠이 안 와서) 힘들었어요. | 잠이 안 와서 | V25 |
+| 45 | 넣었어요 / 넣어 놓았어요 / 들어 있어요 | I put it in (the action) vs I put it in and it stays there vs it's inside (the state, no person) | "There's a USB drive in my desk drawer": 책상 서랍에 USB가 (넣었어요 / 들어 있어요). | 들어 있어요 | G67 |
+| 46 | -도록 / -(으)ㄹ 테니까 | so that (the goal) vs I'll do this, so you do that (my plan + your part) | "I'll drive, so you buy the coffee": 제가 (운전하도록 / 운전할 테니까) 커피를 사세요. | 운전할 테니까 | G68 |
+| 47 | 무리한 / 무례한 | too much, unreasonable vs rude | "Rude people ask for big favors easily": 보통 (무리한 / 무례한) 사람이 무리한 부탁을 쉽게 하는 것 같아요. | 무례한 | V26 |
+| 48 | 멀다 / 넓다 | far away vs wide, big (an area) | "The ocean is six hours away": 지금은 바다가 너무 (멀어요 / 넓어요). | 멀어요 | V27 |
+| 49 | N을 위해서 / V-(으)려고 | for (a noun, an event) vs in order to (a verb, what you want to do) | "I went to see the waterfalls": 폭포를 (보려고 / 위해서) 테네시에 갔어요. | 보려고 | G40 |
+| 50 | 미끄럽다 / 미끄러지다 | to be slippery (a description) vs to slip (something that happens to you) | "I was careful not to slip on the mountain": 산에서 (미끄럽지 / 미끄러지지) 않도록 조심했어요. | 미끄러지지 | V8, V28 |
+| 51 | 열다 / 열리다 | you open it (을/를) vs it comes open (이/가) | "The closet door behind me came open": 뒤에 옷장 문이 (열었어요 / 열렸어요). | 열렸어요 | G58 |
+| 52 | 뿌듯하다 / 흐뭇하다 | proud of something you did vs warmly pleased watching someone else | "My girlfriend liked my gift, so I was pleased": 여자친구가 제 선물을 좋아해서 (뿌듯했어요 / 흐뭇했어요). | 흐뭇했어요 | V29 |
+| 53 | -(으)려고 해요 / -기로 했어요 | a plan you're thinking about vs a decision or a promise, often made with someone | "My brother and I made plans to play pickleball tomorrow": 내일 형하고 피클볼을 (치려고 해요 / 치기로 했어요). | 치기로 했어요 | G39 |
+| 54 | 입다 / 쓰다 / 신다 / 끼다 / 매다 | clothes on the body vs hat or glasses vs socks and shoes vs gloves vs a tie or scarf | "It was cold, so I wore gloves": 추워서 장갑을 (입었어요 / 꼈어요). | 꼈어요 | V30 |
 
 ## Your recurring mistakes
 
@@ -110,3 +120,6 @@ Each line is a real correction from your lessons. Cover the Say column, read the
 | 49 | 직접 만들기 빵은 더 맛있어요. | 직접 만든 빵은 더 맛있어요. | to describe a noun, use V-(으)ㄴ, not -기: 만들다 → 만든 | G12 |
 | 50 | 꼭 만들어 보요. | 꼭 만들어 봐요. | 보 + 아요 = 봐요 | G44 |
 | 51 | 대학교에 공부하면서 아르바이트를 했어요. | 대학생 때 아르바이트를 했어요. | in college = 대학생 때 (or 대학교에 다니면서); 공부하다 takes 에서, not 에 | G20 |
+| 52 | 내년에 여자친구는 할로윈 파티를 가고 싶어해요. | 내년에 여자친구는 할로윈 파티에 가고 싶어해요. | 가다 takes 에 for where you go, events too: 파티에 가다 | G2 |
+| 53 | (about college) 가끔 미식축구 경기가 있으면 비행기를 날려요. | 미식축구 경기가 있을 때 가끔 비행기를 날렸어요. | a past habit: -(으)ㄹ 때 + past tense; 가끔 goes right before the action | G20 |
+| 54 | 너무 사람이 많아서 그런지 미식축구 경기가 … | 미식축구 경기가 인기가 많아서 그런지 사람이 너무 많았어요. | the guessed reason goes before 그런지; what you saw comes after | G28 |

@@ -2,7 +2,7 @@
 
 Oct 8, 2026 · @Darren Funes
 
-354 fill-in-the-blank items on the same vocabulary and grammar as the Korean Review Notes, with the answer key in the next tab.
+407 fill-in-the-blank items on the same vocabulary and grammar as the Korean Review Notes, with the answer key in the next tab.
 
 ## How to use this workbook
 
@@ -10,10 +10,10 @@ Do one part per session, closed-book, and check it the moment you finish.
 
 | Part | What you do | Items | Time |
 | --- | --- | --- | --- |
-| A | Vocabulary in context: write the Korean word from an English cue | 132 | about 20 min |
-| B | Grammar forms: put the base word into the right form | 130 | about 25 min |
-| C | Mixed review: choose the pattern yourself | 48 | about 10 min |
-| D | Fix the mistake: correct the part in \[brackets\] | 34 | about 10 min |
+| A | Vocabulary in context: write the Korean word from an English cue | 152 | about 20 min |
+| B | Grammar forms: put the base word into the right form | 150 | about 25 min |
+| C | Mixed review: choose the pattern yourself | 58 | about 10 min |
+| D | Fix the mistake: correct the part in \[brackets\] | 37 | about 10 min |
 | E | Your turn: finish sentences about your own life | 10 | about 15 min |
 
 1. **Close the notes.** Write in pencil or on a separate sheet so you can redo the workbook later.
@@ -121,7 +121,7 @@ Write the Korean word or phrase for the English cue, in the form the sentence ne
 | A47 | 바다에서 수영할 때 물이 너무 ＿＿＿＿＿. (was cold to the touch) |
 | A48 | 길이 ＿＿＿＿＿ 조심하세요. (slippery, + so) |
 
-## Part A · Vocabulary in context (V9–V25)
+## Part A · Vocabulary in context (V9–V30)
 
 ### V9 Home, chores and repairs
 
@@ -291,6 +291,51 @@ Write the Korean word or phrase for the English cue, in the form the sentence ne
 | A130 | 너무 급하게 먹어서 ＿＿＿＿＿. (got indigestion, past) |
 | A131 | 어제 ＿＿＿＿＿ 힘들었어요. (couldn't fall asleep, -아/어서) |
 | A132 | 자격증 시험에 붙었어요! — 와, ＿＿＿＿＿! (you worked so hard, past) |
+
+### V26 Favors, drawers and getting ready
+
+| # | Fill in the blank |
+| --- | --- |
+| A133 | 제 부탁 좀 ＿＿＿＿＿ 수 있어요? (do a favor) |
+| A134 | 무리한 부탁은 ＿＿＿＿＿ 게 좋아요. (turn down) |
+| A135 | 회의 자료를 ＿＿＿＿＿에 저장해 놓았어요. (computer desktop) |
+| A136 | 나중에 ＿＿＿＿＿ 않도록 잘 생각하세요. (regret) |
+
+### V27 Halloween, trips and a desert island
+
+| # | Fill in the blank |
+| --- | --- |
+| A137 | 바다가 너무 ＿＿＿＿＿ 낚시하러 자주 못 가요. (far, -아/어서) |
+| A138 | 무인도에 ＿＿＿＿＿하고 핸드폰을 가져갈 거예요. (fishing rod) |
+| A139 | 여자친구의 강아지는 ＿＿＿＿＿를 쫓아요. (squirrel) |
+| A140 | 일본에서 ＿＿＿＿＿을 먹을 때마다 행복해요. (local food) |
+
+### V28 Tennessee trip and not missing the train
+
+| # | Fill in the blank |
+| --- | --- |
+| A141 | 운전할 때 길을 잃어버리지 않도록 ＿＿＿＿＿을 사용해요. (GPS navigation) |
+| A142 | 회의 때 ＿＿＿＿＿ 않도록 미리 커피를 마셨어요. (doze off, -지) |
+| A143 | ＿＿＿＿＿를 놓치지 않도록 일찍 출발해야 돼요. (the last train) |
+| A144 | 지금은 가을이라서 ＿＿＿＿＿이 예쁘더라고요. (autumn leaves) |
+
+### V29 Feelings, news and game day
+
+| # | Fill in the blank |
+| --- | --- |
+| A145 | 해커톤 대회에 나가서 정말 ＿＿＿＿＿. (felt proud) |
+| A146 | 청소하면서 ＿＿＿＿＿를 들었어요. (podcast) |
+| A147 | 저는 농구를 ＿＿＿＿＿ 보고 싶어요. (live) |
+| A148 | 집값이 매년 ＿＿＿＿＿. (go up) |
+
+### V30 Clothes and what you wear
+
+| # | Fill in the blank |
+| --- | --- |
+| A149 | 낚시할 때 모자를 꼭 ＿＿＿＿＿. (wear: a hat) |
+| A150 | 겨울에 피클볼을 칠 때 장갑을 ＿＿＿＿＿. (wear: gloves) |
+| A151 | 비가 오면 낚시할 때 ＿＿＿＿＿ 바지를 입어요. (waterproof) |
+| A152 | 날씨가 추워서 두꺼운 ＿＿＿＿＿을 입었어요. (puffer jacket) |
 
 ## Part B · Grammar forms (Units 1–3)
 
@@ -520,6 +565,51 @@ Put the word in parentheses into the form the sentence needs; the English says w
 | B129 | 늦잠을 ＿＿＿＿＿ 회의에 늦었어요. (자다: because, casual) |
 | B130 | 어제 피자를 네 ＿＿＿＿＿ 먹었어요. (조각: as many as) |
 
+### Oct 30 lesson · -아/어 놓다, 들어 있다, -(으)ㄹ 테니까, -기 어렵다
+
+| # | Fill in the blank |
+| --- | --- |
+| B131 | 바나나를 냉장고에 ＿＿＿＿＿. (넣다: put it in and left it there, past) |
+| B132 | 책상 서랍에 드라이버가 ＿＿＿＿＿. (들다: it's inside) |
+| B133 | 내가 밥을 ＿＿＿＿＿ 형은 커피를 사. (사다: I'll …, so you …) |
+| B134 | 친구가 ＿＿＿＿＿ 어려운 부탁을 했어요. (들어주다: hard to do) |
+
+### Lesson 30 · -는 동안, -고 싶어하다, -(으)려고, -지 않아요?
+
+| # | Fill in the blank |
+| --- | --- |
+| B135 | 무인도에 ＿＿＿＿＿ 매일 낚시를 할 거예요. (살다: while) |
+| B136 | 지난 주말에 여자친구는 폭포를 ＿＿＿＿＿. (보다: she wanted to, past) |
+| B137 | 테네시에는 산하고 폭포를 ＿＿＿＿＿ 갔어요. (보다: in order to) |
+| B138 | 오늘은 일이 ＿＿＿＿＿? (많다: isn't it?) |
+
+### Nov 5 lesson
+
+| # | Fill in the blank |
+| --- | --- |
+| B139 | 네, 늦지 ＿＿＿＿＿ 조심할게요. (않다: so that) |
+| B140 | 일본에서 일본어를 조금 ＿＿＿＿＿ 여행 가기 전에 공부할 거예요. (할 수 있다: so that) |
+| B141 | 폭포를 ＿＿＿＿＿ 할로윈 코스튬을 입었어요. (보다: after finishing) |
+| B142 | 저는 운전을 안 ＿＿＿＿＿. (좋아하다: I tend to) |
+
+### Nov 6 lesson
+
+| # | Fill in the blank |
+| --- | --- |
+| B143 | 친구가 집을 ＿＿＿＿＿ 소식을 듣고 기분이 좋았어요. (샀다: the news that) |
+| B144 | 대학교에서 유명한 농구 선수를 ＿＿＿＿＿ 너무 늦게 가서 못 봤어요. (보다: almost, but) |
+| B145 | 코비드 때 집을 ＿＿＿＿＿ 것 같아요. (사다: it would have been nice if) |
+| B146 | 도둑이 경찰한테 ＿＿＿＿＿. (잡다: got caught) |
+
+### Lesson 31
+
+| # | Fill in the blank |
+| --- | --- |
+| B147 | 내일 형하고 피클볼을 ＿＿＿＿＿. (치다: decided, made plans) |
+| B148 | 이번 주말에 블루리지에 ＿＿＿＿＿ 비가 와서 못 가요. (가다: had decided, but) |
+| B149 | 운동할 때는 운동복＿＿＿＿＿ 운동화를 신어요. (plus) |
+| B150 | 회의가 있어서 와이셔츠＿＿＿＿＿ 넥타이를 맸어요. (plus) |
+
 ## Part C · Mixed review
 
 No pattern names here. Read the whole sentence, decide which pattern fits, then write the form. Look-alike patterns are mixed on purpose.
@@ -574,6 +664,16 @@ No pattern names here. Read the whole sentence, decide which pattern fits, then 
 | C46 | (The very first thing) 퇴근하고 집에 ＿＿＿＿＿ 고양이한테 밥을 줘요. (왔을 때 or 오자마자) |
 | C47 | (So that) 비를 ＿＿＿＿＿ 우산을 미리 챙겼어요. (안 맞을까 봐 or 안 맞도록) |
 | C48 | (Only one, too few) 지난 주말에 물고기를 ＿＿＿＿＿ 못 잡았어요. (한 마리밖에 or 한 마리나) |
+| C49 | (So it won't spoil) 음식이 ＿＿＿＿＿ 냉장고에 넣으세요. (상하지 않도록 or 상할 테니까) |
+| C50 | (Splitting the cooking) 내가 김치찌개를 ＿＿＿＿＿ 너는 밥을 해 줘. (만들도록 or 만들 테니까) |
+| C51 | (Every time) 여행을 ＿＿＿＿＿ 약과 선크림을 챙겨요. (갈 때 or 갈 때마다) |
+| C52 | (Purpose, a verb) 밤에 별을 ＿＿＿＿＿ 밖에 나갔어요. (보려고 or 위해서) |
+| C53 | (A worry) 막차를 ＿＿＿＿＿ 일찍 출발했어요. (놓칠까 봐 or 놓치지 않도록) |
+| C54 | (Describing the path) 비가 와서 산길이 ＿＿＿＿＿. (미끄러워요 or 미끄러져요) |
+| C55 | (Your girlfriend liked your gift) 여자친구가 제 선물을 좋아해서 ＿＿＿＿＿. (뿌듯했어요 or 흐뭇했어요) |
+| C56 | (The door behind you) 뒤에 옷장 문이 ＿＿＿＿＿. (열었어요 or 열렸어요) |
+| C57 | (Already agreed with someone) 토요일에 형하고 낚시를 ＿＿＿＿＿. (가려고 해요 or 가기로 했어요) |
+| C58 | (On your feet) 낚시할 때는 방수 신발을 ＿＿＿＿＿. (입어요 or 신어요) |
 
 ## Part D · Fix the mistake
 
@@ -615,6 +715,9 @@ Each sentence has one mistake, shown in \[brackets\]. Write the correct form in 
 | D32 | 형이 직접 \[만들기\] 김치는 정말 맛있어요. | ＿＿＿＿＿ |
 | D33 | 불고기를 꼭 만들어 \[보요\]. | ＿＿＿＿＿ |
 | D34 | \[대학교에 공부하면서\] 아르바이트를 했어요. (when I was in college) | ＿＿＿＿＿ |
+| D35 | 내년에 여자친구는 할로윈 \[파티를\] 가고 싶어해요. (to a party) | ＿＿＿＿＿ |
+| D36 | 대학교 때 미식축구 경기가 \[있으면\] 가끔 비행기를 날렸어요. (whenever there was a game) | ＿＿＿＿＿ |
+| D37 | \[사람이 너무 많아서 그런지 미식축구 경기가 인기가 많았어요.\] (Maybe because the game was popular, there were too many people.) | ＿＿＿＿＿ |
 
 ## Part E · Your turn
 

@@ -56,6 +56,7 @@ Examples:
 - 첫 번째 미팅이 아홉 시 십 분에 시작해요. — My first meeting starts at 9:10.
 - 어제 공부를 네 시간 했어요. — Yesterday I studied for four hours.
 - 제 생일은 11월 14일이에요. — My birthday is November 14.
+- 바다에 가려면 차로 여섯 시간 가야 해요. — To get to the ocean, I have to drive six hours.
 
 ### G5 How often and how long: 마다, 번, 동안, 만에
 
@@ -64,6 +65,7 @@ Examples:
 - N 동안 = for a length of time: 세 시간 동안. It answers "how long?", not "when?".
 - N 만에 = for the first time in a span: 2년 만에. 오랜만에 = for the first time in ages.
 - -(으)ㄹ 때마다 form: after 받침 -을 때마다 (받을 때마다), after a vowel -ㄹ 때마다 (갈 때마다). Nouns take 마다 with no space: 수요일마다, 아침마다.
+- Verb + -는 동안 = while (for the whole time you V): 살다 → 사는 동안, 자다 → 자는 동안. N 동안 still takes a noun: 한 달 동안.
 
 Examples:
 
@@ -75,6 +77,9 @@ Examples:
 - 저는 수요일마다 헬스장에 가요. — I go to the gym every Wednesday.
 - 회사에 갈 때마다 차가 막혀요. — Every time I go to the office, there's traffic.
 - 스트레스를 받을 때마다 낚시를 해요. — Every time I get stressed, I go fishing.
+- 무인도에서 혼자 한 달 동안 살아야 해요. — I have to live alone on a deserted island for a month.
+- 무인도에 사는 동안 매일 낚시를 할 거예요. — While I live on the island, I'll fish every day.
+- 여행을 갈 때마다 약과 선크림을 챙겨요. — Every time I travel, I pack medicine and sunscreen.
 
 ### G6 도, 만, 밖에, 빼고
 
@@ -131,6 +136,7 @@ Examples:
 - 경제 역사에 대한 책을 많이 읽었어요. — I've read a lot of books on economic history.
 - 낚시에 대해서 많이 찾아봐요. — I look up a lot about fishing.
 - 여자친구가 한국 사람이에요. 그래서 한국어에 관심이 많아요. — My girlfriend is Korean, so I'm very interested in Korean.
+- 팟캐스트는 농구에 대한 이야기였어요. — The podcast was about basketball.
 
 ### G9 Comparing: 보다, 가장, 중에서
 
@@ -210,6 +216,7 @@ Cover the Answer column. Say each sentence in Korean, then check.
 | 18 | I drank two whole cups of coffee. | 커피를 두 잔이나 마셨어요. | G63 |
 | 19 | Every time I get stressed, I go fishing. | 스트레스를 받을 때마다 낚시를 해요. | G5 |
 | 20 | I prepared for my certification exam for three whole months. | 자격증 시험 때문에 세 달이나 시험 준비를 했어요. | G63 |
+| 21 | While I live on the island, I'll fish every day. | 무인도에 사는 동안 매일 낚시를 할 거예요. | G5 |
 
 ## Unit 2 · Describing people and things
 
@@ -255,6 +262,7 @@ Examples:
 - Adjective stem + 게 makes an adverb: 성실하게 일해요, 행복하게 살다.
 - 많다 is an adjective: 사람이 많아요, 많은 돈. 많이 is the adverb: 돈을 많이 벌어요. Not 많은 걸었어요 → 많이 걸었어요.
 - 열심히 goes right before the verb: 열심히 공부해요.
+- A-게 works with feeling words too: 흐뭇하다 → 흐뭇하게 웃다 (smile, pleased).
 
 Examples:
 
@@ -262,6 +270,7 @@ Examples:
 - 여자친구하고 너무 많이 걸었어요. — I walked way too much with my girlfriend.
 - 더 많은 돈을 벌고 싶어요. — I want to earn more money.
 - 일을 성실하게 해요. — I work diligently.
+- 선생님은 열심히 공부하는 학생들을 보면서 흐뭇하게 웃으셨어요. — The teacher smiled, pleased, watching the students study hard.
 
 ### G14 A-아/어 보이다: looks …
 
@@ -315,6 +324,10 @@ Examples:
 - 저는 입맛이 까다로운 편이에요. — I'm a fairly picky eater. (까다롭다 is ㅂ irregular: 까다로운)
 - 새로운 취미를 시작할 때 돈을 많이 쓰는 편이에요. — When I start a new hobby, I tend to spend a lot of money.
 - 솔직히 저는 장비를 빨리 사는 편이에요. — Honestly, I tend to buy the gear quickly.
+- 친한 친구는 무리한 부탁을 잘 안 해서 다 들어주는 편이에요. — My close friends don't usually ask for big favors, so I tend to help with everything.
+- 혼자 일을 해서 스트레스를 잘 안 받는 편이에요. — I work alone, so I don't tend to get stressed.
+- 저는 운전을 안 좋아하는 편이에요. 그런데 여자친구는 더 안 좋아해요. — I'm not really into driving, but my girlfriend likes it even less. (안 goes right before the verb: 안 좋아하는 편이에요)
+- 저는 농구를 좋아하는 편이에요. 그래서 매일 농구를 봐요. — I tend to like basketball, so I watch it every day.
 
 ### G17 Change: A-아/어지다 vs V-게 되다
 
@@ -322,6 +335,7 @@ Examples:
 - V-게 되다 = come to, end up (a change in what you do, often not planned): 좋아하게 됐어요. 되었어요 = 됐어요.
 - State vs change: 편안해요 (I'm relaxed) / 편안해져요 (I get relaxed). -고 싶다 → -고 싶어지다 = come to want.
 - N이/가 되다 = to become N: 서른 살이 돼요, 커피를 마시는 사람이 됐어요. 되어요 = 돼요.
+- -아/어지고 있어요 = it's getting more and more …: 부담스럽다 → 부담스러워지고 있어요. 점점 often goes with it.
 
 Examples:
 
@@ -332,17 +346,22 @@ Examples:
 - 요즘 AI가 많이 똑똑해졌어요. — AI has gotten a lot smarter these days.
 - 다음 달에 서른 살이 돼요. — I'll turn thirty next month.
 - 이번 달부터 커피를 마시는 사람이 됐어요. — Starting this month, I've become a coffee drinker.
+- 집값이 매년 올라서 점점 부담스러워지고 있어요. — House prices go up every year, so they're becoming more and more of a burden.
 
 ### G18 Other people's feelings and wishes
 
 - For yourself: -고 싶다, 피곤하다. For someone else: -고 싶어하다, 피곤해하다 (feeling adjective + -아/어하다).
 - 좋다 → 좋아하다 and 싫다 → 싫어하다 follow the same pattern.
+- Past: -고 싶어했어요 (she wanted to). Your teacher writes it with a space too: 보고 싶어 했어요. Both are fine.
 
 Examples:
 
 - 제 여자친구가 너무 가고 싶어해요. — My girlfriend really wants to go.
 - 어머니가 고향에 가고 싶어하셔서 비행기표를 드렸어요. — My mother wanted to go to her hometown, so I gave her a plane ticket.
 - (teacher) 제 남편은 사람이 많은 곳에 가면 피곤해해요. — My husband gets tired in crowded places.
+- (teacher) 제 여자친구는 폭포를 보고 싶어 했어요. — My girlfriend wanted to see the waterfall.
+- 내년에 여자친구는 할로윈 파티에 가고 싶어해요. — Next year my girlfriend wants to go to a Halloween party.
+- (teacher) 제가 운전하면 남편이 불안해해요. — My husband gets nervous when I drive. (불안하다 → 불안해하다 for someone else)
 
 ### G19 Irregular verbs
 
@@ -395,6 +414,7 @@ Cover the Answer column. Say each sentence in Korean, then check.
 - Not for the cause of a feeling: 못 잡았을 때 아쉬웠어요 → 못 잡아서 아쉬웠어요 (G27).
 - Holidays and stages of life take 때 too: 크리스마스 때, 추수감사절 때, 대학생 때 (= when I was in college).
 - -(으)ㄹ 때 = when; -(으)ㄹ 때마다 = every single time (G5). For the very first thing after an action, use -자마자 (G64).
+- A past habit (whenever there was a game) takes -(으)ㄹ 때 + past tense, not -(으)면 + present. 가끔 goes right before the action: 경기가 있을 때 가끔 비행기를 날렸어요. See mistake 53.
 
 Examples:
 
@@ -405,6 +425,10 @@ Examples:
 - 회사에서 회의가 있을 때 정장을 입어요. — I wear a suit when there's a meeting at work.
 - 추수감사절하고 크리스마스 때 가족을 만나요. — I see my family at Thanksgiving and Christmas.
 - 가끔 피곤할 때 집중이 안 돼요. — Sometimes when I'm tired, I can't focus.
+- 스트레스를 받을 때 낚시를 해요. — When I get stressed, I go fishing.
+- 퇴근할 때 기분이 좋아요. = 퇴근할 때마다 기분이 좋아요. — I'm in a good mood when (every time) I finish work.
+- 일본에 갔을 때 꼭 오마카세를 먹고 싶어요. — When I go to Japan, I really want to have omakase.
+- 대학교 때 미식축구 경기가 있을 때 가끔 비행기를 날렸어요. — In college, when there was a football game, I sometimes flew a plane.
 
 ### G21 After and before: -(으)ㄴ 후에, -기 전에
 
@@ -435,6 +459,7 @@ Examples:
 - 가끔 운전해서 애틀랜타에 가요. — Sometimes I drive to Atlanta.
 - 시험이 끝나고 노스캐롤라이나에 갔어요. — After the exam, I went to North Carolina.
 - 폭포를 보고 등산을 했어요. — We saw a waterfall and then went hiking.
+- 폭포를 보고 나서 여자친구하고 할로윈 코스튬을 입었어요. — After we saw the waterfall, my girlfriend and I put on Halloween costumes.
 
 ### G23 Once you've done it: -고 나면
 
@@ -547,12 +572,14 @@ Examples:
 - -아/어서 + 그런지 = maybe because. You're guessing the reason. Nouns: N(이)라서 그런지.
 - The result often ends in -네요 (G48) when you've just noticed it.
 - vs -아/어서: -아/어서 states the reason as fact.
+- Your guessed reason goes before 그런지, and what you noticed comes after it: 경기가 인기가 많아서 그런지 사람이 너무 많았어요. Don't put what you saw (사람이 많다) before 그런지. See mistake 54.
 
 Examples:
 
 - 어제 잠을 못 자서 그런지 오늘 너무 피곤해요. — Maybe because I couldn't sleep last night, I'm really tired today.
 - 사고가 나서 그런지 차가 너무 막히네요! — Maybe there was an accident; traffic is terrible!
 - 우리 동네는 숲이 많아서 그런지 공기가 깨끗해요. — Maybe because there are lots of woods, the air in my neighborhood is clean.
+- 미식축구 경기가 인기가 많아서 그런지 사람이 너무 많았어요. — Maybe because the football game was popular, there were too many people.
 
 ### G29 You see: -거든요
 
@@ -678,6 +705,7 @@ Cover the Answer column. Say each sentence in Korean, then check.
 | 17 | Thanks to my girlfriend, my Korean has improved. | 여자친구 덕분에 한국어 실력이 늘었어요. | G61 |
 | 18 | I overslept, so I was late for my meeting. (casual) | 늦잠을 자 가지고 회의에 늦었어요. | G66 |
 | 19 | I ate a big lunch, so I'm really full. (casual) | 점심을 많이 먹어 가지고 너무 배가 불러요. | G66 |
+| 20 | Maybe because the football game was popular, there were too many people. | 미식축구 경기가 인기가 많아서 그런지 사람이 너무 많았어요. | G28 |
 
 ## Unit 5 · Can, may, must, must not, if
 
@@ -797,11 +825,19 @@ Examples:
 ### G39 Decided: -기로 하다
 
 - Verb stem + 기로 했어요 = (I) decided to, or (we) agreed to. It is almost always past.
+- Teacher's comparison: -(으)려고 하다 = a plan you're thinking about; -기로 하다 = a decision or a promise. "오늘 오후에 뭐 해요?" can be answered 쇼핑하기로 했어요, 쇼핑하려고 해요 or 쇼핑할 거예요.
+- With another person it means you made plans together: 여자친구를 만나기로 했어요 = 약속이 있어요.
+- -기로 했었어요 = had decided, but it's off now: 일본에 가기로 했었어요 (= 못 가요).
 
 Examples:
 
 - 내년에 여자친구하고 한국 여행을 가기로 했어요. — My girlfriend and I decided to take a trip to Korea next year.
 - 다음 주 일요일에 친구를 만나기로 했어요. — I made plans to meet a friend next Sunday.
+- 내일은 헬스장에서 운동하기로 했어요. — Tomorrow I've decided to work out at the gym.
+- 오늘 저녁에 여자친구를 만나기로 했어요. — I made plans to meet my girlfriend tonight.
+- 이번 주말에는 일본에 가기로 했었어요. — I had decided to go to Japan this weekend (but now I can't).
+- 날씨가 추울까 봐 패딩에다가 장갑을 챙기기로 했어요. — I decided to pack a puffer jacket and gloves in case it's cold.
+- 일본 날씨가 따뜻해서 티셔츠에다가 바지를 입기로 했어요. — The weather in Japan is warm, so I decided to wear a T-shirt and pants.
 
 ### G40 Purpose: -(으)러, -(으)려고, -기 위해서
 
@@ -814,12 +850,14 @@ Examples:
 - Form: after 받침 -으러, -으려고 (먹으러); after a vowel or ㄹ -러, -려고 (하러, 놀러).
 - N을 위한 + noun: 저를 위한 선물.
 - You study to get a certificate: 자격증을 따기 위해서 공부해요. For a plain trip, just say 플로리다에 여행 가요, not 여행을 위해서.
+- N을/를 위해서 needs a noun (할로윈을 위해서 = for Halloween). To give the thing you want to do, use a verb + -(으)려고: 산하고 폭포를 보려고 갔어요.
 
 Examples:
 
 - 지난 주말에 친구들하고 블루리지에 낚시하러 갔어요. — Last weekend I went fishing at Blue Ridge with friends.
 - 살을 빼기 위해서 매일 달리고 싶어요. — I want to run every day to lose weight.
 - 다음 주말에 엄마 생일을 위해서 선물을 준비할 거예요. — Next weekend I'll get a gift ready for my mom's birthday.
+- (teacher) 할로윈을 위해서 테네시에 갔어요? 아니요, 산하고 폭포를 보려고 갔어요. — Did you go to Tennessee for Halloween? No, I went to see the mountains and waterfalls.
 
 ### G41 If you want to: -(으)려면 … -아/어야 돼요
 
@@ -872,6 +910,9 @@ Examples:
 - The two parts can have different subjects: 여자친구가 감기에 안 걸리도록 (제가) 따뜻한 차를 만들었어요. -(으)려고 (G40) needs the same subject.
 - Often before a request or a promise: -도록 조심하세요, -도록 -(으)세요, -도록 -(으)ㄹ게요.
 - -(으)ㄹ까 봐 (G51) is a worry; 안 V-도록 is the goal: 늦을까 봐 = worried I'd be late; 안 늦도록 = so I won't be late. See mix-up 42.
+- Teacher's note: 않도록 is said \[안토록\] (ㅎ + ㄷ → ㅌ). -도록 can follow -기 쉽다 too: 찾아보기 쉽도록 = so it's easy to find.
+- Adjectives and states work too: 건강하도록 (so I stay healthy), 잠이 잘 오도록 (so I fall asleep easily), 환기가 잘 되도록 (so the air flows well).
+- Teacher's note (Nov 5): 늦지 않도록 is said \[늗찌 안토록\]; 놓치지 않도록 is said \[노치지 안토록\]. The same goal with a worry: 막차를 놓치지 않도록 = so I don't miss it; 막차를 놓칠까 봐 = worried I'll miss it.
 
 Examples:
 
@@ -883,6 +924,19 @@ Examples:
 - 부모님께서 걱정하지 않도록 전화를 자주 하세요. — Call your parents often so they don't worry.
 - 잘 들리도록 큰 소리로 말해 주세요. — Please speak loudly so I can hear well.
 - 음식이 남지 않도록 조금만 요리하세요. — Cook just a little so there's no food left over.
+- 음식이 상하지 않도록 냉장고에 넣으세요. — Put the food in the fridge so it doesn't spoil.
+- 실수하지 않도록 여러 번 연습했어요. — I practiced several times so I wouldn't make mistakes.
+- 나중에 후회하지 않도록 무리한 부탁은 거절하는 게 좋아요. — It's better to turn down unreasonable favors so you won't regret it later.
+- 회의 자료를 찾아보기 쉽도록 바탕화면에 저장해 놓았어요. — I saved the meeting materials on the desktop so they'd be easy to find.
+- 길을 잃어버리지 않도록 항상 구글 맵을 사용하고 있어요. — I always use Google Maps so I don't get lost.
+- 회의 때 졸지 않도록 미리 커피를 마셨어요. — I drank coffee beforehand so I wouldn't doze off in the meeting.
+- 테네시에 폭포를 보러 갔을 때, 산에서 미끄러지지 않도록 조심했어요. — When I went to Tennessee to see the waterfall, I was careful not to slip on the mountain.
+- 할로윈 분위기를 느낄 수 있도록 코스튬을 준비했어요. — I got costumes ready so we could feel the Halloween mood.
+- 밤에 잠이 잘 오도록 오후에 커피를 안 마셔요. — I don't drink coffee in the afternoon so I can fall asleep at night.
+- 건강하도록 매일 러닝을 해요. — I run every day to stay healthy.
+- 중요한 약속을 잊어버리지 않도록 노트북에 메모해요. — I write important appointments on my laptop so I don't forget them.
+- 일본에서 일본어를 조금 할 수 있도록 여행 가기 전에 일본어를 공부할 거예요. — I'll study Japanese before the trip so I can speak a little in Japan.
+- 막차를 놓치지 않도록 일찍 출발해야 돼요. — I have to leave early so I don't miss the last train.
 
 ### Unit 6 self-test
 
@@ -905,6 +959,10 @@ Cover the Answer column. Say each sentence in Korean, then check.
 | 13 | I want to try scuba diving. | 스쿠버다이빙을 해 보고 싶어요. | G43, G44 |
 | 14 | I got up early so I wouldn't be late for my meeting. | 회의에 안 늦도록 일찍 일어났어요. | G65 |
 | 15 | Please speak loudly so I can hear well. | 잘 들리도록 큰 소리로 말해 주세요. | G65, G58 |
+| 16 | Put the food in the fridge so it doesn't spoil. | 음식이 상하지 않도록 냉장고에 넣으세요. | G65 |
+| 17 | I drank coffee beforehand so I wouldn't doze off in the meeting. | 회의 때 졸지 않도록 미리 커피를 마셨어요. | G65 |
+| 18 | I run every day to stay healthy. | 건강하도록 매일 러닝을 해요. | G65 |
+| 19 | I had decided to go to Japan this weekend (but now I can't). | 이번 주말에 일본에 가기로 했었어요. | G39 |
 
 ## Unit 7 · Experience, wishes and reactions
 
@@ -923,6 +981,7 @@ Examples:
 - 일본에 갔을 때 1인 식당에 가 봤어요. — When I went to Japan, I tried a restaurant for solo diners.
 - 스쿠버다이빙을 안 해 봤어요. — I haven't tried scuba diving.
 - 직접 만든 빵은 더 맛있으니까 꼭 만들어 봐요. — Homemade bread tastes better, so be sure to try making it. (보 + 아요 = 봐요)
+- 찾아보세요. 냉장고에 있을 거예요. — Try looking for it. It should be in the fridge.
 
 ### G45 Have you ever: -(으)ㄴ 적이 있다/없다
 
@@ -935,12 +994,16 @@ Examples:
 - 어렸을 때 스쿨버스를 잘못 탄 적이 있어요. — When I was little, I once got on the wrong school bus.
 - 장기 자랑 대회에서 노래를 부른 적이 있어요. — I've sung at a talent show.
 - 한국에 가 본 적이 없어요. — I've never been to Korea.
+- 친구가 무리한 부탁을 해서 거절한 적이 있어요? — Have you ever turned a friend down because they asked too big a favor?
+- (teacher) 바다에서 낚시를 해 본 적 있어요? 아니요, 없어요. — Have you ever fished in the ocean? No, I haven't.
 
 ### G46 I hope: -았/었으면 좋겠다
 
 - Form: past stem + 으면 좋겠어요: 갔으면, 잡았으면, 잘했으면, 안 왔으면. The past form is used even for future wishes. -(으)면 좋겠어요 (안 오면 좋겠어요) is also correct.
 - Use it for things you can't fully control (weather, results, other people) and for gentle requests: 약속을 잘 지켰으면 좋겠어요.
 - vs -고 싶다: a direct desire for your own action.
+- Looking back: -았/었으면 좋았을 것 같아요 = it would have been nice if … (I wish I had): 코비드 때 집을 샀으면 좋았을 것 같아요.
+- A wish for what someone else does: -아/어 줬으면 좋겠어요: 여자친구가 농구 경기 티켓을 사 줬으면 좋겠어요.
 
 Examples:
 
@@ -950,16 +1013,21 @@ Examples:
 - 피클볼을 잘 쳤으면 좋겠어요. — I wish I were good at pickleball.
 - 다음에는 피클볼에서 이기면 좋겠어요. — I hope I win at pickleball next time.
 - 앞으로 빵을 만드는 일을 하면 좋겠어요. — In the future, I'd like to work making bread.
+- 도쿄에서 오마카세를 먹으면 좋겠어요. — I'd love to have omakase in Tokyo.
+- 코비드 때 집을 샀으면 좋았을 것 같아요. — I wish I had bought a house during COVID.
+- 이번 달에 제 생일이 있어요. 여자친구가 농구 경기 티켓을 사 줬으면 좋겠어요. — My birthday is this month. I hope my girlfriend buys me basketball tickets.
 
 ### G47 Almost: -(으)ㄹ 뻔했다
 
 - Form: after 받침 -을 뻔했어요 (죽을 뻔); after a vowel or ㄹ -ㄹ 뻔했어요 (다칠 뻔, 잃어버릴 뻔). It is almost always past.
 - Usually something bad that nearly happened. 큰일 날 뻔했어요 = that was a close call. 죽을 뻔했어요 can be an exaggeration.
+- It can also be something good you nearly got to do, then didn't: 볼 뻔했어요, 만날 뻔했어요. -지만 can add what stopped you.
 
 Examples:
 
 - 플로리다에서 운전하다가 길을 잃어버릴 뻔했어요. — While driving in Florida, I almost got lost.
 - 어제 넘어져서 다칠 뻔했어요. — I fell yesterday and almost got hurt.
+- 대학교에서 유명한 농구 선수를 볼 뻔했지만 너무 늦게 가서 못 봤어요. — In college I almost got to see a famous basketball player, but I went too late and missed him.
 
 ### G48 Reactions: -네요, -더라고요, -지요?
 
@@ -972,11 +1040,13 @@ Examples:
 - All three attach to any stem. Nouns: N(이)네요, N(이)더라고요.
 - -더라고요 is for what you observed or felt, not your own deliberate actions.
 - Fast: 빠르다 is the adjective (정말 빠르네요); 빨리 is the adverb and needs a verb (정말 빨리 달리네요).
+- -지 않아요? also checks what you think is true ("isn't it?"): 오늘은 일이 많지 않아요? = Aren't you busy today? Answer it like a normal question: 네, 발표를 해야 돼요.
 
 Examples:
 
 - 어제 백룸을 봤거든요. 진짜 무섭더라고요. — I watched Backrooms yesterday. It was really scary.
 - 요즘 날씨가 너무 추워졌더라고요. — I noticed it's gotten really cold lately.
+- 지금은 가을이라서 단풍잎이 예쁘더라고요. — It's fall now, and I noticed the autumn leaves were really pretty.
 - 파란색 티셔츠가 더 시원해 보이지요? — The blue T-shirt looks cooler to wear, doesn't it?
 
 ### Unit 7 self-test
@@ -996,6 +1066,9 @@ Cover the Answer column. Say each sentence in Korean, then check.
 | 9 | Wow, it's been a long time! | 정말 오랜만이네요! | G48 |
 | 10 | I found Korean difficult. | 한국어가 어렵더라고요. | G48 |
 | 11 | It's really hot these days, isn't it? | 요즘 정말 덥지요? | G48 |
+| 12 | Aren't you busy today? | 오늘은 일이 많지 않아요? | G48 |
+| 13 | I wish I had bought a house during COVID. | 코비드 때 집을 샀으면 좋았을 것 같아요. | G46 |
+| 14 | I almost got to see a famous basketball player. | 유명한 농구 선수를 볼 뻔했어요. | G47 |
 
 ## Unit 8 · Questions inside sentences, worries, quoting, making nouns
 
@@ -1059,6 +1132,7 @@ Examples:
 - 운동할 때 목이 마를까 봐 미리 물을 마셔요. — I drink water ahead of time so I won't get thirsty when I work out.
 - 식당 음식이 입맛에 안 맞을까 봐 도시락을 싸요. — I pack a lunch in case the restaurant food doesn't suit my taste.
 - 날씨가 흐려서 비가 올까 봐 우산을 챙겼어요. — It was cloudy, so I packed an umbrella in case it rained.
+- 막차를 놓칠까 봐 일찍 출발해야 돼요. — I have to leave early because I'm worried I'll miss the last train. (Compare 막차를 놓치지 않도록, G65.)
 - 감기에 걸릴까 봐 옷을 따뜻하게 입었어요. — I dressed warmly because I was worried I'd catch a cold.
 - 여자친구가 감기에 걸릴까 봐 따뜻한 차를 만들었어요. — I made warm tea because I was worried my girlfriend would catch a cold.
 - 선생님한테 혼날까 봐 미리 숙제를 했어요. — I did my homework ahead of time because I was worried the teacher would scold me.
@@ -1081,16 +1155,22 @@ Examples:
 - N(이)라고 해요 also names or introduces something: 저는 대런이라고 해요. 'Hello'를 한국어로 뭐라고 해요? → '안녕하세요'라고 해요. 받침 → 이라고, no 받침 → 라고.
 - News you heard: -ㄴ/는다고 들었어요 = I heard that …: 올해 눈이 온다고 들었어요.
 - About yourself, just use N이에요/예요: 저는 개발자예요. N(이)라고 해요 gives the name of a job: 차를 수리하는 사람을 정비공이라고 해요.
+- -다는 + noun = the news, rumor or story that …: adjectives and 있다/없다 -다는 (맛있다는), verbs -ㄴ/는다는 (온다는), past -았/었다는 (샀다는), nouns (이)라는. Most common: -다는 소식을 듣고 = after hearing the news that …
 
 Examples:
 
 - 친구들은 제가 부지런하고 활발하대요. — My friends say I'm diligent and outgoing.
 - 여자친구가 오늘 일이 많아서 바쁘대요. — My girlfriend says she's busy today with a lot of work.
+- 오늘 비 온대요! 그래요? 비 맞지 않도록 우산 가져갈게요. — I heard it's going to rain today! Really? I'll take an umbrella so I don't get rained on.
 - 한국에서 경치가 가장 아름다운 곳은 제주도래요. — They say Jeju has the most beautiful scenery in Korea.
 - 동료들이 점심을 같이 먹자고 했어요. — My coworkers suggested having lunch together.
 - 'Developer'는 한국어로 개발자라고 해요. — 'Developer' is 개발자 in Korean.
 - 올해 조지아에 눈이 온다고 들었어요. — I heard it will snow in Georgia this year.
 - 부모님에게 아프다고 말하지 않았어요. — I didn't tell my parents I was sick.
+- 친구가 집을 샀다는 소식을 듣고 기분이 좋았어요. — I was happy to hear the news that my friend bought a house.
+- 엄마는 제가 시험을 잘 봤다는 소식을 듣고 흐뭇하게 웃었어요. — When Mom heard I did well on the test, she smiled, pleased.
+- 제 여자친구는 그 카페 빵이 맛있다는 소문을 듣고 그 카페에 가고 싶어했어요. — My girlfriend heard the bread at that café is good and wanted to go there.
+- 카피바라를 볼 수 있다는 소식을 듣고 기분이 좋았어요. — I was happy to hear we could see capybaras.
 
 ### G53 Making nouns: -는 것, -기
 
@@ -1101,6 +1181,8 @@ Examples:
 - Teacher's note: -기 works like English -ing for naming hobbies: 빵 만들기, 기타 치기, 책 읽기, 사진 찍기, 스포츠 보기. 쉬다 → 쉬기.
 - ㄹ stems drop ㄹ before -는: 놀다 → 노는 것. Compare two choices: 집에서 쉬는 것 vs 밖에서 노는 것.
 - -기 싫다 = don't want to: 일하기 싫어요. Before a noun: 하기 싫은 일 (things I don't want to do).
+- V-기 쉽다 / 어렵다 = easy / hard to V: 들어주기 쉬운 부탁, 들어주기 어려운 부탁, 들어주기가 어려워요. With -도록 (G65): 찾아보기 쉽도록.
+- In speech -는 것이 shortens to -는 게: 거절하는 것이 좋아요 = 거절하는 게 좋아요 (it's better to …).
 
 Examples:
 
@@ -1114,6 +1196,9 @@ Examples:
 - 저는 집에서 쉬는 것을 더 좋아해요. — I prefer resting at home.
 - 날씨가 좋으면 폭포를 보는 것을 추천해요. — If the weather is nice, I recommend seeing a waterfall.
 - 휴일에 일하기 싫어요. — I don't want to work on my days off.
+- 친구가 들어주기 어려운 부탁을 했어요. — My friend asked me a favor that's hard to do.
+- 피클볼은 배우기 쉬워요. — Pickleball is easy to learn.
+- 운동하기 전에 스트레칭을 하는 게 좋아요. — It's good to stretch before working out.
 
 ### G62 Guessing questions: -(으)ㄹ까요?
 
@@ -1152,6 +1237,8 @@ Cover the Answer column. Say each sentence in Korean, then check.
 | 14 | I put on sunscreen because I was worried I'd get sunburned. | 피부가 탈까 봐 선크림을 발랐어요. | G51 |
 | 15 | I packed a raincoat in case it rains. | 비가 올까 봐 비옷을 준비했어요. | G51 |
 | 16 | I drink water ahead of time so I won't get thirsty when I work out. | 운동할 때 목이 마를까 봐 미리 물을 마셔요. | G51 |
+| 17 | My friend asked me a favor that's hard to do. | 친구가 들어주기 어려운 부탁을 했어요. | G53 |
+| 18 | I was happy to hear the news that my friend bought a house. | 친구가 집을 샀다는 소식을 듣고 기분이 좋았어요. | G52 |
 
 ## Unit 9 · Requests, giving and politeness
 
@@ -1161,12 +1248,16 @@ Cover the Answer column. Say each sentence in Korean, then check.
 - Requests, from plain to most polite: -아/어 주세요 → -아/어 주실래요? → -아/어 주시겠어요? Also -아/어 줄 수 있어요?
 - Soften with 좀 and a lead-in: 죄송하지만, 혹시, 시간 있으면, 부탁이 있는데요. Answers: 무슨 부탁이에요? / 뭘 도와 드릴까요? / 당연하지요!
 - 돕다 vs 도와주다: 돕다 = to help in general (ㅂ irregular: 도와요, 도울게요); 도와주다 = to help someone as a favor (도와줘요, 도와줄게요).
+- Favors: 부탁이 있어요 → 제 부탁 좀 들어줄 수 있어요? Yes: 네, 그 부탁을 들어줄 수 있어요. No: 들어주고 싶은데 들어줄 수 없어요 / 저한테는 무리한 부탁이에요. Turning down a big favor = 거절하다.
 
 Examples:
 
 - 저는 여자친구의 영어 공부를 도와줬어요. — I helped my girlfriend with her English.
 - 회사에서 사 줬어요. — My company bought it for me.
 - 죄송하지만 이것 좀 봐 주시겠어요? — Sorry, could you take a look at this?
+- 수업 시간 좀 바꿔 주세요. 제가 일이 생겼어요. — Could you change the lesson time? Something came up.
+- 대런, 부탁이 있어요. 3일만 제 고양이 좀 챙겨 주세요. — Darren, I have a favor to ask. Please look after my cat for just three days.
+- 미안해요. 들어주고 싶은데 들어줄 수 없어요. — Sorry. I'd like to help, but I can't.
 
 ### G55 Speech levels and honorifics
 
@@ -1209,6 +1300,8 @@ Examples:
 - N 대신에 = instead of N: 술 대신에. V-는 대신에 = instead of V-ing: 자전거를 타는 대신에.
 - N에다가 N까지 = on top of N, even N (stressing how much). You can stack several: 애피타이저에다가 스테이크에다가 치즈케이크까지.
 - The verb must fit every noun: 비에다가 눈까지 왔어요 works, but 비에다가 바람까지 왔어요 does not (wind 불다).
+- For clothes, N에다가 N = N plus N, what you wear together, with no 까지: 티셔츠에다가 청바지를 입었어요. 다가 can drop: 티셔츠에 바지를 입었어요.
+- With clothes the verb fits the last item: 정장에다가 구두를 신으세요, 스웨터에다가 목도리를 해요, 패딩에다가 장갑을 껴요 (V30).
 
 Examples:
 
@@ -1216,6 +1309,11 @@ Examples:
 - 내일 비가 오면 자전거를 타는 대신에 집에 있을 거예요. — If it rains tomorrow, I'll stay home instead of biking.
 - 거실에다가 부엌하고 화장실까지 청소했어요. — I cleaned the living room, and even the kitchen and bathroom.
 - 어제 화장실에다가 거실까지 다 청소했어요. — Yesterday I cleaned the bathroom and even the living room.
+- 모자에다가 선글라스를 썼어요. — I wore a hat and sunglasses.
+- 낚시를 할 때는 모자에다가 재킷을 입어요. — When I fish, I wear a hat and a jacket.
+- 운동을 할 때는 운동복에다가 운동화를 신어요. — When I work out, I wear workout clothes and sneakers.
+- 내일 회의가 있어요? 정장에다가 구두를 신으세요. — You have a meeting tomorrow? Wear a suit and dress shoes.
+- 추울 때는 패딩에다가 장갑을 껴요. — When it's cold, I wear a puffer jacket and gloves.
 
 ### G58 Verb pairs: you do it vs it happens
 
@@ -1227,13 +1325,21 @@ Examples:
 | 끄다 (turn off) | 꺼지다 (go off) | 불을 껐어요 · 불이 꺼졌어요 |
 | 바꾸다 (change it) | 바뀌다 (it changes) | 수업 시간을 바꿨어요 · 근무 시간이 바뀌었어요 |
 | 정하다 (set, decide) | 정해지다 (be set, be decided) | 여행 날짜를 정했어요 · 여행 날짜가 정해졌어요 |
+| 열다 (open) | 열리다 (come open) | 제가 문을 열었어요 · 뒤에 옷장 문이 열렸어요 |
+| 잡다 (catch) | 잡히다 (be caught) | 경찰이 도둑을 잡아요 · 도둑이 경찰한테 잡혔어요 |
+| 안다 (hug, hold) | 안기다 (be held) | 엄마가 아기를 안아요 · 아기가 엄마한테 안겨요 |
+| 날리다 (fly it) | 날다 (fly) | 비행기를 날려요 · 비행기가 날아요 |
 
 - With the "it happens" verb, the thing is the subject and takes 이/가.
+- Many "it happens" verbs add 이, 히, 리 or 기 to the stem: 열리다, 잡히다, 읽히다, 안기다. The person who does it takes 한테: 도둑이 경찰한테 잡혔어요. Your teacher plans to teach these next lesson.
+- 날다 / 날리다 goes the other way: 날다 = it flies, 날리다 = you fly it. 날다 is an ㄹ stem: 날아요.
 
 Examples:
 
 - 회사 근무 시간이 바뀌어서 수업 시간을 바꿨어요. — My work hours changed, so I changed my class time.
 - 어두워서 불을 켰어요. — It was dark, so I turned on the light.
+- 바람이 문을 열었어요. 그래서 뒤에 옷장 문이 열렸어요. — The wind opened the door, so the closet door behind me came open.
+- 저는 친구한테 마음을 읽혔어요. — My friend read my mind.
 
 ### Unit 9 self-test
 
@@ -1253,3 +1359,52 @@ Cover the Answer column. Say each sentence in Korean, then check.
 | 10 | I bought fishing line, and even a fishing chair. | 낚싯줄에다가 낚시 의자까지 샀어요. | G57 |
 | 11 | Can you hear me well? | 잘 들려요? | G58 |
 | 12 | My work hours changed. | 회사 근무 시간이 바뀌었어요. | G58 |
+| 13 | I'd like to do that favor, but I can't. | 들어주고 싶은데 들어줄 수 없어요. | G54 |
+| 14 | The thief got caught by the police. | 도둑이 경찰한테 잡혔어요. | G58 |
+| 15 | When I fish, I wear a hat and a jacket. | 낚시를 할 때는 모자에다가 재킷을 입어요. | G57 |
+
+## Unit 10 · Getting things ready and sharing jobs
+
+### G67 Do it and leave it: -아/어 놓다, N이/가 들어 있다
+
+- Form: verb stem + -아/어 놓다: 넣다 → 넣어 놓다, 저장하다 → 저장해 놓다, 준비하다 → 준비해 놓다. Past: -아/어 놓았어요.
+- Meaning: do V and leave it that way, so the result stays. Often for getting things ready ahead of time.
+- Compare: 넣었어요 = I put it in (the action) · 넣어 놓았어요 = I put it in and it stays there (action + result) · 들어 있어요 = it's inside (the state now).
+- N이/가 들어 있어요 = something is inside. N을/를 넣어 놓았어요 = someone put it in there. See mix-up 45.
+- A past question gets a past answer: 서랍에 뭐를 넣어 놓았어요? → 드라이버를 넣어 놓았어요.
+
+Examples:
+
+- 바나나가 상하지 않도록 냉장고에 넣어 놓았어요. — I put the bananas in the fridge so they wouldn't spoil.
+- 회의 자료를 바탕화면에 저장해 놓았어요. — I saved the meeting materials on the desktop.
+- 책상 서랍에 드라이버하고 USB가 들어 있어요. — There's a screwdriver and a USB drive in my desk drawer.
+- 낚시 가기 전에 낚싯줄을 미리 준비해 놓았어요. — Before going fishing, I got my fishing line ready ahead of time.
+- 고양이 밥을 미리 사 놓았어요. — I bought cat food ahead of time.
+
+### G68 I'll do this, so you do that: -(으)ㄹ 테니까
+
+- Form: after a vowel -ㄹ 테니까 (사다 → 살 테니까, 끓이다 → 끓일 테니까); after 받침 -을 테니까 (먹을 테니까); ㄹ stems add only 테니까 (만들다 → 만들 테니까).
+- Meaning: I'll do V, so (you) do … The first part is my plan or promise; the second part is a request, suggestion or instruction to the other person.
+- The first part usually has 제가 / 내가. The second part ends in -(으)세요, -아/어 주세요, or 반말 -아/어.
+- Works well with -도록 (G65): 잘 이해할 수 있도록 다시 설명해 줄 테니까 잘 들으세요.
+- -도록 = the goal; -(으)ㄹ 테니까 = my plan + your part. See mix-up 46.
+
+Examples:
+
+- 제가 밥을 살 테니까 마크 씨는 커피를 사세요. — I'll pay for the meal, so Mark, you buy the coffee.
+- 내가 라면을 끓일 테니까 너는 상을 차려. — I'll cook the ramen, so you set the table.
+- 내가 김치찌개를 만들 테니까 너는 밥을 해 줘. — I'll make the kimchi stew, so you make the rice.
+- 블루리지에 갈 때 내가 운전할 테니까 형은 집에 올 때 운전해. — I'll drive on the way to Blue Ridge, so you drive on the way home.
+
+### Unit 10 self-test
+
+Cover the Answer column. Say each sentence in Korean, then check.
+
+| # | Say it in Korean | Answer | See |
+| --- | --- | --- | --- |
+| 1 | I put the bananas in the fridge (and left them there). | 바나나를 냉장고에 넣어 놓았어요. | G67 |
+| 2 | There's a screwdriver in my desk drawer. | 책상 서랍에 드라이버가 들어 있어요. | G67 |
+| 3 | I saved the meeting materials on the desktop. | 회의 자료를 바탕화면에 저장해 놓았어요. | G67 |
+| 4 | I'll pay for the meal, so Mark, you buy the coffee. | 제가 밥을 살 테니까 마크 씨는 커피를 사세요. | G68 |
+| 5 | (to a friend) I'll cook the ramen, so you set the table. | 내가 라면을 끓일 테니까 너는 상을 차려. | G68, G55 |
+| 6 | I'll explain it again so you can understand, so listen carefully. | 잘 이해할 수 있도록 다시 설명해 줄 테니까 잘 들으세요. | G68, G65 |

@@ -297,7 +297,7 @@ Words are grouped by topic. Cover the 한국어 column, read the English, and sa
 | 추천하다 | to recommend |  |
 | 잔 | cup (counter) | 커피 한두 잔 |
 
-## Sets V12–V25
+## Sets V12–V30
 
 ### V12 Shopping and money
 
@@ -641,3 +641,147 @@ Words are grouped by topic. Cover the 한국어 column, read the English, and sa
 | 불면증 | insomnia | 불면증에 걸린 것 같아요 |
 | 딸 | daughter | 딸이 한 명밖에 없어요 |
 | 조각 | piece, slice | 피자를 네 조각이나 먹었어요 · 한 판 (V22) |
+
+### V26 Favors, drawers and getting ready
+
+| 한국어 | English | Notes |
+| --- | --- | --- |
+| 부탁(을) 들어주다 | to do someone a favor | 부탁이 있다 (V14) · 제 부탁 좀 들어줄 수 있어요? |
+| 무리한 부탁 | an unreasonable request, too big a favor | 저한테는 무리한 부탁이에요 |
+| 거절하다 | to turn down, say no | 무리한 부탁은 거절하는 게 좋아요 |
+| 부담스럽다 | to feel like too much, a burden | ㅂ irregular: 부담스러워요 |
+| 후회하다 | to regret | said \[후외아다\] · 나중에 후회하지 않도록 |
+| 무례하다 | to be rude | 무례한 사람 · don't mix up with 무리한 |
+| 일이 생기다 | something comes up | 제가 일이 생겼어요 |
+| 사실 | actually, to tell the truth | 사실 고양이 알레르기가 있어요 |
+| 냉장고 | refrigerator | 바나나를 냉장고에 넣었어요 |
+| 서랍 | drawer | 책상 서랍 · 옷장 서랍 · 냉장고 서랍 |
+| 넣다 | to put in | 넣어 놓다 (G67) |
+| 드라이버 | screwdriver | 책상 서랍에 드라이버가 들어 있어요 |
+| 줄자 | measuring tape | 여러 가지 줄자 |
+| 바탕화면 | computer desktop | 바탕화면에 저장해 놓았어요 |
+| 저장하다 | to save (a file) | 파일을 저장해 놓았어요 |
+| 회의 자료 | meeting materials | 자료 = materials, data |
+| 서류 | documents, paperwork | 필요한 서류를 다 준비해 놓았어요 |
+| 출장 | business trip | 출장을 가다 · 출장 준비 |
+| 익다 | to be cooked through | 고기가 잘 익도록 · 익도록 |
+| 계란 프라이 | fried egg | 계란 프라이를 만들어 줘 |
+
+### V27 Halloween, trips and a desert island
+
+| 한국어 | English | Notes |
+| --- | --- | --- |
+| 이제 | now (at this point) | 아니요, 이제 해야 돼요 |
+| 멋지다 | to be nice, cool, great | 멋진 폭포예요 |
+| 할로윈 옷 | Halloween costume | 마리오와 루이지 옷을 입었어요 |
+| 걱정되다 | to be worried | 되 + 어요 = 걱정돼요 |
+| 기분이 좋다 | to be in a good mood | 퇴근할 때 기분이 좋아요 |
+| 두통약 · 복통약 | headache medicine · stomach medicine | 약 = medicine · 두통 (V10) |
+| 현지 음식 | local food | 현지 = local · 현지 음식을 먹을 때마다 행복해요 |
+| 오마카세 | omakase (chef's choice sushi) | 긴자에서 오마카세를 먹고 싶어요 |
+| 지갑 | wallet | 지갑을 잃어버렸어요 |
+| 꽉 차 있다 | to be full, packed | 지갑이 꽉 차 있으면 |
+| 꽉 채우다 | to fill up | 지갑을 꽉 채워서 가세요 |
+| 상상(을) 하다 | to imagine | 상상해 보세요 |
+| 무인도 | deserted island | 무인도에서 혼자 살아요 |
+| 물건 | thing, item (an object) | 세 가지 물건 |
+| 가져가다 | to take along | 무인도에 낚싯대를 가져갈 거예요 |
+| 낚싯대 | fishing rod | 낚시 + 대 |
+| 강아지 | puppy, dog | 여자친구의 강아지 |
+| 다람쥐 | squirrel | 강아지가 다람쥐를 쫓아요 |
+| 쫓다 | to chase | 쫓아요 |
+| 별 | star | 밤에 별을 볼 거예요 |
+| 긍정적으로 생각하다 | to think positively | 긍정적이다 (V19) ↔ 부정적이다 |
+| 황다랑어 | yellowfin tuna | 황다랑어를 잡고 싶어요 |
+| 멀다 | to be far | ㄹ stem: 멀어요 · 바다가 너무 멀어요 |
+| 넓다 | to be wide, big (an area) | 바다가 넓어요 · don't mix up with 멀다 |
+
+### V28 Tennessee trip and not missing the train
+
+| 한국어 | English | Notes |
+| --- | --- | --- |
+| 다녀오다 | to go and come back (from a trip) | 여행 다녀와서 너무 피곤했어요 |
+| 피곤하다 | to be tired | 운전을 오래 해서 피곤했어요 |
+| 차로 | by car | 테네시에 차로 갔어요 |
+| (시간이) 걸리다 | to take (time) | 여기에서 테네시까지 차로 3시간 걸려요 · not 감기에 걸리다 (V10) |
+| 코스튬 | costume | = 할로윈 옷 (V27) · 코스튬을 준비했어요 |
+| 단풍 · 단풍잎 | fall colors · autumn leaf | 가을이라서 단풍잎이 예뻐요 |
+| 운전하다 | to drive | 저는 운전을 안 좋아하는 편이에요 |
+| 불안하다 · 불안해하다 | to feel nervous, uneasy · (someone else) gets nervous | 남편이 불안해해요 (G18) |
+| 조심하다 | to be careful | 늦지 않도록 조심하세요 |
+| 길을 잃어버리다 | to get lost | 길을 잃어버리지 않도록 |
+| 내비게이션 | GPS navigation | your teacher also writes 네비게이션 · 구글 맵을 사용해요 |
+| 미끄러지다 | to slip | a verb · 미끄럽다 (V8) = to be slippery |
+| 졸다 | to doze off, nod off | ㄹ stem: 졸아요 · 회의 때 졸지 않도록 |
+| 환기(가) 잘 되다 | to air out well, be well ventilated | 환기가 잘 되도록 창문을 열어 주세요 |
+| 창문을 열다 | to open the window | ㄹ stem: 열어 주세요 |
+| 메모하다 | to make a note, jot down | 노트북에 메모해요 |
+| 노트북 | laptop | 노트 = a paper notebook |
+| 야채 | vegetables | 야채 요리 · 건강하도록 야채를 먹어요 |
+| 막차 | the last train or bus | 막차를 놓치다 |
+| 시간표 | timetable | 지하철 시간표 |
+| 확인하다 | to check | 시간표를 잘 확인해요 |
+| 새로운 사람 | someone new, new people | 새롭다 (ㅂ irregular) → 새로운 |
+
+### V29 Feelings, news and game day
+
+| 한국어 | English | Notes |
+| --- | --- | --- |
+| 흐뭇하다 | to feel warmly pleased (watching someone else) | 엄마는 흐뭇하게 웃었어요 · see mix-up 52 |
+| 뿌듯하다 | to feel proud (of something you did) | 해커톤 대회에 나가서 뿌듯해요 |
+| 소식 | news (about someone) | 친구가 집을 샀다는 소식을 들었어요 (G52) |
+| 소문 | rumor, word going around | 빵이 맛있다는 소문을 들었어요 |
+| 대회 | contest, competition | 해커톤 대회 · 말하기 대회 |
+| 우승하다 | to win (a contest) | 말하기 대회에서 우승했어요 |
+| 고생하다 | to have a hard time, go through a lot | 진짜 고생했네요! · 고생했어요 (V25) |
+| 결과 | result | 결과가 좋아서 뿌듯해요 |
+| 집값 · 주거비 | house prices · housing costs | 집값이 비싸요 |
+| 오르다 | to go up, rise (prices) | 르 irregular: 올라요 · 집값이 매년 올라요 |
+| 매년 | every year | 매년 블루리지에 낚시하러 가요 |
+| 점점 | more and more, gradually | 점점 추워져요 |
+| 휴식을 취하다 | to get some rest | 하루는 꼭 휴식을 취해야 해요 |
+| 반신욕(을) 하다 | to soak in a warm bath (up to the waist) | 따뜻한 물에서 반신욕을 해 보세요 |
+| 머리 모양을 바꾸다 | to change your hairstyle | 기분 전환이 필요할 때 머리 모양을 바꿔요 |
+| 맛집을 찾아가다 | to go out to a great restaurant | 시간이 있을 때마다 맛집을 찾아가요 |
+| 집안 정리(를) 하다 | to tidy up the house | 주말에 집안 정리를 했어요 |
+| 기분이 풀리다 | to feel better (a bad mood lifts) | 청소하면 기분이 좀 풀려요 · 스트레스가 풀리다 (V1) |
+| 팟캐스트 | podcast | 청소하면서 팟캐스트를 들었어요 |
+| 농구 · 농구 경기 | basketball · basketball game | 농구 경기 티켓 |
+| 미식축구 | American football | 미국 대학교는 미식축구 팀이 인기가 많아요 |
+| 선수 | player, athlete | 유명한 농구 선수 |
+| 라이브로 보다 | to watch live | 농구를 라이브로 보고 싶어요 |
+| 이번 달에 생일이 있다 | my birthday is this month | = 제 생일은 이번 달이에요 |
+| 비행기를 날리다 | to fly a plane (a model or drone) | 비행기가 날다 = a plane flies (G58) |
+| 열리다 | to come open, be opened | 문이 열렸어요 · 열다 = to open it (G58) |
+| 잡히다 | to be caught | 도둑이 경찰한테 잡혔어요 (G58) |
+| 안다 · 안기다 | to hug, hold · to be held | 엄마가 아기를 안아요 · 아기가 엄마한테 안겨요 |
+| 경찰 · 도둑 | police · thief | 경찰이 도둑을 잡아요 |
+
+### V30 Clothes and what you wear
+
+| 한국어 | English | Notes |
+| --- | --- | --- |
+| 입다 | to wear (clothes) | 티셔츠, 와이셔츠, 스웨터, 운동복, 치마, 바지, 패딩을 입어요 |
+| 모자 · 안경을 쓰다 | to wear a hat · glasses | 쓰다 for the head and face: 모자, 안경, 선글라스 · 썼어요 |
+| 신다 | to wear (on the feet) | 양말, 구두, 운동화를 신어요 · 신었어요 |
+| 매다 | to tie on, wear (a tie, a scarf) | 넥타이, 스카프를 매요 · 맸어요 · 목도리를 매다 = 목도리를 하다 |
+| 장갑을 끼다 | to wear gloves | 끼다 → 껴요 · 꼈어요 · 장갑 (V22) |
+| 티셔츠 · 와이셔츠 | T-shirt · dress shirt | 셔츠 = shirt · 셔츠에다가 반바지를 입었어요 |
+| 청바지 · 반바지 | jeans · shorts | 티셔츠에다가 청바지를 입었어요 |
+| 치마 | skirt | 스웨터에다가 치마를 입었어요 |
+| 스웨터 | sweater | 따뜻한 스웨터에다가 목도리를 해요 |
+| 운동복 | workout clothes | 운동을 할 때는 운동복에다가 운동화를 신어요 |
+| 패딩 | puffer jacket | 두꺼운 패딩 · 저는 패딩에다가 장갑을 껴요 |
+| 재킷 | jacket | 정장 재킷 · 낚시를 할 때는 모자에다가 재킷을 입어요 |
+| 양말 | socks | 양말을 신다 |
+| 구두 | dress shoes | 정장에다가 구두를 신으세요 |
+| 운동화 | sneakers | 티셔츠에다가 운동화를 신어요 |
+| 신발 | shoes | 신발을 신었어요 |
+| 넥타이 | necktie | 넥타이를 매다 |
+| 스카프 · 목도리 | scarf · winter scarf | 목 = neck · 목도리를 매다 / 하다 |
+| 안경 | glasses | 안경을 쓰다 · 선글라스 (V21) |
+| 비니 · 헤드밴드 | beanie · headband | both take 쓰다: 비니를 썼어요 |
+| 워커 | work boots | 워커를 신다 |
+| 방수 바지 · 방수 신발 | waterproof pants · waterproof shoes | 방수 = waterproof · 물에 젖다 = to get wet · 낚시할 때 입어요 |
+| 따뜻하다 | to be warm | 일본 날씨가 따뜻해서 티셔츠를 입을 거예요 · 따뜻한 스웨터 |
+| 멋있다 | to look great, be cool | 와, 옷이 멋있어요! · = 멋지다 (V27) |

@@ -138,6 +138,26 @@ Answers are in \[brackets\]. Check each part as soon as you finish it, and look 
 | A130 | \[체했어요\] | 체하다 = get indigestion · V25 |
 | A131 | \[잠이 안 와서\] | 잠을 안 자서 = chose not to sleep · V25 |
 | A132 | \[고생했어요\] | also \[수고했어요\] · V25 |
+| A133 | \[들어줄\] | 부탁(을) 들어주다 · V26 |
+| A134 | \[거절하는\] | -는 게 좋아요 · V26, G53 |
+| A135 | \[바탕화면\] | V26 |
+| A136 | \[후회하지\] | -지 않도록 · V26, G65 |
+| A137 | \[멀어서\] | 멀다 = far; 넓다 = wide · V27 |
+| A138 | \[낚싯대\] | 낚시 + 대 · V27 |
+| A139 | \[다람쥐\] | 쫓다 = chase · V27 |
+| A140 | \[현지 음식\] | 현지 = local · V27 |
+| A141 | \[내비게이션\] | your teacher also writes 네비게이션 · V28 |
+| A142 | \[졸지\] | 졸다 = to doze off · V28 |
+| A143 | \[막차\] | 막차를 놓치다 = to miss the last train · V28 |
+| A144 | \[단풍잎\] | 단풍 = fall colors · V28 |
+| A145 | \[뿌듯했어요\] | 뿌듯하다 = proud of what you did · V29 |
+| A146 | \[팟캐스트\] | podcast · V29 |
+| A147 | \[라이브로\] | 라이브로 보다 = to watch live · V29 |
+| A148 | \[올라요\] | 오르다 (르 irregular) = to go up · V29 |
+| A149 | \[써요\] | hats and glasses take 쓰다 · V30 |
+| A150 | \[껴요\] | 끼다 → 껴요 · V30 |
+| A151 | \[방수\] | V30 |
+| A152 | \[패딩\] | V30 |
 
 ## Part B answers
 
@@ -273,6 +293,26 @@ Answers are in \[brackets\]. Check each part as soon as you finish it, and look 
 | B128 | \[걸리지 않도록\] | = 안 걸리도록 · G65 |
 | B129 | \[자 가지고\] | = 자서 (casual); no past before 가지고 · G66 |
 | B130 | \[조각이나\] | a lot = (이)나 · G63 |
+| B131 | \[넣어 놓았어요\] | action + result stays · G67 |
+| B132 | \[들어 있어요\] | N이/가 들어 있다 · G67 |
+| B133 | \[살 테니까\] | my plan + your part · G68 |
+| B134 | \[들어주기\] | V-기 어렵다 · G53 |
+| B135 | \[사는 동안\] | verb + -는 동안 = while; ㄹ drops: 살다 → 사는 · G5 |
+| B136 | \[보고 싶어했어요\] | also \[보고 싶어 했어요\]; someone else's wish = -고 싶어하다 · G18 |
+| B137 | \[보려고\] | a verb goal = -(으)려고; N을 위해서 needs a noun · G40 |
+| B138 | \[많지 않아요\] | checking question "isn't it?" · G48 |
+| B139 | \[않도록\] | said \[안토록\] · G65 |
+| B140 | \[할 수 있도록\] | -(으)ㄹ 수 있도록 = so that I can · G65 |
+| B141 | \[보고 나서\] | -고 나서 = after finishing · G22 |
+| B142 | \[좋아하는 편이에요\] | verb + -는 편이에요; 안 stays before the verb · G16 |
+| B143 | \[샀다는\] | past + 다는 소식 = the news that … · G52 |
+| B144 | \[볼 뻔했지만\] | -(으)ㄹ 뻔했다 = almost; something good you nearly got to do · G47 |
+| B145 | \[샀으면 좋았을\] | looking back: -았/었으면 좋았을 것 같아요 · G46 |
+| B146 | \[잡혔어요\] | 잡다 → 잡히다 = be caught; the doer takes 한테 · G58 |
+| B147 | \[치기로 했어요\] | decided or made plans = -기로 했어요 · G39 |
+| B148 | \[가기로 했었는데\] | had decided, but it's off = -기로 했었어요 · G39 |
+| B149 | \[에다가\] | also \[에\]; N에다가 N for what you wear together · G57 |
+| B150 | \[에다가\] | 넥타이는 매다 → 맸어요 · G57, V30 |
 
 ## Part C answers
 
@@ -326,6 +366,16 @@ Answers are in \[brackets\]. Check each part as soon as you finish it, and look 
 | C46 | \[오자마자\] | right after = -자마자 · G64 |
 | C47 | \[안 맞도록\] | goal = -도록; 안 맞을까 봐 = worried you WON'T get wet · G65, G51 |
 | C48 | \[한 마리밖에\] | too few = 밖에 + 못 · G6, G63 |
+| C49 | \[상하지 않도록\] | the goal = -도록 · G65 |
+| C50 | \[만들 테니까\] | I'll …, so you … = -(으)ㄹ 테니까 · G68 |
+| C51 | \[갈 때마다\] | every time = -(으)ㄹ 때마다 · G5, G20 |
+| C52 | \[보려고\] | a verb goal = -(으)려고; 위해서 goes after a noun or V-기 · G40 |
+| C53 | \[놓칠까 봐\] | a worry = -(으)ㄹ까 봐; the goal would be 놓치지 않도록 · G51, G65 |
+| C54 | \[미끄러워요\] | slippery = 미끄럽다 (ㅂ irregular); 미끄러지다 = to slip · V8, V28 |
+| C55 | \[흐뭇했어요\] | warmly pleased watching someone else = 흐뭇하다; 뿌듯하다 is pride in what you did · V29, mix-up 52 |
+| C56 | \[열렸어요\] | the door is the subject, so the "it happens" verb 열리다 · G58, mix-up 51 |
+| C57 | \[가기로 했어요\] | plans made with someone = -기로 했어요; -(으)려고 해요 is still just your plan · G39 |
+| C58 | \[신어요\] | feet = 신다; 입다 is for clothes · V30 |
 
 ## Part D answers
 
@@ -365,6 +415,9 @@ Answers are in \[brackets\]. Check each part as soon as you finish it, and look 
 | D32 | \[만든\] | describe a noun with V-(으)ㄴ, not -기 · G12, mistake 49 |
 | D33 | \[봐요\] | 보 + 아요 = 봐요 · G44, mistake 50 |
 | D34 | \[대학생 때\] | in college = 대학생 때 (or 대학교에 다니면서) · G20 |
+| D35 | \[파티에\] | 가다 takes 에, events too: 파티에 가다 · G2 |
+| D36 | \[있을 때\] | a past habit: -(으)ㄹ 때 + past tense · G20, mistake 53 |
+| D37 | \[미식축구 경기가 인기가 많아서 그런지 사람이 너무 많았어요.\] | the guessed reason goes before 그런지; what you saw comes after · G28, mistake 54 |
 
 ## Part E model answers
 

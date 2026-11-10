@@ -2,7 +2,7 @@
 
 Oct 8, 2026 · @Darren Funes
 
-Vocabulary and grammar from every lesson with both teachers through October 29, 2026: 509 words and phrases in 25 sets, 66 grammar points in 9 units, and your most common mix-ups and mistakes, set up so you test yourself first and read second.
+Vocabulary and grammar from every lesson with both teachers through November 9, 2026: 628 words and phrases in 30 sets, 68 grammar points in 10 units, and your most common mix-ups and mistakes, set up so you test yourself first and read second.
 
 ## How to study
 
@@ -56,6 +56,11 @@ Write the date and how many items you missed in each cell (10/9 · 3). If you mi
 | V23 | Tests, jobs and days off |  |  |  |  |  |
 | V24 | Work days and old friends |  |  |  |  |  |
 | V25 | Health, habits and doing well |  |  |  |  |  |
+| V26 | Favors, drawers and getting ready |  |  |  |  |  |
+| V27 | Halloween, trips and a desert island |  |  |  |  |  |
+| V28 | Tennessee trip and not missing the train |  |  |  |  |  |
+| V29 | Feelings, news and game day |  |  |  |  |  |
+| V30 | Clothes and what you wear |  |  |  |  |  |
 | Unit 1 | Particles and basics (G1–G10, G63) |  |  |  |  |  |
 | Unit 2 | Describing (G11–G19) |  |  |  |  |  |
 | Unit 3 | Time and order (G20–G26, G64) |  |  |  |  |  |
@@ -65,6 +70,7 @@ Write the date and how many items you missed in each cell (10/9 · 3). If you mi
 | Unit 7 | Experience and reactions (G44–G48) |  |  |  |  |  |
 | Unit 8 | Inner questions, worries, quoting (G49–G53, G62) |  |  |  |  |  |
 | Unit 9 | Requests and politeness (G54–G58) |  |  |  |  |  |
+| Unit 10 | Getting things ready and sharing jobs (G67–G68) |  |  |  |  |  |
 | Mix-ups | Look-alike pairs |  |  |  |  |  |
 
 ## Lesson sources
@@ -79,6 +85,11 @@ Write the date and how many items you missed in each cell (10/9 · 3). If you mi
 - Lesson 28 (Oct 26, 2026), \[프리토킹\] 휴일, with Sooyoung: 대런-260531 and homework feedback 대런-숙제-261019.pdf. Added V23, new rules and examples in G22, G37 and G53, examples in G6, G7, G12, G16, G41 and G44, Unit 3 self-test row 14, Unit 5 self-test row 13, mix-up 39 and mistakes 47–50.
 - Lesson 29 (Oct 27, 2026), 요즘 아침마다 회의가 있어요, with Sooyoung: 대런-260531 and A-29 lesson PDF. Added V24, G64 (-자마자), new rules and examples in G5 (-마다, -(으)ㄹ 때마다) and G20 (-(으)ㄹ 때, N 때), Unit 1 self-test row 19, Unit 3 self-test rows 15–16, mix-ups 40–41 and mistake 51.
 - Oct 29, 2026 lesson, 대런\_도록.pdf (teacher's folder): -(으)ㄹ까 봐 rewritten with -도록, number + (이)나 vs 밖에, health and sleep, and a first look at -아/어 가지고. Added V25, G65 (-도록), G66 (-아/어 가지고), new rule and examples in G51, examples in G6, G38 and G63, Unit 1 self-test row 20, Unit 4 self-test rows 18–19, Unit 6 self-test rows 14–15, and mix-ups 42–44. No corrected mistakes in this file.
+- Oct 30, 2026 lesson, 대런\_도록(2) (Google Doc and PDF in the teacher's folder): more -도록, -아/어 놓다 and 들어 있다, asking for and turning down favors, and -(으)ㄹ 테니까. Added V26, new Unit 10 with G67 (-아/어 놓다) and G68 (-(으)ㄹ 테니까), new rules and examples in G53 (-기 쉽다/어렵다, -는 게), G54 (favors) and G65, examples in G16, G44 and G45, Unit 6 self-test row 16, Unit 8 self-test row 17, Unit 9 self-test row 13, and mix-ups 45–47. No corrected mistakes in this file.
+- Lesson 30 (Nov 3, 2026), \[프리토킹\] 경험, with Sooyoung: 대런-260531 (no homework set). Halloween, a drive to Tennessee, stress, travel habits, and a desert-island game. Added V27, new rules and examples in G5 (V-는 동안), G18 (-고 싶어했어요), G40 (N을 위해서 vs -(으)려고) and G48 (-지 않아요?), examples in G4, G16, G20, G45 and G46, Unit 1 self-test row 21, Unit 7 self-test row 12, and mix-ups 48–49. No clearly marked corrections, so no new mistakes.
+- Nov 5, 2026 lesson, 대런\_도록(3)\_연습 (Google Doc and PDF in the teacher's folder): retelling the Tennessee trip, then lots of -도록 practice (getting lost, dozing off, the last train, staying healthy). Added V28, new rules and examples in G65 (adjectives with -도록, pronunciation), examples in G16, G18, G22, G48, G51 and G52, Unit 6 self-test rows 17–18, mix-up 50 and mistake 52.
+- Nov 6, 2026 lesson, 대런\_느낌단어.pdf (teacher's folder): feeling words (뿌듯하다, 흐뭇하다, 아쉽다, 부담스럽다, 신나다), -다는 소식을 듣고, free talk about basketball and college football, and a first look at 열리다 / 잡히다 / 안기다 (to be studied next lesson). Added V29, new rules and examples in G13, G17, G20, G28, G46 (-았/었으면 좋았을 것 같아요), G47, G52 (-다는 + noun) and G58 (four new verb pairs), examples in G8 and G16, Unit 4 self-test row 20, Unit 7 self-test rows 13–14, Unit 8 self-test row 18, Unit 9 self-test row 14, mix-ups 51–52 and mistakes 53–54.
+- Lesson 31 (Nov 9, 2026), 청바지에다가 티셔츠를 입으려고 해요, with Sooyoung: 대런-260531 and A-31 lesson PDF; homework 나의 여행 패션 (-기로 하다, 에다가). Clothes and the verbs that go with them (입다, 쓰다, 신다, 끼다, 매다). Added V30, new rules and examples in G39 (-기로 하다 vs -(으)려고 하다, -기로 했었어요) and G57 (에다가 for clothes), Unit 6 self-test row 19, Unit 9 self-test row 15, and mix-ups 53–54. No corrected mistakes in this lesson.
 
 ## Sources
 
