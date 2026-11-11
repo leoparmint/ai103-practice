@@ -80,6 +80,7 @@ Examples:
 - 무인도에서 혼자 한 달 동안 살아야 해요. — I have to live alone on a deserted island for a month.
 - 무인도에 사는 동안 매일 낚시를 할 거예요. — While I live on the island, I'll fish every day.
 - 여행을 갈 때마다 약과 선크림을 챙겨요. — Every time I travel, I pack medicine and sunscreen.
+- 여행 갈 때마다 카메라를 가져가요. — Every time I travel, I take a camera.
 
 ### G6 도, 만, 밖에, 빼고
 
@@ -256,6 +257,7 @@ Examples:
 - 저는 회사에서 프로그램을 만드는 일을 해요. — At my company, I make programs.
 - 제가 자주 가는 곳은 헬스장이에요. — The place I often go is the gym.
 - 직접 만든 빵은 더 맛있어요. — Bread you make yourself tastes better. (만들다 → 만든, not 만들기 빵)
+- 제일 좋아하는 초밥은 예전에 먹은 참치초밥이에요. — My favorite sushi is the tuna sushi I ate before. (먹은 = that I ate; see mistake 55)
 
 ### G13 Adverbs: A-게, 많이, 열심히
 
@@ -566,6 +568,7 @@ Examples:
 - 더 많은 돈을 벌고 싶어서 공부해요. — I'm studying because I want to earn more money.
 - 비가 오니까 오늘은 집에서 쉴까요? — It's raining, so shall we rest at home today?
 - 비 때문에 집에 있었어요. — I stayed home because of the rain.
+- 어제 문제 때문에 밤 열 시까지 야근했어요. — Yesterday I worked late until 10 p.m. because of a problem.
 
 ### G28 Maybe because: -아/어서 그런지
 
@@ -622,12 +625,14 @@ Examples:
 - Form: like -아/어요. 바빠도, 힘들어도, 들어도, 해도.
 - 아무리 + -아/어도 = no matter how.
 - Not the same as -아/어도 되다, "it's OK to" (G34).
+- 어떤 N을 V-아/어도 = whatever N you V: 어떤 옷을 입어도 예뻐요 = (she) looks pretty in anything.
 
 Examples:
 
 - 저는 바빠도 건강을 위해서 매일 요리해서 먹어요. — Even when I'm busy, I cook every day for my health.
 - 공포 영화 음악을 들어도 잠을 잘 자요. — Even when I listen to horror-movie music, I sleep fine.
 - 느긋한 사람은 아무리 급해도 서두르지 않아요. — A laid-back person doesn't rush, no matter how urgent it is.
+- 여자친구는 어떤 옷을 입어도 예뻐요. — My girlfriend looks pretty whatever she wears.
 
 ### G59 Busy doing it: V-느라(고)
 
@@ -706,6 +711,7 @@ Cover the Answer column. Say each sentence in Korean, then check.
 | 18 | I overslept, so I was late for my meeting. (casual) | 늦잠을 자 가지고 회의에 늦었어요. | G66 |
 | 19 | I ate a big lunch, so I'm really full. (casual) | 점심을 많이 먹어 가지고 너무 배가 불러요. | G66 |
 | 20 | Maybe because the football game was popular, there were too many people. | 미식축구 경기가 인기가 많아서 그런지 사람이 너무 많았어요. | G28 |
+| 21 | My girlfriend looks pretty whatever she wears. | 여자친구는 어떤 옷을 입어도 예뻐요. | G32 |
 
 ## Unit 5 · Can, may, must, must not, if
 
@@ -828,6 +834,7 @@ Examples:
 - Teacher's comparison: -(으)려고 하다 = a plan you're thinking about; -기로 하다 = a decision or a promise. "오늘 오후에 뭐 해요?" can be answered 쇼핑하기로 했어요, 쇼핑하려고 해요 or 쇼핑할 거예요.
 - With another person it means you made plans together: 여자친구를 만나기로 했어요 = 약속이 있어요.
 - -기로 했었어요 = had decided, but it's off now: 일본에 가기로 했었어요 (= 못 가요).
+- -기로 약속했어요 = (we) promised or agreed to: 여자친구하고 만나기로 약속했어요. Trip plans: 첫날에는 뭐 하기로 했어요? = What did you plan for the first day?
 
 Examples:
 
@@ -838,6 +845,10 @@ Examples:
 - 이번 주말에는 일본에 가기로 했었어요. — I had decided to go to Japan this weekend (but now I can't).
 - 날씨가 추울까 봐 패딩에다가 장갑을 챙기기로 했어요. — I decided to pack a puffer jacket and gloves in case it's cold.
 - 일본 날씨가 따뜻해서 티셔츠에다가 바지를 입기로 했어요. — The weather in Japan is warm, so I decided to wear a T-shirt and pants.
+- 이번 주에 여자친구를 화요일과 목요일에 만나기로 약속했어요. — This week I promised to see my girlfriend on Tuesday and Thursday.
+- 일본에 갈 때 패딩에다가 티셔츠를 입기로 했어요. — For Japan, I decided to wear a puffer jacket and a T-shirt.
+- 첫날에는 호텔에서 쉬기로 했어요. — On the first day, I decided to rest at the hotel.
+- 도쿄 경치가 예뻐서 형하고 구경하기로 했어요. — Tokyo's scenery is pretty, so my brother and I decided to go sightseeing.
 
 ### G40 Purpose: -(으)러, -(으)려고, -기 위해서
 
@@ -963,6 +974,7 @@ Cover the Answer column. Say each sentence in Korean, then check.
 | 17 | I drank coffee beforehand so I wouldn't doze off in the meeting. | 회의 때 졸지 않도록 미리 커피를 마셨어요. | G65 |
 | 18 | I run every day to stay healthy. | 건강하도록 매일 러닝을 해요. | G65 |
 | 19 | I had decided to go to Japan this weekend (but now I can't). | 이번 주말에 일본에 가기로 했었어요. | G39 |
+| 20 | On the first day, I decided to rest at the hotel. | 첫날에는 호텔에서 쉬기로 했어요. | G39 |
 
 ## Unit 7 · Experience, wishes and reactions
 
@@ -1016,6 +1028,7 @@ Examples:
 - 도쿄에서 오마카세를 먹으면 좋겠어요. — I'd love to have omakase in Tokyo.
 - 코비드 때 집을 샀으면 좋았을 것 같아요. — I wish I had bought a house during COVID.
 - 이번 달에 제 생일이 있어요. 여자친구가 농구 경기 티켓을 사 줬으면 좋겠어요. — My birthday is this month. I hope my girlfriend buys me basketball tickets.
+- 일본에서 오마카세를 먹었으면 좋겠어요. — I hope I get to eat omakase in Japan.
 
 ### G47 Almost: -(으)ㄹ 뻔했다
 
@@ -1085,6 +1098,7 @@ Cover the Answer column. Say each sentence in Korean, then check.
 - 모르겠어요 sounds softer than 몰라요 for "I'm not sure".
 - Spacing: -(으)ㄹ지 is attached (할지). The "time since" pattern -(으)ㄴ 지 (G25) has a space and a length of time after it.
 - ㅂ irregular: 춥다 → 추운지, 추울지.
+- With a noun or a question word on its own, use 인지: 어디인지 기억이 안 나요 = 어디서 먹었는지 기억이 안 나요 (I don't remember where).
 
 Examples:
 
@@ -1092,6 +1106,7 @@ Examples:
 - 사람들이 많이 웃는데 왜 웃는지 몰랐어요. — People were laughing a lot, but I didn't know why.
 - 여자친구가 어떤 선물을 받고 싶은지 물어봤어요. — My girlfriend asked what gift I'd like.
 - 어머니에게 차로 데려다줄 수 있는지 물어봤어요. — I asked my mother if she could give me a ride.
+- 참치초밥을 어디서 먹었는지 기억이 안 나요. — I don't remember where I ate the tuna sushi.
 
 ### G50 Might: -(으)ㄹ지도 모르다
 
@@ -1156,6 +1171,7 @@ Examples:
 - News you heard: -ㄴ/는다고 들었어요 = I heard that …: 올해 눈이 온다고 들었어요.
 - About yourself, just use N이에요/예요: 저는 개발자예요. N(이)라고 해요 gives the name of a job: 차를 수리하는 사람을 정비공이라고 해요.
 - -다는 + noun = the news, rumor or story that …: adjectives and 있다/없다 -다는 (맛있다는), verbs -ㄴ/는다는 (온다는), past -았/었다는 (샀다는), nouns (이)라는. Most common: -다는 소식을 듣고 = after hearing the news that …
+- Asking someone to do something for you, reported: V-아/어 달라고 하다 (from -아/어 주세요). 사 주세요 → 사 달라고 했어요. With -아/어도: 사 달라고 해도 = even if I ask (him) to buy it. See G54.
 
 Examples:
 
@@ -1171,6 +1187,8 @@ Examples:
 - 엄마는 제가 시험을 잘 봤다는 소식을 듣고 흐뭇하게 웃었어요. — When Mom heard I did well on the test, she smiled, pleased.
 - 제 여자친구는 그 카페 빵이 맛있다는 소문을 듣고 그 카페에 가고 싶어했어요. — My girlfriend heard the bread at that café is good and wanted to go there.
 - 카피바라를 볼 수 있다는 소식을 듣고 기분이 좋았어요. — I was happy to hear we could see capybaras.
+- 형에게 오마카세를 사 달라고 하세요. — Ask your brother to buy you omakase.
+- 형에게 사 달라고 해도 너무 비싸서 부담스러워요. — Even if I ask my brother to buy it, it's so expensive that I'd feel bad.
 
 ### G53 Making nouns: -는 것, -기
 
@@ -1239,6 +1257,7 @@ Cover the Answer column. Say each sentence in Korean, then check.
 | 16 | I drink water ahead of time so I won't get thirsty when I work out. | 운동할 때 목이 마를까 봐 미리 물을 마셔요. | G51 |
 | 17 | My friend asked me a favor that's hard to do. | 친구가 들어주기 어려운 부탁을 했어요. | G53 |
 | 18 | I was happy to hear the news that my friend bought a house. | 친구가 집을 샀다는 소식을 듣고 기분이 좋았어요. | G52 |
+| 19 | Ask your brother to buy it for you. | 형에게 사 달라고 하세요. | G52 |
 
 ## Unit 9 · Requests, giving and politeness
 
@@ -1302,6 +1321,7 @@ Examples:
 - The verb must fit every noun: 비에다가 눈까지 왔어요 works, but 비에다가 바람까지 왔어요 does not (wind 불다).
 - For clothes, N에다가 N = N plus N, what you wear together, with no 까지: 티셔츠에다가 청바지를 입었어요. 다가 can drop: 티셔츠에 바지를 입었어요.
 - With clothes the verb fits the last item: 정장에다가 구두를 신으세요, 스웨터에다가 목도리를 해요, 패딩에다가 장갑을 껴요 (V30).
+- Food and drink work the same way: 초밥에다가 라멘을 먹고 싶어요. To just name your favorites, list them with 과/하고: 제일 좋아하는 초밥은 연어초밥과 참치초밥이에요 (teacher's rewrite).
 
 Examples:
 
@@ -1314,6 +1334,10 @@ Examples:
 - 운동을 할 때는 운동복에다가 운동화를 신어요. — When I work out, I wear workout clothes and sneakers.
 - 내일 회의가 있어요? 정장에다가 구두를 신으세요. — You have a meeting tomorrow? Wear a suit and dress shoes.
 - 추울 때는 패딩에다가 장갑을 껴요. — When it's cold, I wear a puffer jacket and gloves.
+- 데이트를 할 때 셔츠에다가 청바지를 입어요. — On dates, I wear a shirt and jeans.
+- 여자친구는 데이트를 할 때 스웨터에다가 치마를 입어요. — On dates, my girlfriend wears a sweater and a skirt.
+- 일본에서 초밥에다가 라멘을 먹고 싶어요. — In Japan, I want to eat sushi and ramen.
+- 제일 좋아하는 것은 연어초밥에다가 맥주를 먹는 거예요. — My favorite thing is having salmon sushi with a beer.
 
 ### G58 Verb pairs: you do it vs it happens
 
@@ -1362,6 +1386,7 @@ Cover the Answer column. Say each sentence in Korean, then check.
 | 13 | I'd like to do that favor, but I can't. | 들어주고 싶은데 들어줄 수 없어요. | G54 |
 | 14 | The thief got caught by the police. | 도둑이 경찰한테 잡혔어요. | G58 |
 | 15 | When I fish, I wear a hat and a jacket. | 낚시를 할 때는 모자에다가 재킷을 입어요. | G57 |
+| 16 | In Japan, I want to eat sushi and ramen. | 일본에서 초밥에다가 라멘을 먹고 싶어요. | G57 |
 
 ## Unit 10 · Getting things ready and sharing jobs
 

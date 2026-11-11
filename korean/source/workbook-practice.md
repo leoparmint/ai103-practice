@@ -2,7 +2,7 @@
 
 Oct 8, 2026 · @Darren Funes
 
-407 fill-in-the-blank items on the same vocabulary and grammar as the Korean Review Notes, with the answer key in the next tab.
+422 fill-in-the-blank items on the same vocabulary and grammar as the Korean Review Notes, with the answer key in the next tab.
 
 ## How to use this workbook
 
@@ -10,10 +10,10 @@ Do one part per session, closed-book, and check it the moment you finish.
 
 | Part | What you do | Items | Time |
 | --- | --- | --- | --- |
-| A | Vocabulary in context: write the Korean word from an English cue | 152 | about 20 min |
-| B | Grammar forms: put the base word into the right form | 150 | about 25 min |
-| C | Mixed review: choose the pattern yourself | 58 | about 10 min |
-| D | Fix the mistake: correct the part in \[brackets\] | 37 | about 10 min |
+| A | Vocabulary in context: write the Korean word from an English cue | 156 | about 20 min |
+| B | Grammar forms: put the base word into the right form | 154 | about 25 min |
+| C | Mixed review: choose the pattern yourself | 60 | about 10 min |
+| D | Fix the mistake: correct the part in \[brackets\] | 42 | about 10 min |
 | E | Your turn: finish sentences about your own life | 10 | about 15 min |
 
 1. **Close the notes.** Write in pencil or on a separate sheet so you can redo the workbook later.
@@ -121,7 +121,7 @@ Write the Korean word or phrase for the English cue, in the form the sentence ne
 | A47 | 바다에서 수영할 때 물이 너무 ＿＿＿＿＿. (was cold to the touch) |
 | A48 | 길이 ＿＿＿＿＿ 조심하세요. (slippery, + so) |
 
-## Part A · Vocabulary in context (V9–V30)
+## Part A · Vocabulary in context (V9–V31)
 
 ### V9 Home, chores and repairs
 
@@ -336,6 +336,15 @@ Write the Korean word or phrase for the English cue, in the form the sentence ne
 | A150 | 겨울에 피클볼을 칠 때 장갑을 ＿＿＿＿＿. (wear: gloves) |
 | A151 | 비가 오면 낚시할 때 ＿＿＿＿＿ 바지를 입어요. (waterproof) |
 | A152 | 날씨가 추워서 두꺼운 ＿＿＿＿＿을 입었어요. (puffer jacket) |
+
+### V31 Date clothes, trip plans and Japanese food
+
+| # | Fill in the blank |
+| --- | --- |
+| A153 | 일본에 가면 ＿＿＿＿＿ 편의점에 갈 거예요. (first of all) |
+| A154 | 일본 ＿＿＿＿＿은 고로케로 유명해요. (convenience store) |
+| A155 | 저는 ＿＿＿＿＿초밥을 제일 좋아해요. (salmon) |
+| A156 | 내일은 휴일이에요. 아주 ＿＿＿＿＿ 쉬세요. (well, a good rest) |
 
 ## Part B · Grammar forms (Units 1–3)
 
@@ -610,6 +619,15 @@ Put the word in parentheses into the form the sentence needs; the English says w
 | B149 | 운동할 때는 운동복＿＿＿＿＿ 운동화를 신어요. (plus) |
 | B150 | 회의가 있어서 와이셔츠＿＿＿＿＿ 넥타이를 맸어요. (plus) |
 
+### Lesson 32
+
+| # | Fill in the blank |
+| --- | --- |
+| B151 | 이번 주에 여자친구를 목요일에 ＿＿＿＿＿ 약속했어요. (만나다: promised to) |
+| B152 | 형에게 오마카세를 사 ＿＿＿＿＿ 하세요. (ask him to buy it for you) |
+| B153 | 여자친구는 어떤 옷을 ＿＿＿＿＿ 예뻐요. (입다: whatever she wears) |
+| B154 | 참치초밥을 어디서 ＿＿＿＿＿ 기억이 안 나요. (먹다: where I ate) |
+
 ## Part C · Mixed review
 
 No pattern names here. Read the whole sentence, decide which pattern fits, then write the form. Look-alike patterns are mixed on purpose.
@@ -674,6 +692,8 @@ No pattern names here. Read the whole sentence, decide which pattern fits, then 
 | C56 | (The door behind you) 뒤에 옷장 문이 ＿＿＿＿＿. (열었어요 or 열렸어요) |
 | C57 | (Already agreed with someone) 토요일에 형하고 낚시를 ＿＿＿＿＿. (가려고 해요 or 가기로 했어요) |
 | C58 | (On your feet) 낚시할 때는 방수 신발을 ＿＿＿＿＿. (입어요 or 신어요) |
+| C59 | (Just naming your favorites) 제일 좋아하는 초밥은 연어초밥＿＿＿＿＿ 참치초밥이에요. (과 or 에다가) |
+| C60 | (Even if) 형에게 사 달라고 ＿＿＿＿＿ 너무 비싸서 부담스러워요. (해도 or 해서) |
 
 ## Part D · Fix the mistake
 
@@ -718,6 +738,11 @@ Each sentence has one mistake, shown in \[brackets\]. Write the correct form in 
 | D35 | 내년에 여자친구는 할로윈 \[파티를\] 가고 싶어해요. (to a party) | ＿＿＿＿＿ |
 | D36 | 대학교 때 미식축구 경기가 \[있으면\] 가끔 비행기를 날렸어요. (whenever there was a game) | ＿＿＿＿＿ |
 | D37 | \[사람이 너무 많아서 그런지 미식축구 경기가 인기가 많았어요.\] (Maybe because the game was popular, there were too many people.) | ＿＿＿＿＿ |
+| D38 | 제일 좋아하는 초밥은 \[예전에 먹기 전에\] 참치초밥이에요. (the tuna sushi I ate before) | ＿＿＿＿＿ |
+| D39 | 비가 와서 낚시를 못 가요. 너무 \[씼씼해요\]. | ＿＿＿＿＿ |
+| D40 | 형하고 일본으로 \[엳행\]을 가요. | ＿＿＿＿＿ |
+| D41 | 내일 블루리지에 비가 \[울\] 것 같아요. | ＿＿＿＿＿ |
+| D42 | \[일본는\] 겨울에 추워요. | ＿＿＿＿＿ |
 
 ## Part E · Your turn
 

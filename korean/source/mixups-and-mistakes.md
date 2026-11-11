@@ -62,6 +62,7 @@ These pairs are where mixing pays off: practicing look-alikes side by side train
 | 52 | 뿌듯하다 / 흐뭇하다 | proud of something you did vs warmly pleased watching someone else | "My girlfriend liked my gift, so I was pleased": 여자친구가 제 선물을 좋아해서 (뿌듯했어요 / 흐뭇했어요). | 흐뭇했어요 | V29 |
 | 53 | -(으)려고 해요 / -기로 했어요 | a plan you're thinking about vs a decision or a promise, often made with someone | "My brother and I made plans to play pickleball tomorrow": 내일 형하고 피클볼을 (치려고 해요 / 치기로 했어요). | 치기로 했어요 | G39 |
 | 54 | 입다 / 쓰다 / 신다 / 끼다 / 매다 | clothes on the body vs hat or glasses vs socks and shoes vs gloves vs a tie or scarf | "It was cold, so I wore gloves": 추워서 장갑을 (입었어요 / 꼈어요). | 꼈어요 | V30 |
+| 55 | N과/하고 / N에다가 | just listing two things vs one thing added on top of another, eaten or worn together | "My favorite sushi is salmon and tuna": 제일 좋아하는 초밥은 연어초밥(과 / 에다가) 참치초밥이에요. | 과 | G57 |
 
 ## Your recurring mistakes
 
@@ -123,3 +124,8 @@ Each line is a real correction from your lessons. Cover the Say column, read the
 | 52 | 내년에 여자친구는 할로윈 파티를 가고 싶어해요. | 내년에 여자친구는 할로윈 파티에 가고 싶어해요. | 가다 takes 에 for where you go, events too: 파티에 가다 | G2 |
 | 53 | (about college) 가끔 미식축구 경기가 있으면 비행기를 날려요. | 미식축구 경기가 있을 때 가끔 비행기를 날렸어요. | a past habit: -(으)ㄹ 때 + past tense; 가끔 goes right before the action | G20 |
 | 54 | 너무 사람이 많아서 그런지 미식축구 경기가 … | 미식축구 경기가 인기가 많아서 그런지 사람이 너무 많았어요. | the guessed reason goes before 그런지; what you saw comes after | G28 |
+| 55 | 제일 초밥가 참치먹기 전에 … | 제일 좋아하는 초밥은 예전에 먹은 참치초밥이에요. | my favorite N = 제일 좋아하는 N; "that I ate before" = 예전에 먹은, not -기 전에 | G12 |
+| 56 | 씼씼할 때 무슨 게임을 해요? | 심심할 때 무슨 게임을 해요? | spelling: 심심하다 starts with ㅅ, not ㅆ | V1 |
+| 57 | 엳행을 갈 때마다 뭐 가져가요? | 여행을 갈 때마다 뭐 가져가요? | spelling: 여 in 여행 has no 받침 | V7 |
+| 58 | 눈이 울 때 · 비가 울 것 같아요. | 눈이 올 때 · 비가 올 것 같아요. | 오다 + -(으)ㄹ = 올; 울다 means to cry | G20, G15 |
+| 59 | 일본는 밤에 추워요. | 일본은 밤에 추워요. | after 받침: 은, not 는 | G1 |

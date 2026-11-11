@@ -297,7 +297,7 @@ Words are grouped by topic. Cover the 한국어 column, read the English, and sa
 | 추천하다 | to recommend |  |
 | 잔 | cup (counter) | 커피 한두 잔 |
 
-## Sets V12–V30
+## Sets V12–V31
 
 ### V12 Shopping and money
 
@@ -785,3 +785,23 @@ Words are grouped by topic. Cover the 한국어 column, read the English, and sa
 | 방수 바지 · 방수 신발 | waterproof pants · waterproof shoes | 방수 = waterproof · 물에 젖다 = to get wet · 낚시할 때 입어요 |
 | 따뜻하다 | to be warm | 일본 날씨가 따뜻해서 티셔츠를 입을 거예요 · 따뜻한 스웨터 |
 | 멋있다 | to look great, be cool | 와, 옷이 멋있어요! · = 멋지다 (V27) |
+
+### V31 Date clothes, trip plans and Japanese food
+
+| 한국어 | English | Notes |
+| --- | --- | --- |
+| 문제 | problem | 어제 문제 때문에 밤 열 시까지 야근했어요 · 야근하다 (V3) |
+| 푹 쉬다 | to get a good rest | 내일은 휴일이에요. 아주 푹 쉬세요! |
+| 데이트(를) 하다 | to go on a date | 데이트를 할 때 셔츠에다가 청바지를 입어요 |
+| 평소에 입는 옷 | everyday clothes, what you usually wear | 평소에 (V25) · 여자친구는 평소에 입는 옷이 제일 예뻐요 |
+| 첫날 | the first day | = 첫 번째 날 · 첫날에는 호텔에서 쉬기로 했어요 · 다음날 (V20) |
+| 제일 먼저 | first of all, the very first thing | 일본에 가면 제일 먼저 편의점에 갈 거예요 |
+| 편의점 | convenience store | said \[펴니점\] · 세븐일레븐 편의점 |
+| 고로케 | croquette | also 크로케 · 일본 편의점은 고로케로 유명해요 |
+| 초밥 | sushi | 초밥에다가 라멘을 먹고 싶어요 · 오마카세 (V27) |
+| 연어 · 참치 | salmon · tuna | 연어초밥, 참치초밥 · 저는 연어초밥을 좋아해요 |
+| 라멘 | ramen (Japanese) | 라면 = Korean instant noodles |
+| 맥주 | beer | 연어초밥에다가 맥주를 먹는 게 제일 좋아요 |
+| 차이나타운 | Chinatown | 중식 = 중국 음식 · 차이나타운에서 만두를 먹고 싶어요 |
+| 사 달라고 하다 | to ask someone to buy it for you | 형에게 사 달라고 하세요 (G52) |
+| 카메라 | camera | 여행 갈 때마다 카메라를 가져가요 |

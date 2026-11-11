@@ -2,7 +2,7 @@
 
 Oct 8, 2026 · @Darren Funes
 
-Vocabulary and grammar from every lesson with both teachers through November 9, 2026: 628 words and phrases in 30 sets, 68 grammar points in 10 units, and your most common mix-ups and mistakes, set up so you test yourself first and read second.
+Vocabulary and grammar from every lesson with both teachers through November 10, 2026: 643 words and phrases in 31 sets, 68 grammar points in 10 units, and your most common mix-ups and mistakes, set up so you test yourself first and read second.
 
 ## How to study
 
@@ -61,6 +61,7 @@ Write the date and how many items you missed in each cell (10/9 · 3). If you mi
 | V28 | Tennessee trip and not missing the train |  |  |  |  |  |
 | V29 | Feelings, news and game day |  |  |  |  |  |
 | V30 | Clothes and what you wear |  |  |  |  |  |
+| V31 | Date clothes, trip plans and Japanese food |  |  |  |  |  |
 | Unit 1 | Particles and basics (G1–G10, G63) |  |  |  |  |  |
 | Unit 2 | Describing (G11–G19) |  |  |  |  |  |
 | Unit 3 | Time and order (G20–G26, G64) |  |  |  |  |  |
@@ -90,6 +91,7 @@ Write the date and how many items you missed in each cell (10/9 · 3). If you mi
 - Nov 5, 2026 lesson, 대런\_도록(3)\_연습 (Google Doc and PDF in the teacher's folder): retelling the Tennessee trip, then lots of -도록 practice (getting lost, dozing off, the last train, staying healthy). Added V28, new rules and examples in G65 (adjectives with -도록, pronunciation), examples in G16, G18, G22, G48, G51 and G52, Unit 6 self-test rows 17–18, mix-up 50 and mistake 52.
 - Nov 6, 2026 lesson, 대런\_느낌단어.pdf (teacher's folder): feeling words (뿌듯하다, 흐뭇하다, 아쉽다, 부담스럽다, 신나다), -다는 소식을 듣고, free talk about basketball and college football, and a first look at 열리다 / 잡히다 / 안기다 (to be studied next lesson). Added V29, new rules and examples in G13, G17, G20, G28, G46 (-았/었으면 좋았을 것 같아요), G47, G52 (-다는 + noun) and G58 (four new verb pairs), examples in G8 and G16, Unit 4 self-test row 20, Unit 7 self-test rows 13–14, Unit 8 self-test row 18, Unit 9 self-test row 14, mix-ups 51–52 and mistakes 53–54.
 - Lesson 31 (Nov 9, 2026), 청바지에다가 티셔츠를 입으려고 해요, with Sooyoung: 대런-260531 and A-31 lesson PDF; homework 나의 여행 패션 (-기로 하다, 에다가). Clothes and the verbs that go with them (입다, 쓰다, 신다, 끼다, 매다). Added V30, new rules and examples in G39 (-기로 하다 vs -(으)려고 하다, -기로 했었어요) and G57 (에다가 for clothes), Unit 6 self-test row 19, Unit 9 self-test row 15, and mix-ups 53–54. No corrected mistakes in this lesson.
+- Lesson 32 (Nov 10, 2026), \[프리토킹\] 옷차림과 여행계획, with Sooyoung: 대런-260531 and homework feedback 대런-숙제-261109.pdf (your 친구 인터뷰하기 and 나의 여행 패션 homework). Working late, what you wear on dates, and plans and food for the Japan trip. Added V31, new rules and examples in G32 (어떤 옷을 입어도), G39 (-기로 약속하다, trip plans), G49 (어디인지), G52 (-아/어 달라고 하다) and G57 (에다가 vs 과 for favorites), examples in G5, G12, G27 and G46, Unit 4 self-test row 21, Unit 6 self-test row 20, Unit 8 self-test row 19, Unit 9 self-test row 16, mix-up 55 and mistakes 55–59. No homework set: 여행 잘 다녀오세요!
 
 ## Sources
 

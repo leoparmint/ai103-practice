@@ -158,6 +158,10 @@ Answers are in \[brackets\]. Check each part as soon as you finish it, and look 
 | A150 | \[껴요\] | 끼다 → 껴요 · V30 |
 | A151 | \[방수\] | V30 |
 | A152 | \[패딩\] | V30 |
+| A153 | \[제일 먼저\] | first of all · V31 |
+| A154 | \[편의점\] | N(으)로 유명하다 = famous for N · V31 |
+| A155 | \[연어\] | 연어 · 참치 = salmon · tuna · V31 |
+| A156 | \[푹\] | 푹 쉬다 = to get a good rest · V31 |
 
 ## Part B answers
 
@@ -313,6 +317,10 @@ Answers are in \[brackets\]. Check each part as soon as you finish it, and look 
 | B148 | \[가기로 했었는데\] | had decided, but it's off = -기로 했었어요 · G39 |
 | B149 | \[에다가\] | also \[에\]; N에다가 N for what you wear together · G57 |
 | B150 | \[에다가\] | 넥타이는 매다 → 맸어요 · G57, V30 |
+| B151 | \[만나기로\] | -기로 약속하다 = promised to · G39 |
+| B152 | \[달라고\] | -아/어 달라고 하다 = ask someone to do it for you · G52 |
+| B153 | \[입어도\] | 어떤 N을 V-아/어도 = whatever N · G32 |
+| B154 | \[먹었는지\] | past + 는지 before 기억이 안 나다 · G49 |
 
 ## Part C answers
 
@@ -376,6 +384,8 @@ Answers are in \[brackets\]. Check each part as soon as you finish it, and look 
 | C56 | \[열렸어요\] | the door is the subject, so the "it happens" verb 열리다 · G58, mix-up 51 |
 | C57 | \[가기로 했어요\] | plans made with someone = -기로 했어요; -(으)려고 해요 is still just your plan · G39 |
 | C58 | \[신어요\] | feet = 신다; 입다 is for clothes · V30 |
+| C59 | \[과\] | just listing favorites = 과/하고; 에다가 is for things you have together · G57, mix-up 55 |
+| C60 | \[해도\] | even if I ask = 사 달라고 해도; 해서 would mean "because I asked" · G32, G52 |
 
 ## Part D answers
 
@@ -418,6 +428,11 @@ Answers are in \[brackets\]. Check each part as soon as you finish it, and look 
 | D35 | \[파티에\] | 가다 takes 에, events too: 파티에 가다 · G2 |
 | D36 | \[있을 때\] | a past habit: -(으)ㄹ 때 + past tense · G20, mistake 53 |
 | D37 | \[미식축구 경기가 인기가 많아서 그런지 사람이 너무 많았어요.\] | the guessed reason goes before 그런지; what you saw comes after · G28, mistake 54 |
+| D38 | \[예전에 먹은\] | the sushi I ate before = V-(으)ㄴ + noun, not -기 전에 · G12, mistake 55 |
+| D39 | \[심심해요\] | spelling: ㅅ, not ㅆ · V1, mistake 56 |
+| D40 | \[여행\] | spelling: 여 has no 받침 · V7, mistake 57 |
+| D41 | \[올\] | 오다 + -(으)ㄹ = 올; 울다 = to cry · G15, mistake 58 |
+| D42 | \[일본은\] | after 받침: 은, not 는 · G1, mistake 59 |
 
 ## Part E model answers
 
