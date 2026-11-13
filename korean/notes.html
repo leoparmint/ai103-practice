@@ -89,6 +89,15 @@ h4{font-weight:600; font-size:1.05rem; margin:0; display:flex; align-items:basel
 .tip{margin:0; padding:10px 14px; border-radius:12px; background:var(--surface); border:1px solid var(--line); border-left:4px solid var(--accent); max-width:66ch}
 kbd{font-family:var(--mono); font-size:.78rem; border:1px solid var(--line); border-bottom-width:2px; border-radius:4px; padding:0 5px; background:var(--surface2); color:var(--ink)}
 .big{display:flex; flex-direction:column; gap:16px}
+
+/* Search: filters the page in place; [hidden] must beat display:contents on example rows */
+[hidden]{display:none !important}
+.nsearch{display:flex; align-items:center; gap:8px 12px; flex-wrap:wrap; max-width:66ch}
+.nsearch input{flex:1 1 260px; min-width:0; font:inherit; color:var(--ink); background:var(--surface); border:1px solid var(--line); border-radius:10px; padding:10px 12px}
+.nsearch input::placeholder{color:var(--faint)}
+.nsearch input:focus-visible{outline:2px solid var(--accent); outline-offset:1px; border-color:var(--accent)}
+.nstat{color:var(--muted); font-size:.92rem}
+mark.hl{background:color-mix(in srgb, var(--yellow) 32%, transparent); color:inherit; border-radius:3px; padding:0 1px}
 .big > h2{padding-bottom:8px; border-bottom:1px solid var(--line)}
 
 /* Contents */
@@ -155,7 +164,7 @@ footer p{margin:0 0 4px}
 }
 @media print{
   :root{--bg:#fff; --surface:#fff; --surface2:#f3f3f3; --ink:#111; --muted:#444; --faint:#666; --line:#bbb; --accent:#4b2a99; --link:#1a4f8a; --miss:#b00020}
-  .bar, .tip{display:none}
+  .bar, .tip, .nsearch{display:none}
   .pt{break-inside:avoid}
   a{color:inherit; text-decoration:none}
 }
@@ -164,6 +173,7 @@ footer p{margin:0 0 4px}
 <body>
 <nav class="bar" aria-label="Sections"><div class="barin">
   <a class="home" href="./">&larr; Flashcards</a>
+  <a href="#search" id="barSearch">Search</a>
   <a href="#contents">Contents</a>
   <a href="#vocabulary">Vocabulary</a>
   <a href="#grammar">Grammar</a>
@@ -175,7 +185,11 @@ footer p{margin:0 0 4px}
     <span class="eyebrow">Korean Review Notes &middot; one page</span>
     <h1>Korean Notes</h1>
     <p class="lede">663 words in 32 sets, 68 grammar points in 10 units with 410 example sentences, 57 mix-ups and 61 recurring mistakes, through the Nov 12, 2026 lesson.</p>
-    <p class="tip">Press <kbd>Ctrl</kbd>+<kbd>F</kbd> (<kbd>&#8984;</kbd>+<kbd>F</kbd> on a Mac, or <b>Find in page</b> on a phone) and type in Korean or English. Everything below is open, so Find reaches all of it. Codes like G51 or V21 are links.</p>
+    <div class="nsearch" id="search" role="search">
+      <input id="nq" type="search" placeholder="Search words, grammar, mistakes…" aria-label="Search the notes" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+      <span class="nstat" id="nstat" role="status"></span>
+    </div>
+    <p class="tip">Type in Korean or English and the page narrows to what matches. English words match on their root, so <i>burdensome</i> finds <i>a burden</i>. Press <kbd>/</kbd> to jump to the box and <kbd>Esc</kbd> to clear it. The browser's own Find (<kbd>Ctrl</kbd>+<kbd>F</kbd>) also reaches everything, and codes like G51 or V21 are links.</p>
   </header>
 
   <section class="big" id="contents">
@@ -221,5 +235,94 @@ footer p{margin:0 0 4px}
     <p><a href="./">Back to the flashcards</a> &middot; <a href="#contents">Back to contents</a></p>
   </footer>
 </main>
+<script>
+
+(function () {
+  const $$ = (s, r) => [...(r || document).querySelectorAll(s)];
+  const input = document.getElementById('nq'), stat = document.getElementById('nstat');
+  const SUFFIXES = ['ations', 'ation', 'ments', 'ment', 'ness', 'some', 'less', 'able', 'ible', 'ings', 'ing', 'edly', 'ful', 'est', 'ers', 'ies', 'ed', 'ly', 'er', 'es', 's'];
+  function stem(w) {
+    if (w.length < 5 || !/^[a-z]+$/.test(w)) return w;
+    let s = w;
+    for (let again = true; again;) { again = false; for (const x of SUFFIXES) if (s.endsWith(x) && s.length - x.length >= 3) { s = s.slice(0, -x.length); again = true; break; } }
+    if (s.length >= 4 && /([b-df-hj-np-tv-z])\1$/.test(s) && !/(ll|ss)$/.test(s)) s = s.slice(0, -1);
+    if (/[iy]$/.test(s)) s = s.slice(0, -1) + (s.length >= 5 ? '[iy]' : '(?:y|ie)');
+    return s;
+  }
+  const rx = t => t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  const low = t => t.normalize('NFC').toLowerCase();
+  const rows = $$('#vocabulary tbody tr, #mixups tbody tr, #mistakes tbody tr').map(el => ({el, t: low(el.textContent)}));
+  const points = $$('article.pt').map(el => ({el,
+    t: low([...el.children].filter(c => !c.matches('.ex, .glabel')).map(c => c.textContent).join(' ')),
+    exs: $$('.ex li', el).map(li => ({el: li, t: low(li.textContent)}))}));
+  const groups = $$('section.set, section.unit').concat($$('section.big'));
+  const MAX_MARKS = 3000;
+
+  function unmark() {
+    for (const m of $$('mark.hl')) { const p = m.parentNode; p.replaceChild(document.createTextNode(m.textContent), m); p.normalize(); }
+  }
+  function mark(el, re, left) {
+    const walker = document.createTreeWalker(el, NodeFilter.SHOW_TEXT), nodes = [];
+    while (walker.nextNode()) nodes.push(walker.currentNode);
+    for (const n of nodes) {
+      if (left <= 0) break;
+      const text = n.nodeValue; let last = 0, m, frag = null;
+      re.lastIndex = 0;
+      while ((m = re.exec(text)) && left > 0) {
+        if (!m[0]) { re.lastIndex++; continue; }
+        frag = frag || document.createDocumentFragment();
+        frag.append(text.slice(last, m.index));
+        const k = document.createElement('mark'); k.className = 'hl'; k.textContent = m[0]; frag.append(k);
+        last = m.index + m[0].length; left--;
+      }
+      if (frag) { frag.append(text.slice(last)); n.parentNode.replaceChild(frag, n); }
+    }
+    return left;
+  }
+  function apply() {
+    const q = low(input.value).trim().replace(/\s+/g, ' ');
+    unmark();
+    if (!q) {
+      for (const el of $$('[hidden]')) el.hidden = false;
+      stat.textContent = '';
+      return;
+    }
+    const words = q.split(' ').map(w => /^[a-z]+$/.test(w) ? {re: new RegExp('(?<![a-z])' + stem(w)), src: '(?<![a-z])' + stem(w) + '[a-z]*'} : {w, src: rx(w)});
+    const has = t => t.includes(q) || words.every(x => x.re ? x.re.test(t) : t.includes(x.w));
+    const hl = new RegExp([rx(q)].concat(words.map(x => x.src)).join('|'), 'gi');
+    let n = 0, left = MAX_MARKS;
+    for (const r of rows) { const hit = has(r.t); r.el.hidden = !hit; if (hit) { n++; left = mark(r.el, hl, left); } }
+    for (const p of points) {
+      // A point that matches by its own rules keeps all its examples; otherwise only the matching ones show
+      const own = has(p.t); let ex = 0;
+      for (const x of p.exs) { const hit = has(x.t); x.el.hidden = !own && !hit; if (hit) ex++; }
+      p.el.hidden = !own && !ex;
+      n += (own ? 1 : 0) + ex;
+      if (own || ex) left = mark(p.el, hl, left);
+    }
+    // Sets and units first, then the big sections that hold them
+    for (const g of groups) g.hidden = !g.querySelector(g.matches('.set') ? 'tbody tr:not([hidden])' : g.matches('.unit') ? 'article.pt:not([hidden])' : g.id === 'vocabulary' ? '.set:not([hidden])' : g.id === 'grammar' ? '.unit:not([hidden])' : g.id === 'contents' ? 'x-none' : 'tbody tr:not([hidden])');
+    stat.textContent = n ? n + (n === 1 ? ' match' : ' matches') : 'Nothing matches “' + input.value.trim() + '”';
+  }
+  let timer = 0;
+  input.addEventListener('input', () => { clearTimeout(timer); timer = setTimeout(apply, 150); });
+  const clear = () => { clearTimeout(timer); input.value = ''; apply(); };
+  input.addEventListener('keydown', e => { if (e.key === 'Escape' && input.value) { e.preventDefault(); clear(); } });
+  const focusBox = () => { input.focus({preventScroll: true}); input.select(); window.scrollTo({top: 0}); };
+  document.addEventListener('keydown', e => {
+    if (e.key === '/' && !e.ctrlKey && !e.metaKey && !e.altKey && document.activeElement !== input) { e.preventDefault(); focusBox(); }
+  });
+  document.getElementById('barSearch').addEventListener('click', e => { e.preventDefault(); focusBox(); });
+  // A link to something the search has hidden (a code like G51, or a section) clears the search first
+  document.addEventListener('click', e => {
+    const a = e.target.closest && e.target.closest('a[href^="#"]');
+    if (!a || a.id === 'barSearch' || !input.value) return;
+    const t = document.getElementById(decodeURIComponent(a.getAttribute('href').slice(1)));
+    if (t && t.closest('[hidden]')) clear();
+  });
+  if (input.value) apply();
+})();
+
+</script>
 </body>
 </html>
