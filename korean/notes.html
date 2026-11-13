@@ -335,6 +335,9 @@ footer p{margin:0 0 4px}
   if (input.value) apply();
 })();
 
+// Offline use: ../sw.js keeps a copy of this page and the flashcards on the device, refreshed whenever there's a connection
+if ('serviceWorker' in navigator) addEventListener('load', () => { navigator.serviceWorker.register('../sw.js').catch(() => {}); });
+
 </script>
 </body>
 </html>

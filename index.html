@@ -772,6 +772,7 @@ table.yn tr.wrong td:first-child{box-shadow:inset 3px 0 0 var(--miss)}
     <span>Some topics were suggested by two community study guides on GitHub, pratip-bagchi/ai-103-study-guide and kkaminsk/AI-103-Study-Guide. Every card cites the Microsoft page that confirms it.</span>
     <span>Practice questions are original, written for this deck in the exam's formats, and cite the Microsoft page that backs each answer.</span>
     <span>Your marks and practice results are saved in this browser only.</span>
+    <span id="offLine"><span id="offState"></span><span id="offGet">To use it without a connection, <a class="link" href="index.html" download="ai103-flashcards.html">download this page</a> and open the file. A downloaded copy keeps its own marks and results.</span></span>
   </footer>
 </div>
 
@@ -3341,6 +3342,29 @@ $("exGrid").addEventListener("click", e => { const b = e.target.closest("button[
 })();
 EX_READY = true;
 if (mode === "exam") showExam();
+
+// Offline use: sw.js keeps a copy of this page on the device and refreshes it whenever there's a connection.
+// Opened from a downloaded file there is no service worker; the page already holds everything it needs.
+(function offline(){
+  const state = $("offState"), get = $("offGet");
+  if (location.protocol === "file:") {
+    state.textContent = "This is a downloaded copy. It opens without a connection, and its marks and results are separate from the website's.";
+    get.hidden = true;
+    return;
+  }
+  if (!("serviceWorker" in navigator) || !window.caches) return;
+  const start = async () => {
+    try {
+      const reg = await navigator.serviceWorker.register("sw.js");
+      const sw = reg.active || reg.waiting || reg.installing;
+      if (sw.state !== "activated") await new Promise((ok, no) => sw.addEventListener("statechange", () => { if (sw.state === "activated") ok(); else if (sw.state === "redundant") no(new Error("not installed")); }));
+      if (!(await caches.match("./", {ignoreVary: true}))) return;
+      state.textContent = "This page is saved on this device, so it opens without a connection. ";
+      get.firstChild.textContent = "To keep it as a file too, ";
+    } catch (e) {}
+  };
+  if (document.readyState === "complete") start(); else addEventListener("load", start);
+})();
 
 </script>
 

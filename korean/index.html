@@ -454,6 +454,9 @@ body.focus .banner.warn:not([hidden]){display:flex}
           <label class="opt"><span class="lab">New cards a day from added decks<small>Separate from the lesson cards above</small></span><input type="number" id="oNewAdded" min="0" max="999"></label>
           <div class="row"><button class="btn small" id="aAdd" type="button">Add an Anki deck (.apkg)</button><input type="file" id="aFile" hidden><span class="optnote" id="aMsg"></span></div>
           <hr class="optsep">
+          <div class="opt"><span class="lab">Offline use<small id="offState">Checking whether this browser can keep the site for offline use…</small><small id="offNote">You can also download the flashcards as one file that opens without a connection. A downloaded copy keeps its own progress; a backup carries it across.</small></span></div>
+          <div class="row" id="offRow"><button class="btn small" id="offGet" type="button">Download the flashcards (.html)</button><span class="optnote" id="offMsg"></span></div>
+          <hr class="optsep">
           <div class="opt"><span class="lab">Backup<small>Progress lives in this browser. Copy it to another device with a backup file or text; restoring merges, keeping each card's latest review.</small></span></div>
           <div class="row"><button class="btn small" id="bDown" type="button">Download backup</button><button class="btn small" id="bCopy" type="button">Copy as text</button><button class="btn small" id="bFile" type="button">Restore from file</button><input type="file" id="bFileIn" accept=".json,application/json" hidden></div>
           <textarea id="restoreBox" placeholder="…or paste backup text here" spellcheck="false"></textarea>
@@ -508,6 +511,7 @@ body.focus .banner.warn:not([hidden]){display:flex}
   <footer>
     <p id="footStats"></p>
     <p>Built from the Korean Review Notes and Practice Workbook, refreshed by the scheduled lesson update. Progress is saved in this browser only; use Options and backup to move it.</p>
+    <p id="footOff" hidden></p>
   </footer>
 </div>
 
@@ -523,6 +527,9 @@ body.focus .banner.warn:not([hidden]){display:flex}
 </div>
 
 <noscript><p style="padding:16px">This page needs JavaScript.</p></noscript>
+
+<!-- Empty on the website, where the deck comes from deck.json. "Download the flashcards" saves this page with the deck written in here. -->
+<script type="application/json" id="deckInline"></script>
 
 <script>
 'use strict';
@@ -1213,12 +1220,7 @@ function initOptions() {
   $('#oType').onchange = e => { S.set.typeEnKo = e.target.checked; save(); };
   $('#oKb').onchange = e => { S.set.kb = e.target.value; save(); applyInputModes(); };
   $('#oKo').onchange = e => setKoType(e.target.checked);
-  $('#bDown').onclick = () => {
-    const blob = new Blob([JSON.stringify(backupData())], {type: 'application/json'});
-    const a = document.createElement('a'); a.href = URL.createObjectURL(blob);
-    a.download = 'korean-progress-' + new Date().toISOString().slice(0, 10) + '.json'; a.click();
-    setTimeout(() => URL.revokeObjectURL(a.href), 2000);
-  };
+  $('#bDown').onclick = () => saveFile('korean-progress-' + new Date().toISOString().slice(0, 10) + '.json', JSON.stringify(backupData()), 'application/json');
   $('#bCopy').onclick = async () => { const ok = await copyText(JSON.stringify(backupData())); $('#bMsg').textContent = ok ? 'Copied. Paste it into the box on your other device.' : 'Copy failed.'; };
   $('#bFile').onclick = () => $('#bFileIn').click();
   $('#bFileIn').onchange = async e => { const f = e.target.files[0]; if (f) restore(await f.text()); e.target.value = ''; };
@@ -1233,6 +1235,11 @@ function armed(btn, prompt, fn) {
     btn.classList.add('armed'); btn.textContent = prompt;
     t = setTimeout(() => { btn.classList.remove('armed'); btn.textContent = label; }, 4000);
   };
+}
+function saveFile(name, text, type) {
+  const a = document.createElement('a'); a.href = URL.createObjectURL(new Blob([text], {type}));
+  a.download = name; a.click();
+  setTimeout(() => URL.revokeObjectURL(a.href), 2000);
 }
 function backupData() { return {kind: 'korean-flashcards', v: 1, at: new Date().toISOString(), cards: S.cards, missed: S.missed, hist: S.hist, log: S.log}; }
 function restore(text) {
@@ -1341,13 +1348,13 @@ function fieldRoles(names) {
 const audioType = n => ({mp3: 'audio/mpeg', ogg: 'audio/ogg', oga: 'audio/ogg', opus: 'audio/ogg', m4a: 'audio/mp4', aac: 'audio/aac', wav: 'audio/wav', webm: 'audio/webm', flac: 'audio/flac'})[(n.split('.').pop() || '').toLowerCase()] || 'application/octet-stream';
 async function readApkg(file, say) {
   say('Loading the deck reader…');
-  await Promise.all(['vendor/jszip.min.js', 'vendor/sql-wasm.js', 'vendor/fzstd.js'].map(lib));
+  await Promise.all(['jszip.min.js', 'sql-wasm.js', 'fzstd.js'].map(f => lib(VENDOR + f)));
   say('Opening ' + file.name + '…');
   let zip;
   try { zip = await JSZip.loadAsync(file); } catch (e) { throw new Error('That isn’t an Anki deck file (.apkg).'); }
   const colName = ['collection.anki21b', 'collection.anki21', 'collection.anki2'].find(n => zip.file(n));
   if (!colName) throw new Error('That file has no Anki deck in it.');
-  const SQL = await initSqlJs({locateFile: f => 'vendor/' + f});
+  const SQL = await initSqlJs({locateFile: f => VENDOR + f});
   let db = new SQL.Database(unzstd(await zip.file(colName).async('uint8array')));
   const fieldNames = {}, deckNames = {}, deckCards = {}, notes = [], sounds = new Set();
   try {
@@ -1943,6 +1950,69 @@ document.addEventListener('keydown', e => {
   }
 });
 
+/* ---------- Offline use ----------
+   On the website, ../sw.js keeps a copy of the site on this device and refreshes it whenever there's a connection.
+   "Download the flashcards" saves this page as one file with the deck written into #deckInline. Opened from that
+   file, COPY is set: the deck is read from the page instead of deck.json, and the notes page and the Anki deck
+   reader, which aren't in the file, come from the website. */
+const deckSlot = $('#deckInline');
+const COPY = deckSlot.textContent.trim() ? {site: /^https?:\/\//.test(deckSlot.dataset.site || '') ? deckSlot.dataset.site : '', saved: deckSlot.dataset.saved || ''} : null;
+const VENDOR = (COPY ? COPY.site : '') + 'vendor/';
+function initOffline() {
+  const state = $('#offState'), foot = $('#footOff');
+  if (COPY) {
+    const site = COPY.site ? `<a href="${esc(COPY.site)}">the website</a>` : 'the website';
+    const when = COPY.saved ? ' from ' + esc(fmtDate(COPY.saved)) : '';
+    state.innerHTML = `This is a downloaded copy${when}. It opens without a connection but doesn’t update itself: for new lessons, download it again from ${site}.`;
+    $('#offNote').textContent = 'Progress here is separate from the website’s; a backup carries it across.';
+    $('#offRow').hidden = true;
+    foot.innerHTML = `Downloaded copy${when}: it stays at these lessons. New ones are on ${site}.`;
+    foot.hidden = false;
+    if (COPY.site) for (const a of $$('a[href="notes.html"]')) a.href = COPY.site + 'notes.html';
+    return;
+  }
+  $('#offGet').onclick = downloadCopy;
+  const cant = () => {
+    state.textContent = 'This browser can’t keep the site for offline use.';
+    $('#offNote').textContent = 'Instead, download the flashcards as one file that opens without a connection. A downloaded copy keeps its own progress; a backup carries it across.';
+  };
+  if (!('serviceWorker' in navigator) || !window.caches) { cant(); return; }
+  const start = async () => {
+    try {
+      state.textContent = 'Saving the site on this device…';
+      const reg = await navigator.serviceWorker.register('../sw.js');
+      const sw = reg.active || reg.waiting || reg.installing;
+      if (sw.state !== 'activated') await new Promise((ok, no) => sw.addEventListener('statechange', () => { if (sw.state === 'activated') ok(); else if (sw.state === 'redundant') no(new Error('not installed')); }));
+      const have = await Promise.all(['./', 'deck.json'].map(u => caches.match(u, {ignoreVary: true})));
+      if (have.every(Boolean)) {
+        state.textContent = 'Saved on this device: the flashcards and notes open without a connection, and new lessons arrive whenever you’re online.';
+        foot.textContent = 'Saved on this device, so it opens without a connection. Options and backup can also download it as a file.';
+        foot.hidden = false;
+      } else state.textContent = 'Not saved on this device yet. It will be the next time you open the site with a connection.';
+    } catch (e) { cant(); }
+  };
+  if (document.readyState === 'complete') start(); else addEventListener('load', start);
+}
+async function downloadCopy() {
+  const msg = $('#offMsg'), btn = $('#offGet');
+  btn.disabled = true; msg.textContent = 'Preparing the file…';
+  try {
+    const get = async url => { const r = await fetch(url, {cache: 'no-cache'}); if (!r.ok) throw new Error(url + ': ' + r.status); return r.text(); };
+    const [page, deck] = await Promise.all([get(location.pathname), get('deck.json')]);
+    JSON.parse(deck);
+    const slot = /(<script type="application\/json" id="deckInline")>(<\/script>)/;
+    if (!slot.test(page)) throw new Error('no deck slot in the page');
+    const now = new Date(), two = n => String(n).padStart(2, '0');
+    const attrs = ` data-site="${esc(new URL('./', location.href).href)}" data-saved="${now.getFullYear()}-${two(now.getMonth() + 1)}-${two(now.getDate())}"`;
+    // Every "<" goes in as its JSON escape (backslash u003c), so nothing in the deck can close the script element early
+    saveFile('korean-flashcards.html', page.replace(slot, (m, open, close) => open + attrs + '>' + deck.replace(/</g, '\\u003c') + close), 'text/html');
+    msg.textContent = 'Downloaded korean-flashcards.html. Open that file in a browser to study without a connection.';
+  } catch (e) {
+    msg.textContent = 'Couldn’t prepare the file. Check your connection and try again.';
+  }
+  btn.disabled = false;
+}
+
 /* ---------- Start ---------- */
 function renderHeader() {
   const s = D.stats;
@@ -1965,15 +2035,20 @@ function renderHeader() {
 async function boot() {
   document.body.classList.toggle('coarse', coarse);
   renderThemes();
-  buildKb(); setKoType(S.set.koType); initOptions();
+  buildKb(); setKoType(S.set.koType); initOptions(); initOffline();
   try { $('#pad').value = localStorage.getItem('kdeck.pad') || ''; } catch (e) {}
   try {
-    const r = await fetch('deck.json', {cache: 'no-cache'});
-    if (!r.ok) throw new Error(r.status);
-    D = await r.json();
+    if (COPY) D = JSON.parse(deckSlot.textContent);
+    else {
+      const r = await fetch('deck.json', {cache: 'no-cache'});
+      if (!r.ok) throw new Error(r.status);
+      D = await r.json();
+    }
   } catch (e) {
     $('#updated').textContent = '';
-    $('#studyView').innerHTML = '<p class="err-load">Couldn’t load the deck (deck.json). Check your connection and reload.</p>';
+    $('#studyView').innerHTML = COPY
+      ? '<p class="err-load">This downloaded copy is damaged. Download the flashcards again from the website.</p>'
+      : '<p class="err-load">Couldn’t load the deck (deck.json). Check your connection and reload.</p>';
     return;
   }
   await loadAdded();

@@ -190,7 +190,7 @@ def build(deck):
     return TEMPLATE.format(
         theme=theme_script(),
         css=CSS,
-        js=SEARCH_JS,
+        js=SEARCH_JS + OFFLINE_JS,
         words=st['words'], sets=st['sets'], points=st['points'], units=st['units'],
         examples=st['examples'], nmix=st['mixups'], nmis=st['mistakes'],
         latest=latest, built=built,
@@ -435,6 +435,12 @@ SEARCH_JS = r"""
   onScroll();
   if (input.value) apply();
 })();
+"""
+
+# The flashcard page registers the same service worker; this covers someone who only ever opens the notes.
+OFFLINE_JS = r"""
+// Offline use: ../sw.js keeps a copy of this page and the flashcards on the device, refreshed whenever there's a connection
+if ('serviceWorker' in navigator) addEventListener('load', () => { navigator.serviceWorker.register('../sw.js').catch(() => {}); });
 """
 
 
