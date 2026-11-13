@@ -265,6 +265,11 @@ kbd{font-family:var(--mono); font-size:.78rem; border:1px solid var(--line); bor
 .nsearch input:focus-visible{outline:2px solid var(--accent); outline-offset:1px; border-color:var(--accent)}
 .nstat{color:var(--muted); font-size:.92rem}
 mark.hl{background:color-mix(in srgb, var(--yellow) 32%, transparent); color:inherit; border-radius:3px; padding:0 1px}
+
+/* Back to top: appears once the page has scrolled */
+.totop{position:fixed; right:max(16px, env(safe-area-inset-right)); bottom:max(16px, env(safe-area-inset-bottom)); z-index:11; width:46px; height:46px; display:grid; place-items:center; border-radius:50%; border:1px solid var(--line); background:var(--surface2); color:var(--accent); font:600 1.3rem/1 var(--body); cursor:pointer; box-shadow:0 4px 14px rgba(0,0,0,.35)}
+.totop:hover{background:var(--accent); color:var(--accent-ink); border-color:var(--accent)}
+.totop:focus-visible{outline:2px solid var(--accent); outline-offset:2px}
 .big > h2{padding-bottom:8px; border-bottom:1px solid var(--line)}
 
 /* Contents */
@@ -331,7 +336,7 @@ footer p{margin:0 0 4px}
 }
 @media print{
   :root{--bg:#fff; --surface:#fff; --surface2:#f3f3f3; --ink:#111; --muted:#444; --faint:#666; --line:#bbb; --accent:#4b2a99; --link:#1a4f8a; --miss:#b00020}
-  .bar, .tip, .nsearch{display:none}
+  .bar, .tip, .nsearch, .totop{display:none}
   .pt{break-inside:avoid}
   a{color:inherit; text-decoration:none}
 }
@@ -385,7 +390,7 @@ SEARCH_JS = r"""
     const q = low(input.value).trim().replace(/\s+/g, ' ');
     unmark();
     if (!q) {
-      for (const el of $$('[hidden]')) el.hidden = false;
+      for (const el of $$('main [hidden]')) el.hidden = false;
       stat.textContent = '';
       return;
     }
@@ -422,6 +427,12 @@ SEARCH_JS = r"""
     const t = document.getElementById(decodeURIComponent(a.getAttribute('href').slice(1)));
     if (t && t.closest('[hidden]')) clear();
   });
+  const toTop = document.getElementById('toTop');
+  const still = matchMedia('(prefers-reduced-motion: reduce)');
+  const onScroll = () => { toTop.hidden = window.scrollY < 600; };
+  window.addEventListener('scroll', onScroll, {passive: true});
+  toTop.addEventListener('click', () => window.scrollTo({top: 0, behavior: still.matches ? 'auto' : 'smooth'}));
+  onScroll();
   if (input.value) apply();
 })();
 """
@@ -511,6 +522,7 @@ TEMPLATE = """<!doctype html>
     <p><a href="./">Back to the flashcards</a> &middot; <a href="#contents">Back to contents</a></p>
   </footer>
 </main>
+<button class="totop" id="toTop" type="button" aria-label="Back to top" title="Back to top" hidden>&uarr;</button>
 <script>
 {js}
 </script>
