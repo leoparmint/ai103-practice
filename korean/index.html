@@ -1611,13 +1611,29 @@ function renderNotes(openId) {
     }
   }
 }
+// Loose matching: words in any order, and English words match on their root (burdensome finds "a burden")
+const SUFFIXES = ['ations', 'ation', 'ments', 'ment', 'ness', 'some', 'less', 'able', 'ible', 'ings', 'ing', 'edly', 'ful', 'est', 'ers', 'ies', 'ed', 'ly', 'er', 'es', 's'];
+function stem(w) {
+  if (w.length < 5 || !/^[a-z]+$/.test(w)) return w;
+  let s = w;
+  for (let again = true; again;) { again = false; for (const x of SUFFIXES) if (s.endsWith(x) && s.length - x.length >= 3) { s = s.slice(0, -x.length); again = true; break; } }
+  if (s.length >= 4 && /([b-df-hj-np-tv-z])\1$/.test(s) && !/(ll|ss)$/.test(s)) s = s.slice(0, -1);
+  if (/[iy]$/.test(s)) s = s.slice(0, -1) + (s.length >= 5 ? '[iy]' : '(?:y|ie)');
+  return s;
+}
 function renderSearch(q) {
-  const f = notes.filter, has = t => (t || '').toLowerCase().includes(q);
-  const hl = t => { const s = esc(t); const qq = esc(q).replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); return s.replace(new RegExp(qq, 'gi'), m => `<mark class="hl">${m}</mark>`); };
+  const f = notes.filter, rx = t => t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  const words = q.split(/\s+/).filter(Boolean).map(w => /^[a-z]+$/.test(w) ? {re: new RegExp('(?<![a-z])' + stem(w)), src: '(?<![a-z&#])' + stem(w) + '[a-z]*'} : {w, src: rx(esc(w))});
+  const exact = t => (t || '').toLowerCase().includes(q);
+  const has = t => { const l = (t || '').toLowerCase(); return l.includes(q) || words.every(x => x.re ? x.re.test(l) : l.includes(x.w)); };
+  const first = (list, texts) => list.map(x => [texts(x).some(exact) ? 0 : 1, x]).sort((a, b) => a[0] - b[0]).map(x => x[1]);
+  const hlRe = new RegExp([rx(esc(q))].concat(words.map(x => x.src)).join('|'), 'gi');
+  const hl = t => esc(t).replace(hlRe, m => `<mark class="hl">${m}</mark>`);
   let html = '', total = 0;
   if (f === 'all' || f === 'vocab') {
     const rows = [];
     for (const s of D.vocab) for (const it of s.items) if (has(it.ko) || has(it.en) || has(it.notes)) rows.push([s, it]);
+    rows.splice(0, rows.length, ...first(rows, ([, it]) => [it.ko, it.en, it.notes]));
     if (rows.length) { total += rows.length; html += `<div class="res"><h3>Vocabulary · ${rows.length}</h3><div class="tw"><table class="nt stack"><tbody>${rows.slice(0, 80).map(([s, it]) => `<tr><td class="mut" data-l="Set">${esc(s.code)}</td><td class="ko" lang="ko">${hl(it.ko)}</td><td>${hl(it.en)}</td><td class="mut ko" lang="ko">${hl(it.notes)}</td></tr>`).join('')}</tbody></table></div></div>`; }
   }
   if (f === 'all' || f === 'grammar') {
@@ -1628,6 +1644,8 @@ function renderSearch(q) {
       for (const x of p.examples) if (has(x.ko) || has(x.en)) exs.push([p, x]);
     }
     for (const u of D.units) for (const s of u.selftest) if (has(s.ko) || has(s.en)) exs.push([{code: 'Unit ' + u.n + ' self-test'}, s]);
+    pts.splice(0, pts.length, ...first(pts, p => [p.code, p.title, p._text]));
+    exs.splice(0, exs.length, ...first(exs, ([, x]) => [x.ko, x.en]));
     if (pts.length) {
       total += pts.length;
       html += `<div class="res"><h3>Grammar · ${pts.length}</h3>${pts.slice(0, 40).map(p => {
