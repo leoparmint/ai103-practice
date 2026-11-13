@@ -11,6 +11,8 @@ Study site for Microsoft exam AI-103, *Developing AI Apps and Agents on Azure*: 
 
 Everything is in `index.html`, a single self-contained page. Progress is saved in your browser only.
 
+It works offline: after one visit with a connection, the page opens without one on that device (`sw.js` saves it and refreshes the saved copy on every online load; see `korean/README.md`, Offline use). The link at the bottom of the page downloads it as a file to open from disk instead; a downloaded copy keeps its own marks and results.
+
 Cards and questions cite the Microsoft Learn pages they come from. Practice questions are original and are not real exam questions.
 
 Also here: [Korean flashcards](https://leoparmint.github.io/ai103-practice/korean/) from lesson notes, with spaced repetition, practice questions and an on-screen Hangul keyboard. See `korean/README.md`.

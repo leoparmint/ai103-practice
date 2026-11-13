@@ -8,7 +8,17 @@ Study site for Darren's Korean lessons: https://leoparmint.github.io/ai103-pract
 - **All notes on one page** (`notes.html`): the same vocabulary, grammar, mix-ups and mistakes as plain, fully open HTML with a table of contents, so the browser's own Find (<kbd>Ctrl</kbd>+<kbd>F</kbd>) reaches everything. A search box at the top narrows the page to what matches, with the same loose matching as the Notes tab (English words match on their root, words in any order). Codes like G51 or V21 link within the page, `notes.html#G51` opens straight to a point, and it uses the theme picked on the flashcard page
 - **Keyboard**: an on-screen 두벌식 Hangul keyboard for devices without a Korean layout, and a scratchpad to copy from. On a computer, typing in an answer box follows the Korean layout (<kbd>Shift</kbd>+<kbd>Space</kbd> switches)
 
+- **Offline**: after one visit with a connection, the flashcards and the notes page open without one on that device. Options › Offline use shows whether the site is saved and can download the flashcards as a single file
+
 Progress is saved in the browser only; Options and backup moves it between devices.
+
+## Offline use
+
+`../sw.js` (one service worker for this site and the AI-103 page above it) saves both sites on the device the first time either is opened: the pages, `deck.json`, and the Anki deck reader in `vendor/`. It is network first: with a connection every load comes from the network as before, so a new lesson shows on the next load, and the saved copy is refreshed along the way. The saved copy is used only when the network fails, returns a server error, or takes more than 4 seconds. Loading either Korean page also refreshes the other one and the deck, so the notes are from the same lesson as the flashcards when you next go offline. Google Fonts are saved as they are used; Hangul the font hasn't been asked for yet shows in the device's own font until you're back online.
+
+Content updates need no change to `sw.js`. Change `VERSION` in it only to throw away everything saved.
+
+Options › Offline use › Download the flashcards saves `korean-flashcards.html`: this page with the deck written into the empty `<script id="deckInline">` slot, so it opens straight from disk. A downloaded copy keeps its own progress (a backup moves it), stays at the lessons it was saved with, and fetches the notes page and the Anki deck reader from the website when they're needed.
 
 ## Added Anki decks
 
