@@ -66,6 +66,7 @@ Examples:
 - N 만에 = for the first time in a span: 2년 만에. 오랜만에 = for the first time in ages.
 - -(으)ㄹ 때마다 form: after 받침 -을 때마다 (받을 때마다), after a vowel -ㄹ 때마다 (갈 때마다). Nouns take 마다 with no space: 수요일마다, 아침마다.
 - Verb + -는 동안 = while (for the whole time you V): 살다 → 사는 동안, 자다 → 자는 동안. N 동안 still takes a noun: 한 달 동안.
+- 씩 = each, per: 일주일에 한 번씩 = once a week (every week). It sits right after the count: 한 번씩, 두 개씩.
 
 Examples:
 
@@ -78,6 +79,8 @@ Examples:
 - 회사에 갈 때마다 차가 막혀요. — Every time I go to the office, there's traffic.
 - 스트레스를 받을 때마다 낚시를 해요. — Every time I get stressed, I go fishing.
 - 무인도에서 혼자 한 달 동안 살아야 해요. — I have to live alone on a deserted island for a month.
+- 주말마다 여자친구하고 맛집을 찾아가요. — Every weekend, my girlfriend and I go looking for good restaurants.
+- 저는 반신욕을 일주일에 한 번씩 해요. — I take a half-body bath once a week.
 - 무인도에 사는 동안 매일 낚시를 할 거예요. — While I live on the island, I'll fish every day.
 - 여행을 갈 때마다 약과 선크림을 챙겨요. — Every time I travel, I pack medicine and sunscreen.
 - 여행 갈 때마다 카메라를 가져가요. — Every time I travel, I take a camera.
@@ -330,6 +333,7 @@ Examples:
 - 혼자 일을 해서 스트레스를 잘 안 받는 편이에요. — I work alone, so I don't tend to get stressed.
 - 저는 운전을 안 좋아하는 편이에요. 그런데 여자친구는 더 안 좋아해요. — I'm not really into driving, but my girlfriend likes it even less. (안 goes right before the verb: 안 좋아하는 편이에요)
 - 저는 농구를 좋아하는 편이에요. 그래서 매일 농구를 봐요. — I tend to like basketball, so I watch it every day.
+- 저는 보통 여자친구하고 수다를 떠는 편이에요. — I usually chat with my girlfriend. (ㄹ stems drop ㄹ before -는: 떨다 → 떠는)
 
 ### G17 Change: A-아/어지다 vs V-게 되다
 
@@ -445,6 +449,8 @@ Examples:
 - 내슈빌에 도착한 후에 매운 치킨을 먹었어요. — After arriving in Nashville, I ate hot chicken.
 - 어제 한국어 수업 후에 호수에 갔어요. — Yesterday after Korean class I went to the lake.
 - 일본에 가기 전에 여권을 만들 거예요. — I'll get a passport before I go to Japan.
+- 일본 여행에서 돌아온 후에 더 연습하고 싶어요. — I want to practice more after I get back from Japan. (= 일본에 여행 다녀온 후에)
+- 제 여자친구는 맛집을 많이 찾아본 후에 저에게 보내 줘요. — My girlfriend looks up lots of good restaurants and then sends them to me.
 
 ### G22 And then: -고, -아/어서, -고 나서
 
@@ -473,6 +479,7 @@ Examples:
 - 운동하고 나면 스트레스가 풀려요. — Once I work out, my stress goes away.
 - 잠시 쉬고 나면 집중력이 좋아져요. — After a short break, my focus improves.
 - 여름이 가고 나면 날씨가 쌀쌀해져요. — Once summer is over, it gets chilly.
+- 낚시를 하고 나면 마음이 편안해져요. — After I go fishing, I feel relaxed.
 
 ### G24 While: -(으)면서 vs -다가
 
@@ -486,6 +493,8 @@ Examples:
 - 영화가 너무 지루해서 보다가 잤어요. — The movie was so boring that I fell asleep watching it.
 - 자전거를 타면서 음악을 들었어요. — I listened to music while riding my bike.
 - 말실수를 할까 봐 항상 생각하면서 말을 해요. — I always think while I talk, in case I say something wrong.
+- 저는 퇴근 후에 집에서 밥을 먹고 영화를 보면서 휴식을 취해요. — After work, I eat at home and relax while watching a movie.
+- 저는 낚시를 하면서 휴식을 취했어요. — I relaxed while fishing.
 
 ### G25 It's been (time) since: -(으)ㄴ 지 + time + 되다
 
@@ -576,6 +585,7 @@ Examples:
 - The result often ends in -네요 (G48) when you've just noticed it.
 - vs -아/어서: -아/어서 states the reason as fact.
 - Your guessed reason goes before 그런지, and what you noticed comes after it: 경기가 인기가 많아서 그런지 사람이 너무 많았어요. Don't put what you saw (사람이 많다) before 그런지. See mistake 54.
+- -아/어서 takes no tense, even for yesterday. The tense goes on the last verb: 어제 날씨가 추워서 그런지 물고기를 못 잡았어요.
 
 Examples:
 
@@ -583,6 +593,11 @@ Examples:
 - 사고가 나서 그런지 차가 너무 막히네요! — Maybe there was an accident; traffic is terrible!
 - 우리 동네는 숲이 많아서 그런지 공기가 깨끗해요. — Maybe because there are lots of woods, the air in my neighborhood is clean.
 - 미식축구 경기가 인기가 많아서 그런지 사람이 너무 많았어요. — Maybe because the football game was popular, there were too many people.
+- 대런 씨는 미국에 살아서 그런지 영어를 정말 잘하네요! — Maybe because you live in the U.S., your English is really good!
+- 어제 날씨가 추워서 그런지 물고기를 못 잡았어요. — Maybe because it was cold yesterday, I couldn't catch any fish.
+- 호수가 너무 조용해서 그런지 저는 낚시를 하고 나면 마음이 편안해져요. — Maybe because the lake is so quiet, I feel relaxed after fishing.
+- 호수가 잔잔해서 그런지 제 마음도 잔잔해져요. — Maybe because the lake is calm, my mind becomes calm too.
+- 일본은 미국보다 물가가 싸서 그런지 오마카세도 싼 것 같아요. — Maybe because prices are lower in Japan than in the U.S., omakase seems cheaper too.
 
 ### G29 You see: -거든요
 
@@ -712,6 +727,7 @@ Cover the Answer column. Say each sentence in Korean, then check.
 | 19 | I ate a big lunch, so I'm really full. (casual) | 점심을 많이 먹어 가지고 너무 배가 불러요. | G66 |
 | 20 | Maybe because the football game was popular, there were too many people. | 미식축구 경기가 인기가 많아서 그런지 사람이 너무 많았어요. | G28 |
 | 21 | My girlfriend looks pretty whatever she wears. | 여자친구는 어떤 옷을 입어도 예뻐요. | G32 |
+| 22 | Maybe because it was cold yesterday, I couldn't catch any fish. | 어제 날씨가 추워서 그런지 물고기를 못 잡았어요. | G28 |
 
 ## Unit 5 · Can, may, must, must not, if
 
@@ -1172,6 +1188,8 @@ Examples:
 - About yourself, just use N이에요/예요: 저는 개발자예요. N(이)라고 해요 gives the name of a job: 차를 수리하는 사람을 정비공이라고 해요.
 - -다는 + noun = the news, rumor or story that …: adjectives and 있다/없다 -다는 (맛있다는), verbs -ㄴ/는다는 (온다는), past -았/었다는 (샀다는), nouns (이)라는. Most common: -다는 소식을 듣고 = after hearing the news that …
 - Asking someone to do something for you, reported: V-아/어 달라고 하다 (from -아/어 주세요). 사 주세요 → 사 달라고 했어요. With -아/어도: 사 달라고 해도 = even if I ask (him) to buy it. See G54.
+- Telling what someone said with 말했어요 works the same way: 편하다 → 편하다고, 고맙다 → 고맙다고, 잘됐다 → 잘됐다고, 다행이다 → 다행이라고 말했어요. Word for word: "고마워요"라고 말했어요. Both mean the same thing.
+- Keep the tense of the words that were said: 먹고 싶다고 말했어요 = he said "I want to eat"; 먹고 싶었다고 말했어요 = he said "I wanted to eat."
 
 Examples:
 
@@ -1189,6 +1207,12 @@ Examples:
 - 카피바라를 볼 수 있다는 소식을 듣고 기분이 좋았어요. — I was happy to hear we could see capybaras.
 - 형에게 오마카세를 사 달라고 하세요. — Ask your brother to buy you omakase.
 - 형에게 사 달라고 해도 너무 비싸서 부담스러워요. — Even if I ask my brother to buy it, it's so expensive that I'd feel bad.
+- 저는 옷이 정말 편하다고 말했어요. — I said the clothes were really comfortable.
+- 저는 "고마워요"라고 말했어요. — I said, "Thank you."
+- 제 여자친구는 저한테 편하게 해 주고 싶었다고 말했어요. — My girlfriend said she wanted to make me comfortable.
+- 여자친구가 다행이라고 말했어요. — My girlfriend said it was a relief.
+- 형이 도쿄에서 초밥을 먹고 싶다고 말했어요. — My brother said he wants to eat sushi in Tokyo.
+- 도쿄가 조금 춥다고 들었어요. — I heard Tokyo is a little cold.
 
 ### G53 Making nouns: -는 것, -기
 
@@ -1258,6 +1282,8 @@ Cover the Answer column. Say each sentence in Korean, then check.
 | 17 | My friend asked me a favor that's hard to do. | 친구가 들어주기 어려운 부탁을 했어요. | G53 |
 | 18 | I was happy to hear the news that my friend bought a house. | 친구가 집을 샀다는 소식을 듣고 기분이 좋았어요. | G52 |
 | 19 | Ask your brother to buy it for you. | 형에게 사 달라고 하세요. | G52 |
+| 20 | I said the clothes were really comfortable. | 저는 옷이 정말 편하다고 말했어요. | G52 |
+| 21 | My girlfriend said it was a relief. | 여자친구가 다행이라고 말했어요. | G52 |
 
 ## Unit 9 · Requests, giving and politeness
 

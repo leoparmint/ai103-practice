@@ -297,7 +297,7 @@ Words are grouped by topic. Cover the 한국어 column, read the English, and sa
 | 추천하다 | to recommend |  |
 | 잔 | cup (counter) | 커피 한두 잔 |
 
-## Sets V12–V31
+## Sets V12–V32
 
 ### V12 Shopping and money
 
@@ -739,7 +739,7 @@ Words are grouped by topic. Cover the 한국어 column, read the English, and sa
 | 오르다 | to go up, rise (prices) | 르 irregular: 올라요 · 집값이 매년 올라요 |
 | 매년 | every year | 매년 블루리지에 낚시하러 가요 |
 | 점점 | more and more, gradually | 점점 추워져요 |
-| 휴식을 취하다 | to get some rest | 하루는 꼭 휴식을 취해야 해요 |
+| 휴식을 취하다 | to get some rest | 하루는 꼭 휴식을 취해야 해요 · more formal than 쉬다 |
 | 반신욕(을) 하다 | to soak in a warm bath (up to the waist) | 따뜻한 물에서 반신욕을 해 보세요 |
 | 머리 모양을 바꾸다 | to change your hairstyle | 기분 전환이 필요할 때 머리 모양을 바꿔요 |
 | 맛집을 찾아가다 | to go out to a great restaurant | 시간이 있을 때마다 맛집을 찾아가요 |
@@ -805,3 +805,28 @@ Words are grouped by topic. Cover the 한국어 column, read the English, and sa
 | 차이나타운 | Chinatown | 중식 = 중국 음식 · 차이나타운에서 만두를 먹고 싶어요 |
 | 사 달라고 하다 | to ask someone to buy it for you | 형에게 사 달라고 하세요 (G52) |
 | 카메라 | camera | 여행 갈 때마다 카메라를 가져가요 |
+
+### V32 Pickleball, a calm lake and what people said
+
+| 한국어 | English | Notes |
+| --- | --- | --- |
+| 같은 팀 | the same team | 여자친구하고 같은 팀이었어요 |
+| 크게 지다 | to lose badly | = 완전히 지다 · 우리는 크게 졌어요 · 이기다 ↔ 지다 (V5) |
+| 완패하다 ↔ 완승하다 | to lose completely ↔ to win completely | 완패했어요 = 완전히 졌어요 · 완승했어요 = 완전히 이겼어요 |
+| 돌아오다 | to come back, return | 일본 여행에서 돌아온 후에 더 연습하고 싶어요 · = 일본에 여행 다녀온 후에 (V28) |
+| 스테이크 | steak | 여자친구가 선물로 스테이크를 사 줄 거예요 |
+| 마음이 편하다 | to feel at ease | 물고기는 못 잡았지만 마음이 편했어요 |
+| 마음이 편안해지다 | to feel relaxed, calm down | 낚시를 하고 나면 마음이 편안해져요 (G23) |
+| 잔잔하다 | to be calm, still (water) | 호수가 잔잔해요 · 잔잔해져요 said \[잔자내져요\] |
+| 고맙다 | to be thankful | 고마워요 → 고맙다고 말했어요 (G52) |
+| 잘됐다 | that's great, it worked out | 여자친구가 잘됐다고 말했어요 |
+| 다행이다 | what a relief, I'm glad | 다행이라고 말했어요 · 다행히 (V16) |
+| 레스토랑 | restaurant | = 식당 · 이 레스토랑은 항상 사람이 많아요 |
+| 외모 | appearance, looks | 외모에 신경(을) 쓰다 = to care about your looks (V24) |
+| 헤어스타일 | hairstyle | = 머리 모양 · 머리 모양을 바꾸다 (V29) |
+| 목욕(을) 하다 | to take a bath | 반신욕 = a half-body bath (V29) |
+| 대청소 | a big cleaning | 집안 정리를 하고 대청소도 해야 돼요 |
+| 추석 | Chuseok (Korean harvest holiday) | 추석 때 많은 사람이 우리 집에 올 거예요 |
+| 일주일에 한 번씩 | once a week | 씩 = each, per (G5) · 반신욕을 일주일에 한 번씩 해요 |
+| 짜증(이) 나다 | to get annoyed | 짜증 나는 일이 있을 때 여자친구하고 수다를 떨어요 |
+| 보내 주다 | to send (to someone) | 여자친구가 맛집을 찾아본 후에 저에게 보내 줘요 |

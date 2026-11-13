@@ -63,6 +63,8 @@ These pairs are where mixing pays off: practicing look-alikes side by side train
 | 53 | -(으)려고 해요 / -기로 했어요 | a plan you're thinking about vs a decision or a promise, often made with someone | "My brother and I made plans to play pickleball tomorrow": 내일 형하고 피클볼을 (치려고 해요 / 치기로 했어요). | 치기로 했어요 | G39 |
 | 54 | 입다 / 쓰다 / 신다 / 끼다 / 매다 | clothes on the body vs hat or glasses vs socks and shoes vs gloves vs a tie or scarf | "It was cold, so I wore gloves": 추워서 장갑을 (입었어요 / 꼈어요). | 꼈어요 | V30 |
 | 55 | N과/하고 / N에다가 | just listing two things vs one thing added on top of another, eaten or worn together | "My favorite sushi is salmon and tuna": 제일 좋아하는 초밥은 연어초밥(과 / 에다가) 참치초밥이에요. | 과 | G57 |
+| 56 | N에서 돌아오다 / N에 다녀오다 | come back from a place (에서) vs go to a place and come back (에). Same meaning for a trip: 일본 여행에서 돌아온 후에 = 일본에 여행 다녀온 후에 | "After I get back from Japan": 일본(에서 / 에) 돌아온 후에 더 연습하고 싶어요. | 에서 | V32, G2 |
+| 57 | -다고 말했어요 / "…"라고 말했어요 | what someone said, in your words (고맙다고) vs their exact words in quotes ("고마워요"라고) | "I said, 'Thank you'": 저는 "고마워요"(라고 / 다고) 말했어요. | 라고 | G52 |
 
 ## Your recurring mistakes
 
@@ -129,3 +131,5 @@ Each line is a real correction from your lessons. Cover the Say column, read the
 | 57 | 엳행을 갈 때마다 뭐 가져가요? | 여행을 갈 때마다 뭐 가져가요? | spelling: 여 in 여행 has no 받침 | V7 |
 | 58 | 눈이 울 때 · 비가 울 것 같아요. | 눈이 올 때 · 비가 올 것 같아요. | 오다 + -(으)ㄹ = 올; 울다 means to cry | G20, G15 |
 | 59 | 일본는 밤에 추워요. | 일본은 밤에 추워요. | after 받침: 은, not 는 | G1 |
+| 60 | 추석 때 많은 사람이 우리 집 올 거예요. | 추석 때 많은 사람이 우리 집에 올 거예요. | 오다 and 가다 take 에 for the place: 우리 집에 오다 | G2 |
+| 61 | 다른 사람 말을 많이 안 해요. | 다른 사람하고는 말을 많이 안 해요. | talk with someone = N하고 말하다; 는 adds the contrast "but with other people" | G8, G1 |

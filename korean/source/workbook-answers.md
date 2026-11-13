@@ -162,6 +162,10 @@ Answers are in \[brackets\]. Check each part as soon as you finish it, and look 
 | A154 | \[편의점\] | N(으)로 유명하다 = famous for N · V31 |
 | A155 | \[연어\] | 연어 · 참치 = salmon · tuna · V31 |
 | A156 | \[푹\] | 푹 쉬다 = to get a good rest · V31 |
+| A157 | \[같은\] | 같은 팀 = the same team · V32 |
+| A158 | \[잔잔해서\] | 잔잔하다 + -아서 그런지 · V32, G28 |
+| A159 | \[대청소\] | 집안 정리 + 대청소 · V32 |
+| A160 | \[씩\] | 일주일에 한 번씩 = once a week · V32, G5 |
 
 ## Part B answers
 
@@ -321,6 +325,10 @@ Answers are in \[brackets\]. Check each part as soon as you finish it, and look 
 | B152 | \[달라고\] | -아/어 달라고 하다 = ask someone to do it for you · G52 |
 | B153 | \[입어도\] | 어떤 N을 V-아/어도 = whatever N · G32 |
 | B154 | \[먹었는지\] | past + 는지 before 기억이 안 나다 · G49 |
+| B155 | \[추워서\] | 춥다 → 추워서; no past tense before 그런지 · G28 |
+| B156 | \[편하다고\] | adjective + -다고 말했어요 · G52 |
+| B157 | \[다행이라고\] | 이다 → (이)라고 말했어요 · G52 |
+| B158 | \[돌아온\] | 돌아오다 + -ㄴ 후에 · G21, V32 |
 
 ## Part C answers
 
@@ -386,6 +394,8 @@ Answers are in \[brackets\]. Check each part as soon as you finish it, and look 
 | C58 | \[신어요\] | feet = 신다; 입다 is for clothes · V30 |
 | C59 | \[과\] | just listing favorites = 과/하고; 에다가 is for things you have together · G57, mix-up 55 |
 | C60 | \[해도\] | even if I ask = 사 달라고 해도; 해서 would mean "because I asked" · G32, G52 |
+| C61 | \[라고\] | the exact words in quotes take 라고 · G52, mix-up 57 |
+| C62 | \[에서\] | come back from a place = N에서 돌아오다 · V32, mix-up 56 |
 
 ## Part D answers
 
@@ -433,6 +443,8 @@ Answers are in \[brackets\]. Check each part as soon as you finish it, and look 
 | D40 | \[여행\] | spelling: 여 has no 받침 · V7, mistake 57 |
 | D41 | \[올\] | 오다 + -(으)ㄹ = 올; 울다 = to cry · G15, mistake 58 |
 | D42 | \[일본은\] | after 받침: 은, not 는 · G1, mistake 59 |
+| D43 | \[집에\] | 오다 takes 에 for the place · G2, mistake 60 |
+| D44 | \[사람하고는\] | talk with someone = N하고 말하다 · G8, mistake 61 |
 
 ## Part E model answers
 
