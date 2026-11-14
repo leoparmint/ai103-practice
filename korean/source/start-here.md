@@ -2,7 +2,7 @@
 
 Oct 8, 2026 · @Darren Funes
 
-Vocabulary and grammar from every lesson with both teachers through November 12, 2026: 663 words and phrases in 32 sets, 68 grammar points in 10 units, and your most common mix-ups and mistakes, set up so you test yourself first and read second.
+Vocabulary and grammar from every lesson with both teachers through November 13, 2026: 680 words and phrases in 33 sets, 69 grammar points in 10 units, and your most common mix-ups and mistakes, set up so you test yourself first and read second.
 
 ## How to study
 
@@ -63,11 +63,12 @@ Write the date and how many items you missed in each cell (10/9 · 3). If you mi
 | V30 | Clothes and what you wear |  |  |  |  |  |
 | V31 | Date clothes, trip plans and Japanese food |  |  |  |  |  |
 | V32 | Pickleball, a calm lake and what people said |  |  |  |  |  |
+| V33 | Stock news, snacks and keeping at it |  |  |  |  |  |
 | Unit 1 | Particles and basics (G1–G10, G63) |  |  |  |  |  |
 | Unit 2 | Describing (G11–G19) |  |  |  |  |  |
 | Unit 3 | Time and order (G20–G26, G64) |  |  |  |  |  |
 | Unit 4 | Reasons and contrast (G27–G32, G59–G61, G66) |  |  |  |  |  |
-| Unit 5 | Can, may, must, if (G33–G37) |  |  |  |  |  |
+| Unit 5 | Can, may, must, if (G33–G37, G69) |  |  |  |  |  |
 | Unit 6 | Plans and purpose (G38–G43, G65) |  |  |  |  |  |
 | Unit 7 | Experience and reactions (G44–G48) |  |  |  |  |  |
 | Unit 8 | Inner questions, worries, quoting (G49–G53, G62) |  |  |  |  |  |
@@ -94,6 +95,7 @@ Write the date and how many items you missed in each cell (10/9 · 3). If you mi
 - Lesson 31 (Nov 9, 2026), 청바지에다가 티셔츠를 입으려고 해요, with Sooyoung: 대런-260531 and A-31 lesson PDF; homework 나의 여행 패션 (-기로 하다, 에다가). Clothes and the verbs that go with them (입다, 쓰다, 신다, 끼다, 매다). Added V30, new rules and examples in G39 (-기로 하다 vs -(으)려고 하다, -기로 했었어요) and G57 (에다가 for clothes), Unit 6 self-test row 19, Unit 9 self-test row 15, and mix-ups 53–54. No corrected mistakes in this lesson.
 - Lesson 32 (Nov 10, 2026), \[프리토킹\] 옷차림과 여행계획, with Sooyoung: 대런-260531 and homework feedback 대런-숙제-261109.pdf (your 친구 인터뷰하기 and 나의 여행 패션 homework). Working late, what you wear on dates, and plans and food for the Japan trip. Added V31, new rules and examples in G32 (어떤 옷을 입어도), G39 (-기로 약속하다, trip plans), G49 (어디인지), G52 (-아/어 달라고 하다) and G57 (에다가 vs 과 for favorites), examples in G5, G12, G27 and G46, Unit 4 self-test row 21, Unit 6 self-test row 20, Unit 8 self-test row 19, Unit 9 self-test row 16, mix-up 55 and mistakes 55–59. No homework set: 여행 잘 다녀오세요!
 - Nov 12, 2026 lesson, 대런\_휴식단어 (Google Doc and PDF in the teacher's folder): losing at pickleball, Japan trip plans, a calm day fishing, what you and your girlfriend said about her gift, and 세종한국어 회화 4 익힘책 p.30 words for resting (휴식을 취하다, 반신욕, 수다를 떨다, 집안 정리). Added V32, new rules and examples in G5 (씩), G28 (no tense before 그런지) and G52 (-다고 말했어요 vs "…"라고, keeping the tense), examples in G16, G21, G23 and G24, Unit 4 self-test row 22, Unit 8 self-test rows 20–21, mix-ups 56–57 and mistakes 60–61.
+- Nov 13, 2026 lesson, 대런\_다가보면 (Google Doc and PDF) and 대런\_아/어지다 VS 게되다 (Google Doc) in the teacher's folder: homework sentences about the Japan trip and Nvidia news, review questions from the last lesson, then V-다(가) 보면 and -아/어지다 vs -게 되다. Added V33, new G69 V-다(가) 보면 (Unit 5 self-test rows 14–15), new rules and examples in G17 (Unit 2 self-test row 15), G18 (짜증나해요), G52 and G67 (-아/어 두다), examples in G28, mix-ups 58–60 and mistakes 62–67.
 
 ## Sources
 

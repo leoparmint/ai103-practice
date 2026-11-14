@@ -65,6 +65,9 @@ These pairs are where mixing pays off: practicing look-alikes side by side train
 | 55 | N과/하고 / N에다가 | just listing two things vs one thing added on top of another, eaten or worn together | "My favorite sushi is salmon and tuna": 제일 좋아하는 초밥은 연어초밥(과 / 에다가) 참치초밥이에요. | 과 | G57 |
 | 56 | N에서 돌아오다 / N에 다녀오다 | come back from a place (에서) vs go to a place and come back (에). Same meaning for a trip: 일본 여행에서 돌아온 후에 = 일본에 여행 다녀온 후에 | "After I get back from Japan": 일본(에서 / 에) 돌아온 후에 더 연습하고 싶어요. | 에서 | V32, G2 |
 | 57 | -다고 말했어요 / "…"라고 말했어요 | what someone said, in your words (고맙다고) vs their exact words in quotes ("고마워요"라고) | "I said, 'Thank you'": 저는 "고마워요"(라고 / 다고) 말했어요. | 라고 | G52 |
+| 58 | A-아/어지다 / V-게 되다 | a state or quality changes (adjective: 건강해져요) vs you end up doing something (verb: 먹게 돼요, 잘 치게 돼요) | "I worked out every day, so I got healthier": 매일 운동해서 (건강해졌어요 / 건강하게 됐어요). | 건강해졌어요 | G17, G69 |
+| 59 | 스트레스를 풀다 / 스트레스가 풀리다 | I relieve my stress (I do it, 을/를) vs my stress goes away (it happens, 이/가) | "I relieve stress at karaoke": 저는 노래방에서 (스트레스를 풀어요 / 스트레스가 풀려요). | 스트레스를 풀어요 | V33, G58 |
+| 60 | 기분 전환(을) 하다 / 기분이 전환되다 | I (we) change our mood on purpose vs my mood gets refreshed (it happens) | "After going to the lake, my mood was refreshed": 호수에 간 후에 제 (기분을 전환했어요 / 기분이 전환됐어요). | 기분이 전환됐어요 | V33, G58 |
 
 ## Your recurring mistakes
 
@@ -133,3 +136,9 @@ Each line is a real correction from your lessons. Cover the Say column, read the
 | 59 | 일본는 밤에 추워요. | 일본은 밤에 추워요. | after 받침: 은, not 는 | G1 |
 | 60 | 추석 때 많은 사람이 우리 집 올 거예요. | 추석 때 많은 사람이 우리 집에 올 거예요. | 오다 and 가다 take 에 for the place: 우리 집에 오다 | G2 |
 | 61 | 다른 사람 말을 많이 안 해요. | 다른 사람하고는 말을 많이 안 해요. | talk with someone = N하고 말하다; 는 adds the contrast "but with other people" | G8, G1 |
+| 62 | 일본 십일월에 춥다라고 들어서 | 일본은 십일월에 춥다고 들어서 | heard that = -다고 들었어요 (no 라); the topic gets 은 | G52, G1 |
+| 63 | 일본 과자를 샀 달라고 했어요. | 일본 과자를 사 달라고 했어요. | -아/어 달라고: 사다 → 사, no past inside; the past goes on 했어요 | G52 |
+| 64 | 엔비디아 스톡 떨어진다는 소식 | 엔비디아 주식이 떨어진다는 소식 | stock = 주식, and the subject needs 이 | V33, G52 |
+| 65 | 여자친구는 … 정말 짜증나요. | 여자친구는 … 정말 짜증나해요. | someone else's feeling takes -아/어하다 | G18 |
+| 66 | 매일 운동하다 보면 건강하게 돼요. | 매일 운동하다 보면 건강해져요. | adjectives change with -아/어지다, not -게 되다 | G17, G69 |
+| 67 | 비행기 표를 미리 사 놓았고, 호텔을 예약해 놓았어요. | 비행기 표를 미리 사 놓았고, 호텔도 예약해 놓았어요. | teacher's rewrite: 도 = the hotel too | G6, G67 |

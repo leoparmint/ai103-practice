@@ -297,7 +297,7 @@ Words are grouped by topic. Cover the 한국어 column, read the English, and sa
 | 추천하다 | to recommend |  |
 | 잔 | cup (counter) | 커피 한두 잔 |
 
-## Sets V12–V32
+## Sets V12–V33
 
 ### V12 Shopping and money
 
@@ -830,3 +830,25 @@ Words are grouped by topic. Cover the 한국어 column, read the English, and sa
 | 일주일에 한 번씩 | once a week | 씩 = each, per (G5) · 반신욕을 일주일에 한 번씩 해요 |
 | 짜증(이) 나다 | to get annoyed | 짜증 나는 일이 있을 때 여자친구하고 수다를 떨어요 |
 | 보내 주다 | to send (to someone) | 여자친구가 맛집을 찾아본 후에 저에게 보내 줘요 |
+
+### V33 Stock news, snacks and keeping at it
+
+| 한국어 | English | Notes |
+| --- | --- | --- |
+| 주식 | stock, shares | 엔비디아 주식이 떨어졌어요 |
+| (값이) 떨어지다 ↔ 오르다 | (a price) to fall ↔ to go up | 주식이 떨어진다는 소식을 들었어요 · 오르다 (V29) · 시험에 떨어지다 (V4) |
+| 스캔들 | scandal | 여자친구하고 엔비디아 스캔들에 대해서 수다를 떨어요 |
+| 과자 | snacks, chips, cookies | 여자친구가 일본 과자를 사 달라고 했어요 |
+| 그릭 요거트 | Greek yogurt | 저는 아침마다 그릭 요거트를 먹어요 |
+| 코스트코 | Costco | 코스트코 그릭 요거트가 맛있다는 소식을 들었어요 |
+| 질리다 | to get sick of (the same thing) | 같은 음식을 매일 먹다 보면 질려요 |
+| 익숙하다 · 익숙해지다 | to be used to · to get used to | 집에서 일하는 것에 익숙해졌어요 |
+| 스트레스를 풀다 | to relieve stress (you do it) | said \[푸러요\] · 스트레스가 풀리다 (V1) = stress goes away by itself |
+| 기분이 전환되다 | to feel refreshed, your mood changes | 기분 전환(을) 하다 = I refresh my mood (V1) · 호수에 가면 기분이 전환돼요 |
+| 노래방 | karaoke room | 노래방에서 노래를 부르면 스트레스가 풀려요 |
+| 며칠 (동안) | how many days, a few days | 일본에서 며칠 동안 여행할 거예요? · 6일 = 육일 |
+| 여행을 다니다 | to travel around (often) | 여행을 자주 다니다 보면 행복해져요 |
+| 사 놓다 · 사 두다 | to buy ahead of time | 비행기 표를 미리 사 놓았어요 (G67) |
+| 건강해지다 | to get healthier | 건강하게 돼요 ✗ → 건강해져요 ✓ (G17) |
+| 예를 들면 | for example | 예를 들면 초밥이나 라멘을 좋아해요 |
+| 특별한 이유는 없어요 | there's no particular reason | 특별한 이유는 없어요. 그냥 가고 싶었어요 |

@@ -166,6 +166,10 @@ Answers are in \[brackets\]. Check each part as soon as you finish it, and look 
 | A158 | \[잔잔해서\] | 잔잔하다 + -아서 그런지 · V32, G28 |
 | A159 | \[대청소\] | 집안 정리 + 대청소 · V32 |
 | A160 | \[씩\] | 일주일에 한 번씩 = once a week · V32, G5 |
+| A161 | \[주식\] | stock = 주식, not 스톡 · V33 |
+| A162 | \[질려요\] | 질리다 = get sick of the same thing · V33, G69 |
+| A163 | \[과자\] | 과자 = snacks, chips, cookies · V33 |
+| A164 | \[풀어요\] | 스트레스를 풀다 = I relieve it; 스트레스가 풀리다 = it goes away · V33, mix-up 59 |
 
 ## Part B answers
 
@@ -329,6 +333,10 @@ Answers are in \[brackets\]. Check each part as soon as you finish it, and look 
 | B156 | \[편하다고\] | adjective + -다고 말했어요 · G52 |
 | B157 | \[다행이라고\] | 이다 → (이)라고 말했어요 · G52 |
 | B158 | \[돌아온\] | 돌아오다 + -ㄴ 후에 · G21, V32 |
+| B159 | \[하다 보면\] | V-다(가) 보면 = as you keep doing it · G69 |
+| B160 | \[치게 될\] | verb + -게 되다 = end up, come to · G17, G69 |
+| B161 | \[건강해져요\] | adjective + -아/어지다, not -게 되다 · G17, G69 |
+| B162 | \[짜증나해요\] | someone else's feeling: -아/어하다 · G18 |
 
 ## Part C answers
 
@@ -396,6 +404,8 @@ Answers are in \[brackets\]. Check each part as soon as you finish it, and look 
 | C60 | \[해도\] | even if I ask = 사 달라고 해도; 해서 would mean "because I asked" · G32, G52 |
 | C61 | \[라고\] | the exact words in quotes take 라고 · G52, mix-up 57 |
 | C62 | \[에서\] | come back from a place = N에서 돌아오다 · V32, mix-up 56 |
+| C63 | \[마시게 돼요\] | a verb result after -다 보면 takes -게 돼요 · G69, G17, mix-up 58 |
+| C64 | \[사 놓았고\] | 사 놓다 = buy ahead of time (= 사 두다) · G67, G22 |
 
 ## Part D answers
 
@@ -445,6 +455,12 @@ Answers are in \[brackets\]. Check each part as soon as you finish it, and look 
 | D42 | \[일본은\] | after 받침: 은, not 는 · G1, mistake 59 |
 | D43 | \[집에\] | 오다 takes 에 for the place · G2, mistake 60 |
 | D44 | \[사람하고는\] | talk with someone = N하고 말하다 · G8, mistake 61 |
+| D45 | \[춥다고\] | heard that = -다고 들었어요 · G52, mistake 62 |
+| D46 | \[사 달라고\] | no past inside -아/어 달라고 · G52, mistake 63 |
+| D47 | \[주식이\] | stock = 주식 · V33, mistake 64 |
+| D48 | \[짜증나해요\] | someone else's feeling: -아/어하다 · G18, mistake 65 |
+| D49 | \[건강해져요\] | adjective + -아/어지다 · G17, mistake 66 |
+| D50 | \[호텔도\] | 도 = too · G6, G67, mistake 67 |
 
 ## Part E model answers
 

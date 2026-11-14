@@ -2,7 +2,7 @@
 
 Oct 8, 2026 · @Darren Funes
 
-434 fill-in-the-blank items on the same vocabulary and grammar as the Korean Review Notes, with the answer key in the next tab.
+450 fill-in-the-blank items on the same vocabulary and grammar as the Korean Review Notes, with the answer key in the next tab.
 
 ## How to use this workbook
 
@@ -10,10 +10,10 @@ Do one part per session, closed-book, and check it the moment you finish.
 
 | Part | What you do | Items | Time |
 | --- | --- | --- | --- |
-| A | Vocabulary in context: write the Korean word from an English cue | 160 | about 20 min |
-| B | Grammar forms: put the base word into the right form | 158 | about 25 min |
-| C | Mixed review: choose the pattern yourself | 62 | about 10 min |
-| D | Fix the mistake: correct the part in \[brackets\] | 44 | about 10 min |
+| A | Vocabulary in context: write the Korean word from an English cue | 164 | about 20 min |
+| B | Grammar forms: put the base word into the right form | 162 | about 25 min |
+| C | Mixed review: choose the pattern yourself | 64 | about 10 min |
+| D | Fix the mistake: correct the part in \[brackets\] | 50 | about 10 min |
 | E | Your turn: finish sentences about your own life | 10 | about 15 min |
 
 1. **Close the notes.** Write in pencil or on a separate sheet so you can redo the workbook later.
@@ -121,7 +121,7 @@ Write the Korean word or phrase for the English cue, in the form the sentence ne
 | A47 | 바다에서 수영할 때 물이 너무 ＿＿＿＿＿. (was cold to the touch) |
 | A48 | 길이 ＿＿＿＿＿ 조심하세요. (slippery, + so) |
 
-## Part A · Vocabulary in context (V9–V32)
+## Part A · Vocabulary in context (V9–V33)
 
 ### V9 Home, chores and repairs
 
@@ -354,6 +354,15 @@ Write the Korean word or phrase for the English cue, in the form the sentence ne
 | A158 | 호수가 ＿＿＿＿＿ 그런지 제 마음도 편안해져요. (calm, still) |
 | A159 | 추석 때 손님이 많이 와서 집안 정리를 하고 ＿＿＿＿＿도 해야 돼요. (a big cleaning) |
 | A160 | 저는 반신욕을 일주일에 한 번＿＿＿＿＿ 해요. (each, per) |
+
+### V33 Stock news, snacks and keeping at it
+
+| # | Fill in the blank |
+| --- | --- |
+| A161 | 엔비디아 ＿＿＿＿＿이 많이 떨어졌어요. (stock) |
+| A162 | 같은 음식을 매일 먹다 보면 ＿＿＿＿＿. (get sick of it) |
+| A163 | 여자친구가 일본 ＿＿＿＿＿를 사 달라고 했어요. (snacks) |
+| A164 | 저는 낚시를 하면서 스트레스를 ＿＿＿＿＿. (relieve) |
 
 ## Part B · Grammar forms (Units 1–3)
 
@@ -646,6 +655,15 @@ Put the word in parentheses into the form the sentence needs; the English says w
 | B157 | 여자친구가 ＿＿＿＿＿ 말했어요. (다행이다: said it was a relief) |
 | B158 | 일본 여행에서 ＿＿＿＿＿ 후에 더 연습하고 싶어요. (돌아오다: after) |
 
+### Nov 13 lesson
+
+| # | Fill in the blank |
+| --- | --- |
+| B159 | 낚시를 ＿＿＿＿＿ 시간이 빨리 가요. (하다: as you keep doing) |
+| B160 | 피클볼을 연습하다 보면 잘 ＿＿＿＿＿ 거예요. (치다: will end up) |
+| B161 | 매일 운동하다 보면 ＿＿＿＿＿. (건강하다: become) |
+| B162 | 여자친구는 주식 소식을 듣고 정말 ＿＿＿＿＿. (짜증나다: someone else's feeling) |
+
 ## Part C · Mixed review
 
 No pattern names here. Read the whole sentence, decide which pattern fits, then write the form. Look-alike patterns are mixed on purpose.
@@ -714,6 +732,8 @@ No pattern names here. Read the whole sentence, decide which pattern fits, then 
 | C60 | (Even if) 형에게 사 달라고 ＿＿＿＿＿ 너무 비싸서 부담스러워요. (해도 or 해서) |
 | C61 | (Your exact words) 저는 "고마워요"＿＿＿＿＿ 말했어요. (라고 or 다고) |
 | C62 | (Coming back from a trip) 일본＿＿＿＿＿ 돌아온 후에 피클볼을 더 연습할 거예요. (에서 or 에) |
+| C63 | 집에서 일하다 보면 커피를 더 ＿＿＿＿＿. (마시다: end up) |
+| C64 | 여행 가기 전에 비행기 표를 미리 ＿＿＿＿＿, 호텔도 예약해 놓았어요. (사다: bought ahead, and) |
 
 ## Part D · Fix the mistake
 
@@ -765,6 +785,12 @@ Each sentence has one mistake, shown in \[brackets\]. Write the correct form in 
 | D42 | \[일본는\] 겨울에 추워요. | ＿＿＿＿＿ |
 | D43 | 추석 때 많은 사람이 우리 \[집\] 올 거예요. (to my house) | ＿＿＿＿＿ |
 | D44 | 저는 여자친구하고 수다를 많이 떨어요. 다른 \[사람\] 말을 많이 안 해요. (with other people) | ＿＿＿＿＿ |
+| D45 | 일본은 십일월에 \[춥다라고\] 들어서 패딩을 입으려고 해요. (I heard that) | ＿＿＿＿＿ |
+| D46 | 여자친구가 일본 과자를 \[샀 달라고\] 했어요. (asked me to buy) | ＿＿＿＿＿ |
+| D47 | 엔비디아 \[스톡이\] 떨어진다는 소식을 들었어요. (stock) | ＿＿＿＿＿ |
+| D48 | 여자친구는 그 소식을 듣고 정말 \[짜증나요\]. (she's annoyed) | ＿＿＿＿＿ |
+| D49 | 매일 운동하다 보면 \[건강하게 돼요\]. (get healthier) | ＿＿＿＿＿ |
+| D50 | 비행기 표를 미리 사 놓았고, \[호텔을\] 예약해 놓았어요. (the hotel too) | ＿＿＿＿＿ |
 
 ## Part E · Your turn
 

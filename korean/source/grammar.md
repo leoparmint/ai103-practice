@@ -342,6 +342,9 @@ Examples:
 - State vs change: 편안해요 (I'm relaxed) / 편안해져요 (I get relaxed). -고 싶다 → -고 싶어지다 = come to want.
 - N이/가 되다 = to become N: 서른 살이 돼요, 커피를 마시는 사람이 됐어요. 되어요 = 돼요.
 - -아/어지고 있어요 = it's getting more and more …: 부담스럽다 → 부담스러워지고 있어요. 점점 often goes with it.
+- Teacher's rule: A-아/어지다 = a state or quality changes (건강해져요, 피곤해져요, 행복해져요, 익숙해져요). V-게 되다 = an action or situation changes (먹게 돼요, 알게 돼요 = I find out, 잘 치게 돼요).
+- Adjectives don't take -게 되다: 건강하게 돼요 ✗ → 건강해져요 ✓.
+- 자게 돼요 = I end up falling asleep. 자고 싶어져요 = I start to want to sleep.
 
 Examples:
 
@@ -353,12 +356,17 @@ Examples:
 - 다음 달에 서른 살이 돼요. — I'll turn thirty next month.
 - 이번 달부터 커피를 마시는 사람이 됐어요. — Starting this month, I've become a coffee drinker.
 - 집값이 매년 올라서 점점 부담스러워지고 있어요. — House prices go up every year, so they're becoming more and more of a burden.
+- 배가 고프면 싫어하는 음식도 먹게 돼요. — When I'm hungry, I end up eating even food I don't like.
+- 너무 피곤하면 자게 돼요. — When I'm really tired, I end up falling asleep.
+- 너무 피곤하면 자고 싶어져요. — When I'm really tired, I start to want to sleep.
+- 한국 친구를 자주 만나다 보면 한국어를 더 잘하게 돼요. — If you meet Korean friends often, you get better at Korean.
 
 ### G18 Other people's feelings and wishes
 
 - For yourself: -고 싶다, 피곤하다. For someone else: -고 싶어하다, 피곤해하다 (feeling adjective + -아/어하다).
 - 좋다 → 좋아하다 and 싫다 → 싫어하다 follow the same pattern.
 - Past: -고 싶어했어요 (she wanted to). Your teacher writes it with a space too: 보고 싶어 했어요. Both are fine.
+- Works for 짜증(이) 나다 too: 짜증나요 (I'm annoyed) → 짜증나해요 (she's annoyed). Same as 먹고 싶어요 → 먹고 싶어해요.
 
 Examples:
 
@@ -368,6 +376,7 @@ Examples:
 - (teacher) 제 여자친구는 폭포를 보고 싶어 했어요. — My girlfriend wanted to see the waterfall.
 - 내년에 여자친구는 할로윈 파티에 가고 싶어해요. — Next year my girlfriend wants to go to a Halloween party.
 - (teacher) 제가 운전하면 남편이 불안해해요. — My husband gets nervous when I drive. (불안하다 → 불안해하다 for someone else)
+- 여자친구는 엔비디아 주식이 떨어진다는 소식을 듣고 정말 짜증나해요. — My girlfriend gets really annoyed when she hears that Nvidia stock is falling.
 
 ### G19 Irregular verbs
 
@@ -408,6 +417,7 @@ Cover the Answer column. Say each sentence in Korean, then check.
 | 12 | I came to like coffee. | 커피를 좋아하게 됐어요. | G17 |
 | 13 | My girlfriend really wants to go. | 여자친구가 정말 가고 싶어해요. | G18 |
 | 14 | The river is close to my house. | 강이 집에서 가까워요. | G19 |
+| 15 | If I work out every day, I get healthier. | 매일 운동하면 건강해져요. | G17 |
 
 ## Unit 3 · Time and order
 
@@ -598,6 +608,8 @@ Examples:
 - 호수가 너무 조용해서 그런지 저는 낚시를 하고 나면 마음이 편안해져요. — Maybe because the lake is so quiet, I feel relaxed after fishing.
 - 호수가 잔잔해서 그런지 제 마음도 잔잔해져요. — Maybe because the lake is calm, my mind becomes calm too.
 - 일본은 미국보다 물가가 싸서 그런지 오마카세도 싼 것 같아요. — Maybe because prices are lower in Japan than in the U.S., omakase seems cheaper too.
+- 호수가 잔잔해서 그런지 낚시를 하고 싶어요. — Maybe because the lake is calm, I want to go fishing.
+- 지난번에 낚시를 했을 때 날씨가 추워서 그런지 물고기가 별로 없었어요. — Last time I went fishing, maybe because it was cold, there weren't many fish.
 
 ### G29 You see: -거든요
 
@@ -800,6 +812,27 @@ Examples:
 - 돈과 시간이 충분하다면 스쿠버다이빙을 배우고 싶어요. — If I had enough money and time, I'd like to learn scuba diving.
 - 비가 오면 집에서 빵을 만들어요. — If it rains, I bake bread at home. (오다 → 오면, not 올면)
 
+### G69 If you keep doing it: V-다(가) 보면
+
+- Form: verb stem + -다(가) 보면. 가 usually drops: 하다 보면, 먹다 보면, 다니다 보면. No 받침 change.
+- Meaning: if you keep doing V (again and again, for a while), then this happens. The second part is the result of doing it a lot.
+- Endings that fit after it (teacher's chart): -아/어요 (general result), -(으)ㄹ 거예요 (expected result), -(으)ㄹ 수 있어요 (can), -게 돼요 (end up), -(으)ㄹ 수도 있어요 (might), -기도 해요 (sometimes).
+- A change in the result: adjective → -아/어져요 (행복해져요, 건강해질 거예요); verb → -게 돼요 (잘 치게 돼요). See G17.
+- Compare -(으)면 (G37): 노래를 부르면 스트레스가 풀려요 = if/when (one time). 낚시를 하다 보면 스트레스가 풀려요 = as you keep fishing.
+
+Examples:
+
+- 낚시를 하다 보면 시간이 빨리 가요. — When I'm fishing, time goes by fast.
+- 낚시를 하다 보면 스트레스가 풀려요. — As I keep fishing, my stress goes away.
+- 매일 운동하다 보면 저는 건강해질 거예요. — If I work out every day, I'll get healthier.
+- 피클볼을 연습하다 보면 잘 치게 될 거예요. — If you keep practicing pickleball, you'll get good at it.
+- 집에서 일하다 보면 커피를 더 마시게 돼요. — When you work from home, you end up drinking more coffee.
+- 같은 음식을 매일 먹다 보면 질리기도 해요. — If you eat the same food every day, you sometimes get sick of it.
+- 사람들을 자주 만나다 보면 덜 어색할 수 있어요. — If you meet people often, you can feel less awkward.
+- 일을 너무 많이 하다 보면 스트레스를 더 받게 돼요. — If you work too much, you end up more stressed.
+- 여행을 자주 다니다 보면 행복해질 수도 있어요. — If you travel often, you might become happier.
+- 스트레스를 받다 보면 낚시를 하고 싶어져요. — When the stress keeps building, I start wanting to go fishing.
+
 ### Unit 5 self-test
 
 Cover the Answer column. Say each sentence in Korean, then check.
@@ -819,6 +852,8 @@ Cover the Answer column. Say each sentence in Korean, then check.
 | 11 | When I see my girlfriend, my stress goes away. | 여자친구를 만나면 스트레스가 풀려요. | G37 |
 | 12 | If I had saved more money, I would have gone to Korea. | 만약에 돈을 더 모았으면 한국에 갔을 거예요. | G37 |
 | 13 | If I had enough money and time, I'd like to learn scuba diving. | 돈과 시간이 충분하다면 스쿠버다이빙을 배우고 싶어요. | G37 |
+| 14 | When I'm fishing, time goes by fast. | 낚시를 하다 보면 시간이 빨리 가요. | G69 |
+| 15 | If you keep practicing pickleball, you'll get good at it. | 피클볼을 연습하다 보면 잘 치게 될 거예요. | G69, G17 |
 
 ## Unit 6 · Plans, intentions and purpose
 
@@ -1213,6 +1248,11 @@ Examples:
 - 여자친구가 다행이라고 말했어요. — My girlfriend said it was a relief.
 - 형이 도쿄에서 초밥을 먹고 싶다고 말했어요. — My brother said he wants to eat sushi in Tokyo.
 - 도쿄가 조금 춥다고 들었어요. — I heard Tokyo is a little cold.
+- 대런 씨가 다음 주에 일본에 간다는 소식을 들었어요. — I heard that Darren is going to Japan next week.
+- 대런 씨는 아침마다 그릭 요거트를 먹는다는 소식을 들었어요. — I heard that Darren eats Greek yogurt every morning.
+- 코스트코 그릭 요거트가 맛있다는 소식을 들었어요. — I heard that Costco's Greek yogurt is good.
+- 형은 도쿄에서 초밥을 먹고 싶다고 말했어요. — My brother said he wants to eat sushi in Tokyo.
+- 여자친구한테 고맙다고 말했어요. — I told my girlfriend thank you.
 
 ### G53 Making nouns: -는 것, -기
 
@@ -1423,6 +1463,8 @@ Cover the Answer column. Say each sentence in Korean, then check.
 - Compare: 넣었어요 = I put it in (the action) · 넣어 놓았어요 = I put it in and it stays there (action + result) · 들어 있어요 = it's inside (the state now).
 - N이/가 들어 있어요 = something is inside. N을/를 넣어 놓았어요 = someone put it in there. See mix-up 45.
 - A past question gets a past answer: 서랍에 뭐를 넣어 놓았어요? → 드라이버를 넣어 놓았어요.
+- -아/어 두다 means the same as -아/어 놓다: 사 놓다 = 사 두다, 예약해 놓다 = 예약해 두다.
+- Two things done ahead: -아/어 놓았고, then 도 on the second thing: 표를 사 놓았고, 호텔도 예약해 놓았어요.
 
 Examples:
 
@@ -1431,6 +1473,7 @@ Examples:
 - 책상 서랍에 드라이버하고 USB가 들어 있어요. — There's a screwdriver and a USB drive in my desk drawer.
 - 낚시 가기 전에 낚싯줄을 미리 준비해 놓았어요. — Before going fishing, I got my fishing line ready ahead of time.
 - 고양이 밥을 미리 사 놓았어요. — I bought cat food ahead of time.
+- 여행 가기 전에 비행기 표를 미리 사 놓았고, 호텔도 예약해 놓았어요. — Before the trip, I bought my plane ticket ahead of time and booked the hotel too.
 
 ### G68 I'll do this, so you do that: -(으)ㄹ 테니까
 
